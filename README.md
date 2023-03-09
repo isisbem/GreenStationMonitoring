@@ -1,11 +1,8 @@
 
 
-# Project Title
+# GreenStationMonitoring
 
-
-A brief description of what this project does and who it's for
-
-
+Sistema di monitoraggio e analisi per la pensilina fotovoltaica, che viene usata per ricaricare i mezzi elettrici;
 
 
 ## Badges
@@ -24,22 +21,20 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 ## Documentation
 
 
-[Documentation](https://linktodocumentation)
+[WebSite](https://linktodocumentation)
 
 
 
 
 ## Installation
 
-
-Install my-project with npm
-
+Install my-project with npm (node.js)
 
 ```bash
-  npm install GreenStationMonitoring
   cd GreenStationMonitoring
+  npm install 
   npm run dev
-  *go to localhost:8080 or 8800*
+  *go to localhost:5173 or 8800 / 8000*
 ```
    
 ## Usage/Examples
@@ -47,21 +42,16 @@ Install my-project with npm
 
 ```javascript
 import Component from 'my-project'
-
-
 function App() {
   return <Component />
 }
 ```
 
 
-
-
 ## Used By
 
 
 This project is used by the following companies:
-
 
 - Company 1
 - Company 2
