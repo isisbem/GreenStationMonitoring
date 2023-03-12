@@ -5,18 +5,15 @@
 </script>
 
 <template>
-  <div>
+  <div id="app" data-v-app="">
     <!-- main page -->
-    <main class="h-screen text-center font-poppins">
+    <main class="h-full w-full overflow-x-hidden text-center font-poppins">
       <!-- navigation -->
-      <div id="nav">
-        <Navbar></Navbar>
-      </div>
-
+      <Navbar></Navbar>
       <!-- for content of the page -->
       <router-view v-slot="{ Component, route }">
         <transition name="fade" mode="out-in">
-          <div :key="route.name" class="h-full m-0 p-0 font-poppins">  
+          <div :key="route.name" class="sw-components container mx-auto max-w-full overflow-x-hidden flex flex-col bg-white">  
             <component :is="Component"></component>
           </div>
         </transition>
@@ -26,6 +23,10 @@
 </template>
 
 <style lang="css">
+/* for the component */
+.sw-components {
+  min-height: calc(100vh - 75px) !important;
+}
 .fade-enter-active, .fade-leave-active {
   transition: all 300ms ease; 
   opacity: 1;
