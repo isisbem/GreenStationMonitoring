@@ -2,7 +2,7 @@
   <!-- navbar -->
   <header class="m-0 flex flex-wrap items-center justify-between px-2 py-3 bg-green-500 mb-3">
     <div ref="wrapper" @click="handleOutsideClick" class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-      <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+      <div class="w-full relative flex justify-between ">
         <Router-Link
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300 active:rounded p-3"
           to="/">
@@ -16,33 +16,33 @@
       </div>
     
       <nav ref="navbar" v-show="isNavbarOpen"
-            class="flex lg:w-fit w-full justify-center items-center">
-        <div class="lg:flex flex-grow lg:flex-grow-0 w-full lg:w-fit md:justify-end md:items-end justify-center items-center transition-all">
-          <ul class="flex flex-col lg:flex-row list-none mx-auto">
+            class="flex w-full flex-col justify-center items-center">
+        <div class="lg:flex flex-grow w-full justify-center items-center transition-all">
+          <ul class="flex flex-col list-none mx-auto">
             <li class="nav-item">
               <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                 to="/">
                 <span class="ml-2">Home</span>
               </RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                 to="/About">
                 <span class="ml-2">About</span>
               </RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                 to="/Analytics">
                 <span class="ml-2">Analytics</span>
               </RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                 to="/Informations">
                 <span class="ml-2">Informations</span>
               </RouterLink>
