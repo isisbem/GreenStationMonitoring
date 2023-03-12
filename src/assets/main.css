@@ -1,43 +1,38 @@
+/* cdn */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* get the font */
 :root {
     --font-fam-poppins:'Poppins', sans-serif;
 }
-
 body, html {
     font-family: var(--font-fam-poppins)
 }
-
+/* local */
 @font-face {
     font-family: var(--font-fam-poppins);
     font-weight: 400;
     font-style: normal;
     font-display: auto;
-    unicode-range: U+000-5FF;
     src: local("Poppins"), url('../public/Fonts/Poppins-Regular.woff2') format("woff2");
 }
-
 @font-face {
     font-family: var(--font-fam-poppins);
     font-weight: 500;
     font-style: normal;
     font-display: auto;
-    unicode-range: U+000-5FF;
-    src: url('../public/Fonts/Poppins-Medium.woff2') format("woff2");
+    src: local("Poppins"), url('../public/Fonts/Poppins-Medium.woff2') format("woff2");
 }
-
 @font-face {
     font-family: var(--font-fam-poppins);
     font-weight: 600;
     font-style: normal;
     font-display: auto;
-    unicode-range: U+000-5FF;
-    src: url('../public/Fonts/Poppins-SemiBold.woff2') format("woff2");
+    src: local("Poppins"), url('../public/Fonts/Poppins-SemiBold.woff2') format("woff2");
 }
-
 @font-face {
     font-family: var(--font-fam-poppins);
     font-weight: 700;
     font-style: normal;
     font-display: auto;
-    unicode-range: U+000-5FF;
-    src: url('../public/Fonts/Poppins-Bold.woff2') format("woff2");
+    src: local("Poppins"), url('../public/Fonts/Poppins-Bold.woff2') format("woff2");
 }
