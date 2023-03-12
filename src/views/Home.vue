@@ -3,27 +3,44 @@ import Footer from '../components/Footer.vue'
 </script>
 
 <template>
-    <div class="home h-5/6 m-0">
-        <div class="h-full w-full m-0 p-3 flex flex-col justify-center items-center text-white bg-green-500">
-            <h1 class="text-xl font-bold">Green Station Monitoring</h1>
-            <div class="container flex flex-col justify-center items-center w-fit pt-12 pb-2">
-                <img src="" alt="logo" width="100" height="100">
-            </div>
-            <div class="flex flex-row justify-center items-center gap-4 w-64 py-10 px-2">
-                <a href="/About" target="_self">
-                    <button 
-                     class="py-3 px-5 transition-colors border-2 rounded-lg hover:bg-slate-50 hover:text-black">
-                        About us
-                    </button>
-                </a>
-                <a href="/Analytics" target="_self">
-                    <button
-                     class="py-3 px-5 transition-colors border-2 hover:bg-slate-50 hover:text-black rounded-lg hover:">
-                        Analytics
-                    </button>
-                </a>
+    <div class="home h-4/5 font-poppins">
+        <div class="h-full w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
+            <div class="container flex flex-col h-fit justify-center items-center">
+                <div class="gap-12 flex flex-col items-center text-center w-fit m-auto">
+                    <div class="my-0 flex flex-col justify-center items-center self-center mx-auto lg:mt-0">
+                        <h1 class="text-2xl md:text-4xl font-medium tracking-tight flex flex-col flex-wrap mb-8">
+                            GreenStationMonitoring
+                            <span class="text-green-600 font-bold text-2xl md:text-4xl py-2">
+                                Green, Save, Sustain.
+                            </span>
+                        </h1>
+                        <!-- buttons -->
+                        <div class="flex flex-row gap-2">
+                            <RouterLink class="inline-block px-7 py-3 mr-2 bg-green-600
+                                    text-white font-medium text-sm leading-snug uppercase 
+                                    rounded shadow-md hover:bg-green-700 hover:shadow-lg 
+                                    focus:bg-green-700 focus:shadow-lg focus:outline-none 
+                                    focus:ring-0 active:bg-green-800 active:shadow-lg transition 
+                                    duration-150 ease-in-out"  
+                                    to="/Analytics" role="button">Analytics</RouterLink>
+                            <RouterLink class="inline-block px-7 py-3 bg-transparent 
+                                    text-green-600 font-medium text-sm leading-snug uppercase 
+                                    rounded hover:text-green-700 hover:bg-gray-100 
+                                    focus:bg-gray-100 focus:outline-none focus:ring-0 
+                                    active:bg-gray-200 transition duration-150 ease-in-out" 
+                                    to="/About" role="button">About us</RouterLink>
+                        </div>
+                    </div>
+                    <!-- logo -->
+                    <!-- <div class="mb-12 mx-auto lg:mb-0">
+                    </div> -->
+                </div>
             </div>
         </div>
+        <Footer></Footer>
     </div>
-    <Footer></Footer>
 </template>
+
+<style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+</style>
