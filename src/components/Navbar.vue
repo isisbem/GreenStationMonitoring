@@ -9,7 +9,7 @@
           Logo
         </Router-Link>
         <button
-          class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300"
+          class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300"
           type="button" ref="toggleButton" @click="isNavbarOpen = !isNavbarOpen">
           <i class="fas fa-bars"></i>
         </button>
