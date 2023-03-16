@@ -50,8 +50,8 @@
                         <!-- carousel of cards -->
                         <div class="card mx-4 border border-gray-200 rounded-lg p-4">
                             <!-- image -->
-                            <div class="">
-                                <!-- <img src="../../public/Icon - img/green-economy.png" alt=""> -->
+                            <div class="flex justify-center items-center w-full p-3">
+                                <img src="../assets/Icon - img/green-economy.png" class="w-10 h-10 object-cover" alt="">
                             </div>
                             <p class="font-normal">
                                 the cart
@@ -59,8 +59,8 @@
                         </div>
                         <div class="card mx-4 border border-gray-200 rounded-lg p-4">
                             <!-- image -->
-                            <div class="">
-                                <!-- <img src="../../public/Icon - img/paper.png" alt=""> -->
+                            <div class="flex justify-center items-center w-full p-3">
+                                <img src="../assets/Icon - img/paper.png" class="w-10 h-10 object-cover" alt="">
                             </div>
                             <p class="font-normal">
                                 the cart
@@ -68,8 +68,8 @@
                         </div>
                         <div class="card mx-4 border border-gray-200 rounded-lg p-4">
                             <!-- image -->
-                            <div class="">
-                                <!-- <img src="../public/Icon - img/planet-earth.png" alt=""> -->
+                            <div class="flex justify-center items-center w-full p-3">
+                                <img src="../assets/Icon - img/planet-earth.png" class="w-10 h-10 object-cover" alt="">
                             </div>
                             <p class="font-normal">
                                 the cart
