@@ -30,10 +30,10 @@ import Footer from '../components/Footer.vue'
                                 to="/About" role="button">About us</RouterLink>
                     </div>
                 </div>
-                <!-- logo image-->
-                <!-- <div class="mb-12 mx-auto lg:mb-0">
+                <!-- logo image 150x150-->
+                <!--<div class="mb-12 mx-auto lg:mb-0">
                         <img></img>
-                    </div> -->
+                    </div>-->
             </div>
         </div>
     </div>
