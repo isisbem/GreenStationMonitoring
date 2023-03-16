@@ -5,17 +5,17 @@
             <ul class="flex gap-5 py-3">
                 <li class="text-2xl">
                     <a href="" target="_blank">
-                        <i class="fa-brands fa-instagram text-white"></i>
+                        <i class="bi bi-instagram text-white"></i>
                     </a>
                 </li>
                 <li class="text-2xl">
                     <a href="" target="_blank">
-                        <i class="fa-solid fa-envelope text-white"></i>
+                        <i class="bi bi-github text-white"></i>
                     </a>
                 </li>
                 <li class="text-2xl">
                     <a href="" target="_blank">
-                        <i class="fa-brands fa-github text-white"></i>
+                        <i class="bi bi-envelope text-white"></i>
                     </a>
                 </li>
             </ul>

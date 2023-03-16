@@ -23,6 +23,8 @@
 </template>
 
 <style lang="css">
+/* icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 /* for the component */
 .sw-components {
   min-height: calc(100vh - 75px) !important;

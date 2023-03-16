@@ -6,12 +6,14 @@
         <Router-Link
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300 active:rounded p-3"
           to="/">
-          Logo
+          <div class="">
+            <img src="../../public/favicon.jpeg" class="imageLogo" alt="">
+          </div>
         </Router-Link>
         <button
           class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300"
           type="button" ref="toggleButton" @click="isNavbarOpen = !isNavbarOpen">
-          <i class="fas fa-bars"></i>
+          <i class="bi bi-list text-white text-2xl"></i>
         </button>
       </div>
     
@@ -87,3 +89,12 @@ export default {
   }
 };
 </script>
+
+<style>
+.imageLogo {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+</style>
