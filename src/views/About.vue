@@ -51,7 +51,7 @@
                         <div class="card mx-4 border border-gray-200 rounded-lg p-4">
                             <!-- image -->
                             <div class="">
-                                <img src="../../public/Icon - img/green-economy.png" alt="">
+                                <!-- <img src="../../public/Icon - img/green-economy.png" alt=""> -->
                             </div>
                             <p class="font-normal">
                                 the cart
@@ -60,7 +60,7 @@
                         <div class="card mx-4 border border-gray-200 rounded-lg p-4">
                             <!-- image -->
                             <div class="">
-                                <img src="../../public/Icon - img/paper.png" alt="">
+                                <!-- <img src="../../public/Icon - img/paper.png" alt=""> -->
                             </div>
                             <p class="font-normal">
                                 the cart
@@ -69,7 +69,7 @@
                         <div class="card mx-4 border border-gray-200 rounded-lg p-4">
                             <!-- image -->
                             <div class="">
-                                <img src="../../public/Icon - img/planet-earth.png" alt="">
+                                <!-- <img src="../public/Icon - img/planet-earth.png" alt=""> -->
                             </div>
                             <p class="font-normal">
                                 the cart
