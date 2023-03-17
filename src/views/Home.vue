@@ -4,7 +4,7 @@ import Footer from '../components/Footer.vue'
 
 <template>
     <div class="home font-poppins mx-auto">
-        <div class="h-full w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
+        <div class="max-h-full h-screen w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
             <div class="gap-12 flex flex-col items-center text-center w-fit m-auto">
                 <div class="my-0 flex flex-col justify-center items-center self-center mx-auto lg:mt-0">
                     <h1 class="text-2xl md:text-4xl font-medium tracking-tight flex flex-col flex-wrap mb-8">
