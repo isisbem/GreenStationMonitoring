@@ -6,7 +6,7 @@ import Footer from '../components/Footer.vue'
     <div>
         <div class="Informations h-full max-w-3xl mx-auto w-full">
             <!-- .sectionNormal -->
-            <div class="container w-full mt-4 flex flex-col text-black">
+            <div class="container w-full mt-4 flex flex-col text-black text-left">
                 <h1 class="font-semibold text-2xl mt-16">
                     More Informations
                 </h1>
@@ -63,10 +63,13 @@ import Footer from '../components/Footer.vue'
                             <div class="py-8 text-base leading-5 space-y-7 text-gray-700 sm:text-lg sm:leading-7">
                                 <div class="relative">
                                     <input autocomplete="off" id="email" name="email" type="text"
-                                        class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                                        class="peer placeholder-transparent h-10 w-full focus:border-b-green-500 border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                                         placeholder="Email address" />
                                     <label for="email"
-                                        class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                                        class="absolute left-0 -top-3.5 text-gray-600 text-sm 
+                                        peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 
+                                        peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5
+                                        peer-focus:text-gray-600 peer-focus:text-sm">
                                         Email Address
                                     </label>
                                 </div>

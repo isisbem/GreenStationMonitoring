@@ -59,10 +59,10 @@ import Footer from '../components/Footer.vue'
                         </div>
                     </div>
                     <!-- second section -->
-                    <div class="mt-28">
+                    <div class="mt-14 md:mt-24">
                         <h1 class="font-semibold text-2xl">Why this project?</h1>
                     </div>
-                    <div class="sectionNormal">
+                    <div class="sectionNormal2">
                         <div class="flex flex-col sm:flex-row gap-2 max-h-full mt-4 mb-24">
                             <!-- carousel of cards -->
                             <div class="card mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">

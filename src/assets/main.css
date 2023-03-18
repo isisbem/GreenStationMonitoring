@@ -49,6 +49,15 @@ main {
     position: relative
 }
 
-.sectionNormal {
-    height: calc(100vh - 375px)
+.sectionNormal, .sectionNormal2 {
+    min-height: calc(100vh - 375px);
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .sectionNormal2 {
+        height: 100%;
+        min-height: 100dvh !important;
+        min-height: 100vh !important;
+    }
 }
