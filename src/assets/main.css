@@ -1,12 +1,16 @@
 /* cdn */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* get the font */
 :root {
-    --font-fam-poppins:'Poppins', sans-serif;
+    --font-fam-poppins: 'Poppins', sans-serif;
 }
-body, html {
+
+body,
+html {
     font-family: var(--font-fam-poppins)
 }
+
 /* local */
 @font-face {
     font-family: var(--font-fam-poppins);
@@ -15,6 +19,7 @@ body, html {
     font-display: auto;
     src: local("Poppins"), url('../public/Fonts/Poppins-Regular.woff2') format("woff2");
 }
+
 @font-face {
     font-family: var(--font-fam-poppins);
     font-weight: 500;
@@ -22,6 +27,7 @@ body, html {
     font-display: auto;
     src: local("Poppins"), url('../public/Fonts/Poppins-Medium.woff2') format("woff2");
 }
+
 @font-face {
     font-family: var(--font-fam-poppins);
     font-weight: 600;
@@ -29,10 +35,20 @@ body, html {
     font-display: auto;
     src: local("Poppins"), url('../public/Fonts/Poppins-SemiBold.woff2') format("woff2");
 }
+
 @font-face {
     font-family: var(--font-fam-poppins);
     font-weight: 700;
     font-style: normal;
     font-display: auto;
     src: local("Poppins"), url('../public/Fonts/Poppins-Bold.woff2') format("woff2");
+}
+
+/* sections */
+main {
+    position: relative
+}
+
+.sectionNormal {
+    height: calc(100vh - 375px)
 }

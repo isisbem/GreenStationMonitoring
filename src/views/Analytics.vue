@@ -1,14 +1,25 @@
+<script setup>
+    import Footer from '../components/Footer.vue'
+</script>
+
 <template>
     <div>
-        <div class="Analytics h-full">
-            <div class="h-2/3 container mt-4 flex flex-col justify-center items-center text-black">
-                <h1 class="font-semibold">
+        <div class="Analytics h-screen">
+            <div class="h-4/5 container w-full max-w-4xl mx-auto mt-4 flex flex-col justify-center items-center text-black">
+                <h1 class="font-semibold text-2xl mt-16">
                     Analytics 
                 </h1>
-                <p class="font-light mt-2">
+                <p class="font-light mt-2 my-6">
                     ...we are loading some dates from the server...
+                    <div class="container my-8 flex flex-col justify-center items-center mx-auto">
+                        <figure>
+                            <img src="/loading.gif" alt="loading" title="fig loading" loading="lazy" width="100" height="100">
+                        </figure>
+                    </div>
                 </p>
             </div>
+
+            <Footer class="mt-auto"></Footer>
         </div>
     </div>
 </template>

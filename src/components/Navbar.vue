@@ -7,7 +7,7 @@
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300 active:rounded p-3"
           to="/">
           <div class="">
-            <img src=".//..//..//public/favicon.jpeg" class="imageLogo" alt="">
+            <img src="/favicon.jpeg" class="imageLogo" alt="">
           </div>
         </Router-Link>
         <button
