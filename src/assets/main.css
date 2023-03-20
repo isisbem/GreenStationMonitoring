@@ -65,7 +65,7 @@ main { position: relative }
   
 @media screen and (min-width: 768px) {
     .hamburger { display: none !important }
-    .navbar, .navbar .contenitore, .fullata { display: flex !important; width: fit-content !important }
+    .navbar, .navbar .contenitore, .fullata { display: flex !important; width: fit-content !important}
     .navbar ul { flex-direction: row !important }
 }
   
@@ -82,12 +82,14 @@ ul li:nth-child(3) { animation-delay: calc(var(--animation-delay) * 3) !importan
 ul li:nth-child(4) { animation-delay: calc(var(--animation-delay) * 4) !important }
 ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !important }
   
-.nav-item {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+@media screen and (max-width: 767px) {
+    .nav-item {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
 }
   
 .nav-item.active {
