@@ -6,7 +6,10 @@ import Footer from '../components/Footer.vue'
     <div class="font-poppins mx-auto">
         <div class="max-h-full home w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
             <div class="gap-12 flex flex-col items-center text-center w-fit m-auto">
-                <div class="my-0 flex flex-col justify-center items-center self-center mx-auto lg:mt-0">
+                <div class="my-0 flex flex-col justify-center items-center self-center mx-auto lg:mt-0"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-duration="275">
                     <h1 class="text-2xl md:text-4xl font-medium tracking-tight flex flex-col flex-wrap mb-8">
                         GreenStationMonitoring
                         <span class="text-green-600 font-bold text-2xl md:text-4xl py-2">
