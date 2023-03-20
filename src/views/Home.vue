@@ -42,6 +42,7 @@ import Footer from '../components/Footer.vue'
 
 <style>
     .home {
+        height: calc(100dvh - 190px) !important;
         height: calc(100vh - 190px) !important;
     }
 </style>
