@@ -3,8 +3,8 @@ import Footer from '../components/Footer.vue'
 </script>
 
 <template>
-    <div class="home font-poppins mx-auto">
-        <div class="max-h-full h-screen w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
+    <div class="font-poppins mx-auto">
+        <div class="max-h-full home w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
             <div class="gap-12 flex flex-col items-center text-center w-fit m-auto">
                 <div class="my-0 flex flex-col justify-center items-center self-center mx-auto lg:mt-0">
                     <h1 class="text-2xl md:text-4xl font-medium tracking-tight flex flex-col flex-wrap mb-8">
@@ -41,8 +41,11 @@ import Footer from '../components/Footer.vue'
 </template>
 
 <style>
+    :root {
+        --size-vh: 212px; 
+    }
     .home {
-        height: calc(100dvh - 190px) !important;
-        height: calc(100vh - 190px) !important;
+        height: calc(100dvh - var(--size-vh)) !important;
+        height: calc(100vh - var(--size-vh));
     }
 </style>

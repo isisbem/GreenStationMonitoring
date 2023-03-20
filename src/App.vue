@@ -7,7 +7,7 @@
 <template>
   <div id="app" data-v-app="">
     <!-- main page -->
-    <main class="h-full w-full overflow-x-hidden text-center font-poppins">
+    <main class="Main w-full overflow-x-hidden text-center font-poppins">
       <!-- navigation -->
       <Navbar></Navbar>
       <!-- for content of the page -->
@@ -25,10 +25,14 @@
 <style lang="css">
 /* icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-/* for the component */
-.sw-components {
-  min-height: calc(100vh - 75px) !important;
+.Main {
+  height: 100dvh !important;
+  /* height: 100vh !important; */
 }
+/* for the component */
+/* .sw-components {
+  min-height: calc(100vh - 75px) !important;
+} */
 .fade-enter-active, .fade-leave-active {
   transition: all 300ms ease; 
   opacity: 1;

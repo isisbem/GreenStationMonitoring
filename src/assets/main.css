@@ -58,6 +58,6 @@ main {
     .sectionNormal2 {
         height: 100%;
         min-height: 100dvh !important;
-        min-height: 100vh !important;
+        min-height: 100vh;
     }
 }
