@@ -6,10 +6,7 @@
     --font-fam-poppins: 'Poppins', sans-serif;
 }
 
-body,
-html {
-    font-family: var(--font-fam-poppins)
-}
+body, html { font-family: var(--font-fam-poppins) }
 
 /* local */
 @font-face {
@@ -45,9 +42,7 @@ html {
 }
 
 /* sections */
-main {
-    position: relative
-}
+main { position: relative }
 
 .sectionNormal, .sectionNormal2 {
     min-height: calc(100vh - 375px);
@@ -56,8 +51,83 @@ main {
 
 @media screen and (max-width: 767px) {
     .sectionNormal2 {
-        height: 100%;
         min-height: 100dvh !important;
         min-height: 100vh;
     }
 }
+
+/* navbar styles */
+:root {
+    --animation-delay: 100ms;
+    --animation-name: fade-in;
+    --fill-mode: cubic-bezier(0.100, 0.850, 0.300, 1.150);
+}
+  
+@media screen and (min-width: 768px) {
+    .hamburger { display: none !important }
+    .navbar, .navbar .contenitore, .fullata { display: flex !important; width: fit-content !important }
+    .navbar ul { flex-direction: row !important }
+}
+  
+.imageLogo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+  
+ul li:nth-child(1) { animation-delay: var(--animation-delay) !important }
+ul li:nth-child(2) { animation-delay: calc(var(--animation-delay) * 2) !important }
+ul li:nth-child(3) { animation-delay: calc(var(--animation-delay) * 3) !important }
+ul li:nth-child(4) { animation-delay: calc(var(--animation-delay) * 4) !important }
+ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !important }
+  
+.nav-item {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+  
+.nav-item.active {
+    /* animations */
+    animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
+    animation-name: fade-in;
+    animation-duration: calc(var(--animation-delay)*3.3);
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: var(--fill-mode);
+      -webkit-animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
+      -webkit-animation-name: fade-in;
+      -webkit-animation-direction: normal;
+      -webkit-animation-fill-mode: forwards;
+      -webkit-animation-duration: calc(var(--animation-delay)*3.3);
+      -webkit-animation-timing-function: var(--fill-mode);
+        -moz-animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
+        -moz-animation-direction: normal;
+        -moz-animation-name: fade-in;
+        -moz-animation-duration: calc(var(--animation-delay)*3.3);
+        -moz-animation-timing-function: var(--fill-mode);
+    /* displays */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+}
+  
+@keyframes fade-in { 
+0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
+100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+@-webkit-keyframes fade-in {
+0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
+100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+@-moz-keyframes fade-in {
+0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
+100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+@-o-keyframes fade-in {
+0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
+100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+/* end navbar styles */
