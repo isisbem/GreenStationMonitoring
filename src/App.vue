@@ -13,7 +13,7 @@
       <!-- for content of the page -->
       <router-view v-slot="{ Component, route }">
         <transition name="fade" mode="out-in">
-          <div :key="route.name" class="sw-components container mx-auto max-w-full overflow-x-hidden flex flex-col bg-white">  
+          <div :key="route.name" class="container mx-auto max-w-full overflow-x-hidden flex flex-col bg-white">  
             <component :is="Component"></component>
           </div>
         </transition>
@@ -27,12 +27,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 .Main {
   height: 100dvh !important;
-  /* height: 100vh !important; */
+  height: 100vh;
 }
-/* for the component */
-/* .sw-components {
-  min-height: calc(100vh - 75px) !important;
-} */
 .fade-enter-active, .fade-leave-active {
   transition: all 300ms ease; 
   opacity: 1;

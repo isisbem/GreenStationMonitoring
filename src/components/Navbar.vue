@@ -1,7 +1,8 @@
 <template>
   <!-- navbar -->
   <header class="m-0 flex flex-wrap items-center justify-between px-2 py-3 bg-green-500 mb-3">
-    <div ref="wrapper" @click="handleOutsideClick" class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <div ref="wrapper" @click="handleOutsideClick"
+      class="container px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full fullata relative flex justify-between ">
         <Router-Link
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300 active:rounded p-3"
@@ -16,11 +17,10 @@
           <i class="bi bi-list text-white text-2xl"></i>
         </button>
       </div>
-    
+
       <nav ref="navbar" v-show="isNavbarOpen" class="navbar flex w-full flex-col justify-center items-center">
         <div class="contenitore lg:flex flex-grow w-full justify-center items-center transition-all">
-          <ul ref="lista" 
-            class="flex flex-col list-none mx-auto">
+          <ul ref="lista" class="flex flex-col list-none mx-auto">
             <li class="nav-item">
               <RouterLink
                 class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
@@ -74,7 +74,7 @@ export default {
       const toggleButton = this.$refs.toggleButton;
       const navbar = this.$refs.navbar;
       const wrapper = this.$refs.wrapper;
-      
+
       if (this.isNavbarOpen && event.target !== toggleButton && !navbar.contains(event.target) && !wrapper.contains(event.target)) {
         this.isNavbarOpen = false;
         document.body.style.overflow = 'hidden';
@@ -91,7 +91,6 @@ export default {
       });
     }
   },
-
   watch: {
     isNavbarOpen(newVal) {
       document.body.style.overflow = newVal ? 'hidden' : 'auto';
@@ -104,16 +103,15 @@ export default {
 :root {
   --animation-delay: 100ms;
   --animation-name: fade-in;
-  --fill-mode: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --fill-mode: cubic-bezier(0.100, 0.850, 0.300, 1.150);
 }
+
 @media screen and (min-width: 768px) {
   .hamburger { display: none !important }
-  .navbar, .navbar .contenitore, .fullata {
-    display: flex !important;
-    width: fit-content !important;
-  }
+  .navbar, .navbar .contenitore, .fullata { display: flex !important; width: fit-content !important }
   .navbar ul { flex-direction: row !important }
 }
+
 .imageLogo {
   border-radius: 50%;
   width: 40px;
@@ -126,16 +124,33 @@ ul li:nth-child(2) { animation-delay: calc(var(--animation-delay) * 2) !importan
 ul li:nth-child(3) { animation-delay: calc(var(--animation-delay) * 3) !important }
 ul li:nth-child(4) { animation-delay: calc(var(--animation-delay) * 4) !important }
 ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !important }
-.nav-item.active { animation: fade-in calc(var(--animation-delay)*3.3) ease-in-out forwards }
+
+.nav-item {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.nav-item.active {
+  /* animations */
+  animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
+  animation-name: fade-in;
+  animation-duration: calc(var(--animation-delay)*3.3);
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  /* displays */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
 
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-33.3%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
+  100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);}
 }
 </style>
