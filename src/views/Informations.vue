@@ -22,7 +22,18 @@ import Footer from '../components/Footer.vue'
                         <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                             <dt class="text-lg font-medium text-green-500"> Group members: </dt>
                             <dd class="mt-3 font-medium text-md text-gray-900 sm:mt-0 sm:col-span-2">
-                                list of components
+                                <div class="columns-2 col-span-1 col">
+                                   <h1>Area Tecnica:</h1>
+                                   <p>//</p>
+                                </div>
+                                <div class="columns-2 col-span-1 col">
+                                    <h1>Area Creativa:</h1>
+                                    <p>//</p>
+                                </div>
+                                 <div class="columns-2 col-span-1 col">
+                                    <h1>Area Gestionale:</h1>
+                                    <p>//</p>
+                                </div>
                             </dd>
                         </div>
                         <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
@@ -36,7 +47,7 @@ import Footer from '../components/Footer.vue'
                         <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                             <dt class="text-lg font-medium text-green-500"> More specs </dt>
                             <dd class="mt-3 text-md text-gray-900 sm:mt-0 sm:col-span-2">
-                                this project will fetch various statistics from a photovoltaic shelter.
+                                This project will fetch various statistics from a photovoltaic shelter.
                                 This data can be of a purely technical nature such as instantaneous
                                 electricity absorption or over time or data on its use such as the
                                 number of available charging ports and occupied ports.
@@ -63,7 +74,10 @@ import Footer from '../components/Footer.vue'
                             <div class="py-8 text-base leading-5 space-y-7 text-gray-700 sm:text-lg sm:leading-7">
                                 <div class="relative">
                                     <input autocomplete="off" id="email" name="email" type="text"
-                                        class="peer placeholder-transparent h-10 w-full focus:border-b-green-500 border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                                        class="peer placeholder-transparent h-10 w-full 
+                                            focus:border-b-green-500 border-b-2 border-gray-300
+                                             text-gray-900 focus:outline-none focus:borer-rose-600
+                                             focus:shadow-sm"
                                         placeholder="Email address" />
                                     <label for="email"
                                         class="absolute left-0 -top-3.5 text-gray-600 text-sm 
@@ -83,7 +97,7 @@ import Footer from '../components/Footer.vue'
                                             transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 
                                             placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-green-500 
                                             focus:border-t-transparent focus:outline-0 disabled:resize-none disabled:border-0 
-                                            disabled:bg-blue-gray-50"
+                                            disabled:bg-blue-gray-50 focus:shadow-md"
                                             placeholder=" "></textarea>
                                         <label
                                             class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 
@@ -109,7 +123,10 @@ import Footer from '../components/Footer.vue'
                                     </div>
                                 </div>
                                 <div class="relative w-full">
-                                    <button class="bg-green-500 text-white rounded-md w-full px-6 py-2">
+                                    <button 
+                                        class="bg-green-500 text-white rounded-md w-full 
+                                               px-6 py-2 hover:bg-green-600 transition-all
+                                               hover:-translate-y-1 hover:shadow-md">
                                         Submit
                                     </button>
                                 </div>

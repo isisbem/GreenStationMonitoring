@@ -2,10 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* get the font */
-:root {
-    --font-fam-poppins: 'Poppins', sans-serif;
-}
-
+:root { --font-fam-poppins: 'Poppins', sans-serif }
 body, html { font-family: var(--font-fam-poppins) }
 
 /* local */
@@ -54,6 +51,13 @@ main { position: relative }
         min-height: 100dvh !important;
         min-height: 100vh;
     }
+}
+
+/* about */
+.tondo {
+    border-radius: 50%;
+    width: 53px;
+    height: 100%;
 }
 
 /* navbar styles */
@@ -113,11 +117,12 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
         -moz-animation-timing-function: var(--fill-mode);
     /* displays */
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     visibility: visible;
     backface-visibility: visible;
-    -webkit-backface-visibility: visible;
+        -webkit-backface-visibility: visible;
 }
   
 @keyframes fade-in { 
@@ -134,11 +139,29 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
 100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
 
 /* hamburger close icon */
-/* button with 2 icons */
-.Close { display: none !important }
+.Open, .Close { display: none }
 .active { display: flex !important }
 /* second toggle */
-.Closing { display: none !important }
+.Closing { display: none }
 /* end navbar styles */
 /* other states */
-.hamburger { transition: 0ms !important }
+.hamburger { transition: 0ms } 
+
+/* analytics */
+.gif-disabled:hover { animation: pulse 1.5s cubic-bezier(0.1, 1, .125, .75) }
+@keyframes pulse {
+    0% { transform: scale(1) }
+    47% {
+        transform: scale(1.04);
+        background-color: red;
+        padding: 12px;
+        border-radius: 8px;
+    }
+    53% {
+        transform: scale(1.12);
+        background-color: red;
+        padding: 12px;
+        border-radius: 8px;
+    }
+    100% { transform: scale(1) }
+}

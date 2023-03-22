@@ -4,18 +4,18 @@
             <!-- social list -->
             <div class="flex flex-col justify-center items-center py-2 w-full bg-green-500">
                 <ul class="flex gap-5 py-3">
-                    <li class="text-2xl">
-                        <a href="" target="_blank">
+                    <li class="text-2xl hover:-translate-y-1 transition-all">
+                        <a href="" class="opacity-100 hover:opacity-80" target="_blank">
                             <i class="bi bi-instagram text-white"></i>
                         </a>
                     </li>
-                    <li class="text-2xl">
-                        <a href="" target="_blank">
+                    <li class="text-2xl hover:-translate-y-1 transition-all">
+                        <a href="" class="opacity-100 hover:opacity-80" target="_blank">
                             <i class="bi bi-github text-white"></i>
                         </a>
                     </li>
-                    <li class="text-2xl">
-                        <a href="" target="_blank">
+                    <li class="text-2xl hover:-translate-y-1 transition-all">
+                        <a href="" class="opacity-100 hover:opacity-80" target="_blank">
                             <i class="bi bi-envelope text-white"></i>
                         </a>
                     </li>

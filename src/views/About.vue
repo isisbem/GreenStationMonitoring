@@ -15,9 +15,9 @@ import Footer from '../components/Footer.vue'
                             <div class="my-4 mx-3 flex flex-col sm:flex sm:flex-row">
                                 <!-- 1 row -->
                                 <div
-                                    class="border border-gray-300 flex flex-col justify-center items-center rounded-md w-full mr-3">
-                                    <div class="flex flex-col p-2 my-2 tondo object-cover border-4 border-gray-200">
-                                        <i class="bi bi-people-fill text-xl"></i>
+                                    class="hover:transition-shadow hover:shadow-lg border border-gray-300 flex flex-col justify-center items-center rounded-md w-full mr-3">
+                                    <div class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
+                                        <i class="bi bi-people-fill text-xl text-neutral-100"></i>
                                     </div>
                                     <h1 class="font-semibold">Our teammate</h1>
                                     <div class="rounded p-3 font-normal">
@@ -38,9 +38,9 @@ import Footer from '../components/Footer.vue'
                             <div class="my-4 mx-3 flex flex-col sm:flex sm:flex-row">
                                 <!-- 2 row -->
                                 <div
-                                    class="border border-gray-300 rounded-md flex flex-col justify-center items-center w-full mr-3">
-                                    <div class="flex flex-col p-2 my-2 tondo object-cover border-4 border-gray-200">
-                                        <i class="bi bi-graph-up text-xl"></i>
+                                    class="hover:transition-shadow hover:shadow-lg border border-gray-300 rounded-md flex flex-col justify-center items-center w-full mr-3">
+                                    <div class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
+                                        <i class="bi bi-graph-up text-xl text-neutral-100"></i>
                                     </div>
                                     <h1 class="font-semibold">About the project</h1>
                                     <div class="rounded p-3 font-normal">
@@ -65,7 +65,7 @@ import Footer from '../components/Footer.vue'
                     <div class="sectionNormal2">
                         <div class="flex flex-col sm:flex-row gap-2 max-h-full mt-4 mb-24">
                             <!-- carousel of cards -->
-                            <div class="card mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                            <div class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
                                 <!-- image -->
                                 <div class="flex justify-center items-center w-full p-3">
                                     <img src="/green-economy.png" class="w-10 h-10 object-cover" alt="">
@@ -81,7 +81,7 @@ import Footer from '../components/Footer.vue'
                                     to school accessible to everyone.
                                 </p>
                             </div>
-                            <div class="card mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                            <div class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
                                 <!-- image -->
                                 <div class="flex justify-center items-center w-full p-3">
                                     <img src="/paper.png" class="w-10 h-10 object-cover" alt="">
@@ -96,7 +96,7 @@ import Footer from '../components/Footer.vue'
                                     reach, thanks to the user-friendly interface of the software.
                                 </p>
                             </div>
-                            <div class="card mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                            <div class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
                                 <!-- image -->
                                 <div class="flex justify-center items-center w-full p-3">
                                     <img src="/planet-earth.png" class="w-10 h-10 object-cover" alt="">
@@ -119,11 +119,3 @@ import Footer from '../components/Footer.vue'
         </div>
     </div>
 </template>
-
-<style>
-.tondo {
-    border-radius: 50%;
-    width: 54px;
-    height: 100%;
-}
-</style>
