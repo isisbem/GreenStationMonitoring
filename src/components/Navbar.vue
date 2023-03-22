@@ -14,7 +14,8 @@
         <button
           class="text-white hamburger cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300"
           type="button" ref="toggleButton" @click="isNavbarOpen = !isNavbarOpen; toggleActive()">
-          <i class="bi bi-list text-white text-2xl"></i>
+          <i class="bi bi-list Open text-white text-2xl" ref="open"></i>
+          <i class="bi bi-x-lg Close text-white text-2xl" ref="close"></i>
         </button>
       </div>
 
@@ -82,14 +83,20 @@ export default {
     },
     toggleActive() {
       const navItems = this.$refs.lista.querySelectorAll('.nav-item');
+      let btnClose = document.querySelector('.Close');
+      let btnOpen = document.querySelector('.Open');
       navItems.forEach(item => {
         if (this.isNavbarOpen) {
           item.classList.add('active');
+          btnClose.classList.add('active');
+          btnOpen.classList.add('Closing');
         } else {
           item.classList.remove('active');
+          btnClose.classList.remove('active');
+          btnOpen.classList.remove('Closing');
         }
-      });
-    }
+      });      
+    },
   },
   watch: {
     isNavbarOpen(newVal) {

@@ -132,4 +132,13 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
 @-o-keyframes fade-in {
 0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
 100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+
+/* hamburger close icon */
+/* button with 2 icons */
+.Close { display: none !important }
+.active { display: flex !important }
+/* second toggle */
+.Closing { display: none !important }
 /* end navbar styles */
+/* other states */
+.hamburger { transition: 0ms !important }
