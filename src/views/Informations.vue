@@ -7,32 +7,43 @@ import Footer from '../components/Footer.vue'
         <div class="Informations h-full max-w-3xl mx-auto w-full">
             <!-- .sectionNormal -->
             <div class="container w-full mt-4 flex flex-col text-black text-left">
-                <h1 class="font-semibold text-2xl mt-16 mx-4 sm:mx-auto">
-                    More Informations
+                <h1 class="font-semibold text-2xl w-full text-center mt-16 mx-4 sm:mx-auto">
+                    Di più +
                 </h1>
                 <!-- first table with some information -->
                 <div class="mt-10 grid mx-4 sm:mx-auto">
                     <dl>
                         <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
-                            <dt class="text-lg font-medium text-green-500"> Name of project: </dt>
+                            <dt class="text-lg font-medium text-green-500"> Nome del progetto: </dt>
                             <dd class="mt-3 font-semibold text-md text-gray-900 sm:mt-0 sm:col-span-2">
                                 Green Station Monitoring
                             </dd>
                         </div>
                         <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
-                            <dt class="text-lg font-medium text-green-500"> Group members: </dt>
+                            <dt class="text-lg font-medium text-green-500"> Membri del gruppo: </dt>
                             <dd class="mt-3 font-medium text-md text-gray-900 sm:mt-0 sm:col-span-2">
-                                <div class="columns-2 col-span-1 col">
-                                   <h1>Area Tecnica:</h1>
-                                   <p>//</p>
-                                </div>
-                                <div class="columns-2 col-span-1 col">
-                                    <h1>Area Creativa:</h1>
-                                    <p>//</p>
-                                </div>
-                                 <div class="columns-2 col-span-1 col">
-                                    <h1>Area Gestionale:</h1>
-                                    <p>//</p>
+                                <div class="grid grid-cols-2">
+                                    <!-- 1 -->
+                                    <div class="grid grid-cols-1 w-full">
+                                        <p class="">Area Tecnica</p>                                
+                                    </div>
+                                    <div class="grid grid-cols-1 w-full max-w-max">
+                                        <p>Bertotti, Santaniello, Pecenkovic, Bonaldo, Dima Sizzi, Bossio, Scognamiglio, La Battaglia, Pernice, Cassola, Mennella.</p>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="grid grid-cols-1 w-full pt-3">
+                                        <p class="">Area Creativa</p>
+                                    </div>
+                                    <div class="grid grid-cols-1 w-full pt-3 max-w-max">
+                                        <p>Manià, Malaroda, Moratti, Lapira, Nisi, Apostoli.</p>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="grid grid-cols-1 pt-3">
+                                        <p>Area Gestionale</p>
+                                    </div>
+                                    <div class="grid grid-cols-1 pt-3 w-full max-w-max">
+                                        <p>Rogoza, Corsi, Nisi.</p>
+                                    </div>
                                 </div>
                             </dd>
                         </div>
@@ -44,6 +55,17 @@ import Footer from '../components/Footer.vue'
                                 </dd>
                             </a>
                         </div>
+                        <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
+                            <dt class="text-lg font-medium text-green-500"> Ringraziamenti: </dt>
+                            <dd class="mt-3 font-medium text-md text-gray-900 sm:mt-0 sm:col-span-2">
+                                <p>Rigraziamo i prof. che hanno aderito a questo progetto e che ci hanno supportato: 
+                                    <span class="font-bold">prof. Pierdomenico</span>
+                                    <span class="font-bold">prof. Apollo</span>
+                                    <span class="font-bold">prof. Spessot</span>
+                                </p>
+                            </dd>
+                        </div>
+                            
                         <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                             <dt class="text-lg font-medium text-green-500"> More specs </dt>
                             <dd class="mt-3 text-md text-gray-900 sm:mt-0 sm:col-span-2">

@@ -7,10 +7,10 @@ import Footer from '../components/Footer.vue'
         <div class="Analytics m-auto">
             <div class="h-4/5 container w-full max-w-4xl mx-auto mt-4 flex flex-col justify-center items-center text-black">
                 <h1 class="font-semibold text-2xl mt-16">
-                    Analytics
+                    Analisi
                 </h1>
                 <p class="font-light mt-5">
-                    ...we are loading some dates from the server...
+                    ...Siamo in attesa di ricevere informazioni dal server...
                 </p>
                 <p class="font-semibold mt-3 underline">
                     coming soon!

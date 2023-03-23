@@ -23,14 +23,14 @@ import Footer from '../components/Footer.vue'
                                     focus:bg-green-700 focus:shadow-lg focus:outline-none 
                                     focus:ring-0 active:bg-green-800 active:shadow-lg transition 
                                     duration-150 ease-in-out" to="/Analytics" role="button">
-                            Analytics
+                            Analisi
                         </RouterLink>
                         <RouterLink class="inline-block px-7 py-3 bg-transparent 
                                     text-green-600 font-medium text-sm leading-snug uppercase 
                                     rounded hover:text-green-700 hover:bg-gray-100 
                                     focus:bg-gray-100 focus:outline-none focus:ring-0 
                                     active:bg-gray-200 transition duration-150 ease-in-out" to="/About" role="button">
-                            About us
+                            Su di noi
                         </RouterLink>
                     </div>
                 </div>
