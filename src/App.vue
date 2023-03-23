@@ -7,7 +7,7 @@
 <template>
   <div id="app" data-v-app="">
     <!-- main page -->
-    <main class="Main w-full overflow-x-hidden text-center font-poppins">
+    <main class="Main w-full scrollbar overflow-y-auto overflow-x-hidden text-center font-poppins">
       <!-- navigation -->
       <Navbar></Navbar>
       <!-- for content of the page -->
@@ -33,7 +33,5 @@
   transition: all 300ms ease; 
   opacity: 1;
 }
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-}
+.fade-enter-from, .fade-leave-to { opacity: 0 }
 </style>

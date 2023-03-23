@@ -25,6 +25,7 @@
             <li class="nav-item">
               <RouterLink
                 class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                title="Home"
                 to="/">
                 <span class="ml-2">Home</span>
               </RouterLink>
@@ -32,22 +33,25 @@
             <li class="nav-item">
               <RouterLink
                 class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                title="About"
                 to="/About">
-                <span class="ml-2">About</span>
+                <span class="ml-2">Riguardo noi</span>
               </RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink
                 class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                title="Analisi"
                 to="/Analytics">
-                <span class="ml-2">Analytics</span>
+                <span class="ml-2">Analisi</span>
               </RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink
                 class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                title="Informazioni"
                 to="/Informations">
-                <span class="ml-2">Informations</span>
+                <span class="ml-2">Informazioni</span>
               </RouterLink>
             </li>
           </ul>

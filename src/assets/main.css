@@ -165,3 +165,29 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
     }
     100% { transform: scale(1) }
 }
+
+/* title hover */
+.tags { display: inline; position: relative }
+.tags:hover:after {
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: -38px;
+    color: #fff;
+    content: attr(data-gloss);
+    left: -14%;
+    padding: 5px;
+    position: absolute;
+    z-index: 98;
+    width: 250px;
+}
+.tags:hover:before {
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 0 8px 8px 8px;
+    bottom: -6px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}

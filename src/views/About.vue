@@ -16,19 +16,21 @@ import Footer from '../components/Footer.vue'
                                 <!-- 1 row -->
                                 <div
                                     class="hover:transition-shadow hover:shadow-lg border border-gray-300 flex flex-col justify-center items-center rounded-md w-full mr-3">
-                                    <div class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
+                                    <div
+                                        class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
                                         <i class="bi bi-people-fill text-xl text-neutral-100"></i>
                                     </div>
                                     <h1 class="font-semibold">Teammate</h1>
                                     <div class="rounded p-3 font-regular">
                                         <p class="py-1">
-                                            Siamo una quarta superiore (4IA) dell'istituto tecnico-informatico 
-                                            "G. Marconi" di Staranzano. La cosa che più ci accumuna è la passione 
-                                            per l'informatica e per i nuovi progetti. 
+                                            Siamo una quarta superiore (4IA) dell'istituto tecnico-informatico
+                                            "G. Marconi" di Staranzano. La cosa che più ci accumuna è la passione
+                                            per l'informatica e per i nuovi progetti.
                                         </p>
                                         <p class="pt-2">
-                                            Abbiamo iniziato a sviluppare e a progettare questo progetto per la pensilina fotovoltaica
-                                            per monitorare e gestire i dati che verranno raccolti direttamente da essa. 
+                                            Abbiamo iniziato a sviluppare e a progettare questo progetto per la pensilina
+                                            fotovoltaica
+                                            per monitorare e gestire i dati che verranno raccolti direttamente da essa.
                                         </p>
                                     </div>
                                 </div>
@@ -37,21 +39,23 @@ import Footer from '../components/Footer.vue'
                                 <!-- 2 row -->
                                 <div
                                     class="hover:transition-shadow hover:shadow-lg border border-gray-300 rounded-md flex flex-col justify-center items-center w-full mr-3">
-                                    <div class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
+                                    <div
+                                        class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
                                         <i class="bi bi-graph-up text-xl text-neutral-100"></i>
                                     </div>
-                                    <h1 class="font-semibold">About the project</h1>
+                                    <h1 class="font-semibold">progetto "GreenStation"</h1>
                                     <div class="rounded p-3 regular">
                                         <p class="py-1">
-                                            Questo progetto è nato dall'esigenza di monitorare l'utilizzo 
-                                            della pensilina fotovoltaica realizzata dal 
+                                            Questo progetto è nato dall'esigenza di monitorare l'utilizzo
+                                            della pensilina fotovoltaica realizzata dal
                                             <span class="font-bold"> prof. Roberto Bertogna</span>
                                             , il quale ha realizzato la pensilina.
                                         </p>
                                         <p class="pt-2">
-                                            Questi dati verranno raccolti 
-                                            e convogliati in un server, dove verranno modellati dal nostro programma e la pensilina verrà regolata 
-                                            in base alle misurarazioni effettuate. 
+                                            Questi dati verranno raccolti
+                                            e convogliati in un server, dove verranno modellati dal nostro programma e la
+                                            pensilina verrà regolata
+                                            in base alle misurarazioni effettuate.
                                         </p>
                                     </div>
                                 </div>
@@ -67,7 +71,8 @@ import Footer from '../components/Footer.vue'
                     <div class="sectionNormal2">
                         <div class="flex flex-col sm:flex-row gap-2 max-h-full mt-4 mb-24">
                             <!-- carousel of cards -->
-                            <div class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                            <div
+                                class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
                                 <!-- image -->
                                 <div class="flex justify-center items-center w-full p-3">
                                     <img src="/green-economy.png" class="w-10 h-10 object-cover" alt="">
@@ -83,7 +88,8 @@ import Footer from '../components/Footer.vue'
                                     scuola accessibile a tutti.
                                 </p>
                             </div>
-                            <div class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                            <div
+                                class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
                                 <!-- image -->
                                 <div class="flex justify-center items-center w-full p-3">
                                     <img src="/paper.png" class="w-10 h-10 object-cover" alt="">
@@ -98,7 +104,8 @@ import Footer from '../components/Footer.vue'
                                     portata, grazie all'interfaccia user-friendly del software.
                                 </p>
                             </div>
-                            <div class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                            <div
+                                class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
                                 <!-- image -->
                                 <div class="flex justify-center items-center w-full p-3">
                                     <img src="/planet-earth.png" class="w-10 h-10 object-cover" alt="">
@@ -115,9 +122,71 @@ import Footer from '../components/Footer.vue'
                             </div>
                         </div>
                     </div>
+                    <div class="sectionNormal2 min-h-full">
+                        <div class="flex flex-col sm:flex-row justify-center items-center gap-2 max-h-full mt-4 mb-24">
+                            <div class="full flex flex-col">
+                                <h1 class="font-semibold text-2xl">Altre domande?</h1>
+                                <a class="tags" data-gloss="Click hover the questions!">
+                                    <span class="text-lg sm:text-xl py-2">
+                                        Box domande
+                                    </span>
+                                </a>
+
+                                <!-- box domande -->
+                                <div class="container w-full mx-auto flex flex-col justify-start items-start pt-8 mt-6">
+                                    <button @click="toggleContent(1)" :class="{ 'button-active': showContent1 }"
+                                        class="flex justify-between w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        Domanda 1
+                                        <i :class="showContent1 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                            class="text-dark-500"></i>
+                                    </button>
+                                    <div v-show="showContent1">Testo della domanda 1</div>
+
+                                    <button @click="toggleContent(2)" :class="{ 'button-active': showContent2 }"
+                                        class="flex justify-between w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        Domanda 2
+                                        <i :class="showContent2 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                            class="text-dark-500"></i>
+                                    </button>
+                                    <div v-show="showContent2">Testo della domanda 2</div>
+
+                                    <button @click="toggleContent(3)" :class="{ 'button-active': showContent3 }"
+                                        class="flex justify-between w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        Domanda 3
+                                        <i :class="showContent3 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                            class="text-dark-500"></i>
+                                    </button>
+                                    <div v-show="showContent3">Testo della domanda 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footer class="mt-auto"></Footer>
         </div>
     </div>
 </template>
+  
+<script>
+export default {
+    data() {
+        return {
+            showContent1: false,
+            showContent2: false,
+            showContent3: false
+        };
+    },
+    methods: {
+        toggleContent(id) {
+            if (id === 1) {
+                this.showContent1 = !this.showContent1;
+            } else if (id === 2) {
+                this.showContent2 = !this.showContent2;
+            } else if (id === 3) {
+                this.showContent3 = !this.showContent3;
+            }
+        }
+    }
+};
+</script>
