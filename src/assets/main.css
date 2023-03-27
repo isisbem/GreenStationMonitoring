@@ -1,6 +1,6 @@
 /* get the font */
-body, html { font-family: 'Mona Sans' }
-body, html { font-family: 'Mona Sans', sans-serif}  /*second*/
+body { font-family: 'mona sansthin' !important }
+html { font-family: 'mona sansthin' !important }
 
 /* local woff2*/
 @font-face {
