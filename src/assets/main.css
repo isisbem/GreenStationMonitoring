@@ -1,10 +1,5 @@
 /* get the font */
-@import url('../../public/Fonts/Mona-Sans.woff2');
-@import url('../../public/Fonts/Mona-Sans.woff');
-@import url('../../public/Fonts/Mona-Sans.ttf');
-
-:root { --font-fam-monaSans: 'Mona Sans' }
-body, html { font-family: var(--font-fam-monaSans) !important}
+body, html { font-family: 'Mona Sans' !important}
 
 /* local woff2*/
 @font-face {
@@ -29,18 +24,12 @@ body, html { font-family: var(--font-fam-monaSans) !important}
 /* local woff */
 @font-face {
     font-family: var(--font-fam-monaSans);  
-    src:
-    url('/Fonts/Mona-Sans.woff') format('woff');
-    font-weight: 200 700;
-    font-stretch: 75% 125%;
+    src: url('/Fonts/Mona-Sans.woff') format('woff');
 }
 /* local ttf */
 @font-face {
     font-family: var(--font-fam-monaSans);  
-    src:
-    url('/Fonts/Mona-Sans.ttf') format('ttf');
-    font-weight: 200 700;
-    font-stretch: 75% 125%;
+    src: url('/Fonts/Mona-Sans.ttf') format('ttf');
 }
 
 /* sections */

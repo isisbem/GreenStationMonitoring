@@ -4,8 +4,9 @@ import App from './App.vue'
 //Import tailwind
 import './style.css'
 
-//Import font 
+//Import css main
 import './assets/main.css'
+import '../public/Fonts/Mona-sans.woff2'
 
 //import aos animation
 import AOS from 'aos'
