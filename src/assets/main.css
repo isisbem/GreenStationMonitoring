@@ -11,6 +11,13 @@ body, html { font-family: var(--font-fam-monaSans) }
     font-weight: 200 700;
     font-stretch: 75% 125%;
 }
+/* second support */
+@font-face {
+    font-family: var(--font-fam-monaSans);  
+    src: url('/Fonts/Mona-Sans.woff2') format('woff2');
+    font-weight: 200 700;
+    font-stretch: 75% 125%;
+}
 /* local woff */
 @font-face {
     font-family: var(--font-fam-monaSans);  
