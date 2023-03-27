@@ -3,33 +3,18 @@ body, html { font-family: 'Mona Sans' !important}
 
 /* local woff2*/
 @font-face {
-    font-family: var(--font-fam-monaSans) !important;  
+    font-family: 'Mona Sans' !important;  
     src:
-    url('/Fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('/Fonts/Mona-Sans.woff2') format('woff2-variations');
+        url('/Fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('/Fonts/Mona-Sans.woff2') format('woff2-variations'),
+        url('/Fonts/Mona-Sans.woff') format('woff'),
+        url('/Fonts/Mona-Sans.ttf') format('truetype'); /* Safari, Android, iOS */
     font-weight: 200 700;
     font-stretch: 75% 125%;
     /* for ie and safari */
     font-style: normal;
     font-variant: normal;
     font-feature-settings: normal;
-}
-/* second support */
-@font-face {
-    font-family: var(--font-fam-monaSans);  
-    src: url('/Fonts/Mona-Sans.woff2') format('woff2');
-    font-weight: 200 700;
-    font-stretch: 75% 125%;
-}
-/* local woff */
-@font-face {
-    font-family: var(--font-fam-monaSans);  
-    src: url('/Fonts/Mona-Sans.woff') format('woff');
-}
-/* local ttf */
-@font-face {
-    font-family: var(--font-fam-monaSans);  
-    src: url('/Fonts/Mona-Sans.ttf') format('ttf');
 }
 
 /* sections */
