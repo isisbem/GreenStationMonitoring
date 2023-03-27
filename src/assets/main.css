@@ -2,6 +2,34 @@
 :root { --font-fam-monaSans: 'Mona Sans' }
 body, html { font-family: var(--font-fam-monaSans) }
 
+/* local woff2*/
+@font-face {
+    font-family: var(--font-fam-monaSans);  
+    src:
+    url('../../public/Fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('../../public/Fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 700;
+    font-stretch: 75% 125%;
+}
+/* local woff */
+@font-face {
+    font-family: var(--font-fam-monaSans);  
+    src:
+    url('../../public/Fonts/Mona-Sans.woff') format('woff supports variations'),
+    url('../../public/Fonts/Mona-Sans.woff') format('woff-variations');
+    font-weight: 200 700;
+    font-stretch: 75% 125%;
+}
+/* local ttf */
+@font-face {
+    font-family: var(--font-fam-monaSans);  
+    src:
+    url('../../public/Fonts/Mona-Sans.ttf') format('ttf supports variations'),
+    url('../../public/Fonts/Mona-Sans.ttf') format('ttf-variations');
+    font-weight: 200 700;
+    font-stretch: 75% 125%;
+}
+
 /* sections */
 main { position: relative }
 
