@@ -12,7 +12,7 @@
         --font-fam-monaSans: 'Mona Sans'
     }
 
-    html,body{ font-family: var(--font-fam-monaSans); font-feature-settings: unset !important; size-adjust: 100% }
+    html,body{ font-family: var(--font-fam-monaSans) !important }
     /* For Firefox Browser */
     .scrollbar { scrollbar-width: thin; scrollbar-color: var(--clr-bg) var(--clr-primary) }
     /* For Chrome, EDGE, Opera, Others */

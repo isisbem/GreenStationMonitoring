@@ -1,15 +1,23 @@
 /* get the font */
+@import url('../../public/Fonts/Mona-Sans.woff2');
+@import url('../../public/Fonts/Mona-Sans.woff');
+@import url('../../public/Fonts/Mona-Sans.ttf');
+
 :root { --font-fam-monaSans: 'Mona Sans' }
-body, html { font-family: var(--font-fam-monaSans) }
+body, html { font-family: var(--font-fam-monaSans) !important}
 
 /* local woff2*/
 @font-face {
-    font-family: var(--font-fam-monaSans);  
+    font-family: var(--font-fam-monaSans) !important;  
     src:
     url('/Fonts/Mona-Sans.woff2') format('woff2 supports variations'),
     url('/Fonts/Mona-Sans.woff2') format('woff2-variations');
     font-weight: 200 700;
     font-stretch: 75% 125%;
+    /* for ie and safari */
+    font-style: normal;
+    font-variant: normal;
+    font-feature-settings: normal;
 }
 /* second support */
 @font-face {
@@ -22,8 +30,7 @@ body, html { font-family: var(--font-fam-monaSans) }
 @font-face {
     font-family: var(--font-fam-monaSans);  
     src:
-    url('/Fonts/Mona-Sans.woff') format('woff supports variations'),
-    url('/Fonts/Mona-Sans.woff') format('woff-variations');
+    url('/Fonts/Mona-Sans.woff') format('woff');
     font-weight: 200 700;
     font-stretch: 75% 125%;
 }
@@ -31,8 +38,7 @@ body, html { font-family: var(--font-fam-monaSans) }
 @font-face {
     font-family: var(--font-fam-monaSans);  
     src:
-    url('/Fonts/Mona-Sans.ttf') format('ttf supports variations'),
-    url('/Fonts/Mona-Sans.ttf') format('ttf-variations');
+    url('/Fonts/Mona-Sans.ttf') format('ttf');
     font-weight: 200 700;
     font-stretch: 75% 125%;
 }
