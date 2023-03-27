@@ -1,46 +1,19 @@
 /* get the font */
 body { font-family: 'mona sansthin' !important }
 html { font-family: 'mona sansthin' !important }
-
-/* local woff2*/
+   
 @font-face {
-    font-family: 'Mona Sans' !important;  
-    src:
-        url('../../public/Fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-        url('../../public/Fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-family: 'mona_sansthin';
+    src: url('../../public/Fonts/mona-sans-webfont.woff2') format('woff2'),
+         url('../../public/Fonts/mona-sans-webfont.woff') format('woff');
     font-weight: 200 700;
     font-stretch: 75% 125%;
     /* for ie and safari */
+    font-weight: normal;
     font-style: normal;
     font-variant: normal;
     font-feature-settings: normal;
 }
-
-@font-face {
-    font-family: 'Mona Sans' !important;
-    src: url('../../public/Fonts/Mona-Sans.woff2') format('woff2');
-    /* for ie and safari */
-    font-style: normal;
-    font-variant: normal;
-    font-feature-settings: normal;
-}
-@font-face {
-    font-family: 'Mona Sans' !important;
-    src: url('../../public/Fonts/Mona-Sans.woff') format('woff');
-    /* for ie and safari */
-    font-style: normal;
-    font-variant: normal;
-    font-feature-settings: normal;
-}
-@font-face {
-    font-family: 'Mona Sans' !important;
-    src: url('../../public/Fonts/Mona-Sans.ttf') format('truetype');
-    /* for ie and safari */
-    font-style: normal;
-    font-variant: normal;
-    font-feature-settings: normal;
-}
-        
 
 /* sections */
 main { position: relative }
