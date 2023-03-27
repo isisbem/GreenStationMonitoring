@@ -1,18 +1,21 @@
-/* get the font */
-body { font-family: 'mona sansthin' !important }
-html { font-family: 'mona sansthin' !important }
-   
 @font-face {
-    font-family: 'mona_sansthin';
-    src: url('../../public/Fonts/mona-sans-webfont.woff2') format('woff2'),
-         url('../../public/Fonts/mona-sans-webfont.woff') format('woff');
-    font-weight: 200 700;
-    font-stretch: 75% 125%;
+    font-family: 'Inter', sans-serif;
+    src: local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.woff2') format('woff2'),
+         local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.ttf') format('ttf'),
+         local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.woff2') format('truetype'),
+         local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.ttf') format('truetype');
+    font-weight: 200 900;
+    font-stretch: 100%;
     /* for ie and safari */
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
     font-feature-settings: normal;
+}
+
+/* get the font */
+html, body {
+    font-family: 'Inter', sans-serif !important;
 }
 
 /* sections */

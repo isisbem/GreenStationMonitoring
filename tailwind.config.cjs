@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Mona-sans': ['Mona Sans'],
+        'Inter': ['Inter', 'sans-serif'],
         'mono': ['Roboto', 'sans-serif']
       },
     },

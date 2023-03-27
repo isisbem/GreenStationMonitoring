@@ -7,7 +7,7 @@
 <template>
   <div id="app" data-v-app="">
     <!-- main page -->
-    <main class="Main w-full scrollbar overflow-y-auto overflow-x-hidden text-center font-Mona-sans">
+    <main class="Main w-full scrollbar overflow-y-auto overflow-x-hidden text-center font-Inter">
       <!-- navigation -->
       <Navbar></Navbar>
       <!-- for content of the page -->
