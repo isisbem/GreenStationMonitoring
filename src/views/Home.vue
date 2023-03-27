@@ -9,9 +9,9 @@ import Footer from '../components/Footer.vue'
                 <div class="my-0 flex flex-col justify-center items-center self-center mx-auto lg:mt-0" 
                     data-aos="fade-up"
                     data-aos-duration="300">
-                    <h1 title="project title: GreenStationMonitoring" class="text-2xl md:text-4xl font-medium tracking-tight flex flex-col flex-wrap mb-8">
+                    <h1 title="project title: GreenStationMonitoring" class="text-2xl md:text-4xl normal-stretch font-normal tracking-tight flex flex-col flex-wrap mb-8">
                         GreenStationMonitoring
-                        <span title="our slogan: green,save,sustain." class="text-green-600 font-bold text-2xl md:text-4xl py-2">
+                        <span title="our slogan: green,save,sustain." class="text-green-600 stretch text-2xl md:text-4xl pt-3 pb-2.5">
                             Green, Save, Sustain.
                         </span>
                     </h1>
@@ -50,4 +50,12 @@ import Footer from '../components/Footer.vue'
     height: calc(100dvh - var(--size-vh)) !important;
     height: calc(100vh - var(--size-vh));
 }
+.stretch {
+    font-stretch: 125% !important;
+    font-weight: 800 !important;
+}
+.normal-stretch {
+    font-stretch: 100% !important;
+    font-weight: 400;
+}   
 </style>
