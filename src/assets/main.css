@@ -1,5 +1,6 @@
 /* get the font */
 body, html { font-family: 'Mona Sans' !important}
+body, html { font-family: 'Mona Sans', sans-serif}  /*second*/
 
 /* local woff2*/
 @font-face {
@@ -7,6 +8,7 @@ body, html { font-family: 'Mona Sans' !important}
     src:
         url('../../public/Fonts/Mona-Sans.woff2') format('woff2 supports variations'),
         url('../../public/Fonts/Mona-Sans.woff2') format('woff2-variations'),
+        url('../../public/Fonts/Mona-Sans.woff2') format('woff2'),
         url('../../public/Fonts/Mona-Sans.woff') format('woff'),
         url('../../public/Fonts/Mona-Sans.ttf') format('truetype'); /* Safari, Android, iOS */
     font-weight: 200 700;
