@@ -179,13 +179,17 @@ export default {
     },
     methods: {
         toggleContent(id) {
-            if (id === 1) {
-                this.showContent1 = !this.showContent1;
-            } else if (id === 2) {
-                this.showContent2 = !this.showContent2;
-            } else if (id === 3) {
-                this.showContent3 = !this.showContent3;
-            }
+            switch(id) {
+                case 1:
+                    this.showContent1 = !this.showContent1;
+                break; 
+                case 2:
+                    this.showContent2 = !this.showContent2;
+                break; 
+                case 3:
+                    this.showContent3 = !this.showContent3;
+                break; 
+            }   
         }
     }
 };

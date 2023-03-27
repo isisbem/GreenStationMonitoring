@@ -1,41 +1,33 @@
-/* cdn */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 /* get the font */
-:root { --font-fam-poppins: 'Poppins', sans-serif }
-body, html { font-family: var(--font-fam-poppins) }
+:root { --font-fam-monaSans: 'Mona Sans' }
+body, html { font-family: var(--font-fam-monaSans) }
 
-/* local */
+/* local woff2*/
 @font-face {
-    font-family: var(--font-fam-poppins);
-    font-weight: 400;
-    font-style: normal;
-    font-display: auto;
-    src: local("Poppins"), url('../public/Fonts/Poppins-Regular.woff2') format("woff2");
+    font-family: var(--font-fam-monaSans);  
+    src:
+    url('../../public/Fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('../../public/Fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
 }
-
+/* local woff */
 @font-face {
-    font-family: var(--font-fam-poppins);
-    font-weight: 500;
-    font-style: normal;
-    font-display: auto;
-    src: local("Poppins"), url('../public/Fonts/Poppins-Medium.woff2') format("woff2");
+    font-family: var(--font-fam-monaSans);  
+    src:
+    url('../../public/Fonts/Mona-Sans.woff') format('woff supports variations'),
+    url('../../public/Fonts/Mona-Sans.woff') format('woff-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
 }
-
+/* local ttf */
 @font-face {
-    font-family: var(--font-fam-poppins);
-    font-weight: 600;
-    font-style: normal;
-    font-display: auto;
-    src: local("Poppins"), url('../public/Fonts/Poppins-SemiBold.woff2') format("woff2");
-}
-
-@font-face {
-    font-family: var(--font-fam-poppins);
-    font-weight: 700;
-    font-style: normal;
-    font-display: auto;
-    src: local("Poppins"), url('../public/Fonts/Poppins-Bold.woff2') format("woff2");
+    font-family: var(--font-fam-monaSans);  
+    src:
+    url('../../public/Fonts/Mona-Sans.ttf') format('ttf supports variations'),
+    url('../../public/Fonts/Mona-Sans.ttf') format('ttf-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
 }
 
 /* sections */
