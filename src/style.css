@@ -9,10 +9,9 @@
         --clr-primary: #22c55e;
         --clr-bg: #44403c;
         --bg-: #E7E5E4;
-        --font-fam-monaSans: 'Mona Sans'
+        --font-fam: 'Inter', sans-serif;
     }
-
-    html,body{ font-family: var(--font-fam-monaSans) !important }
+    html,body{ font-family: var(--font-fam) !important }
     /* For Firefox Browser */
     .scrollbar { scrollbar-width: thin; scrollbar-color: var(--clr-bg) var(--clr-primary) }
     /* For Chrome, EDGE, Opera, Others */

@@ -33,6 +33,12 @@ main { position: relative }
     }
 }
 
+/* analytics */
+.Analytics {
+    min-height: calc(100dvh) !important;
+    min-height: calc(100vh);
+}
+
 /* about */
 .tondo {
     border-radius: 50%;
@@ -52,7 +58,7 @@ main { position: relative }
     .navbar, .navbar .contenitore, .fullata { display: flex !important; width: fit-content !important}
     .navbar ul { flex-direction: row !important }
 }
-  
+
 .imageLogo {
     border-radius: 50%;
     width: 40px;

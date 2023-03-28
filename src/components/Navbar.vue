@@ -19,41 +19,55 @@
         </button>
       </div>
 
-      <nav ref="navbar" v-show="isNavbarOpen" class="navbar flex w-full flex-col justify-center items-center">
+      <nav ref="navbar" v-show="isNavbarOpen" class="navbar flex w-full flex-col justify-start items-start text-left sm:justify-center sm:items-center">
         <div class="contenitore lg:flex flex-grow w-full justify-center items-center transition-all">
-          <ul ref="lista" class="flex flex-col list-none mx-auto">
-            <li class="nav-item">
-              <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                title="Home"
-                to="/">
-                <span class="ml-2">Home</span>
-              </RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                title="About"
-                to="/About">
-                <span class="ml-2">Riguardo noi</span>
-              </RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                title="Analisi"
-                to="/Analytics">
-                <span class="ml-2">Analisi</span>
-              </RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink
-                class="px-3 py-2 flex my-1 justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                title="Informazioni"
-                to="/Informations">
-                <span class="ml-2">Informazioni</span>
-              </RouterLink>
-            </li>
+          <ul ref="lista" data-testid="nav-list" class="flex flex-col list-none mx-auto">
+            <div class="md:w-full md:flex md:flex-row w-44 mx-auto"> 
+              <li class="nav-item w-fit mx-2">
+                <div class="flex my-1 items-center">
+                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">01</span>
+                  <RouterLink
+                    class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                    title="Home"
+                    to="/">
+                    <span>Home</span>
+                  </RouterLink>
+                </div>
+              </li>
+              <li class="nav-item w-fit mx-2">
+                <div class="flex my-1 items-center">
+                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">02</span>
+                  <RouterLink
+                    class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                    title="About"
+                    to="/About">
+                    <span>Riguardo noi</span>
+                  </RouterLink>
+                </div>
+              </li>
+              <li class="nav-item w-fit mx-2">
+                <div class="flex my-1 items-center">
+                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">03</span>
+                  <RouterLink
+                    class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                    title="Analisi"
+                    to="/Analytics">
+                    <span>Analisi</span>
+                  </RouterLink>
+                </div>
+              </li>
+              <li class="nav-item w-fit ml-2">
+                <div class="flex my-1 items-center">
+                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">04</span>
+                  <RouterLink
+                    class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                    title="Informazioni"
+                    to="/Informations">
+                    <span>Informazioni</span>
+                  </RouterLink>
+                </div>
+              </li>  
+            </div>           
           </ul>
         </div>
       </nav>

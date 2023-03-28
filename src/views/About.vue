@@ -64,67 +64,73 @@ import Footer from '../components/Footer.vue'
                             <!-- if  it is -->
                         </div>
                     </div>
-                    <!-- second section -->
-                    <div class="mt-14 md:mt-24">
-                        <h1 class="font-semibold text-2xl">Perché questo progetto?</h1>
-                    </div>
-                    <div class="sectionNormal2">
-                        <div class="flex flex-col sm:flex-row gap-2 max-h-full mt-4 mb-24">
-                            <!-- carousel of cards -->
-                            <div
-                                class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
-                                <!-- image -->
-                                <div class="flex justify-center items-center w-full p-3">
-                                    <img src="/green-economy.png" class="w-10 h-10 object-cover" alt="">
+                    
+                    <div class="mt-44 mb-2">
+                        <!-- second section -->
+                        <div class="my-2">
+                            <h1 class="font-semibold text-2xl">Perché questo progetto?</h1>
+                        </div>
+                        <div class="m-auto">
+                            <div class="flex flex-col sm:flex-row gap-2 max-h-full mt-4 mb-24">
+                                <!-- carousel of cards -->
+                                <div
+                                    class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                                    <!-- image -->
+                                    <div class="flex justify-center items-center w-full p-3">
+                                        <img src="/green-economy.png" class="w-10 h-10 object-cover" alt="">
+                                    </div>
+                                    <h1 class="font-medium my-2 text-md break-words">
+                                        Risparmio di soldi
+                                    </h1>
+                                    <p class="font-normal text-sm">
+                                        L'istruzione pubblica è una cosa molto importante per i cittadini,
+                                        ed è proprio per questo che la scuola di
+                                        particolare cerca di aiutare le persone fornendo i mezzi per
+                                        facilitare il viaggio, ammortizzare tutti i costi e rendere l'accesso
+                                        scuola accessibile a tutti.
+                                    </p>
                                 </div>
-                                <h1 class="font-medium my-2 text-md break-words">
-                                    Risparmio di soldi
-                                </h1>
-                                <p class="font-normal text-sm">
-                                    L'istruzione pubblica è una cosa molto importante per i cittadini,
-                                    ed è proprio per questo che la scuola di
-                                    particolare cerca di aiutare le persone fornendo i mezzi per
-                                    facilitare il viaggio, ammortizzare tutti i costi e rendere l'accesso
-                                    scuola accessibile a tutti.
-                                </p>
-                            </div>
-                            <div
-                                class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
-                                <!-- image -->
-                                <div class="flex justify-center items-center w-full p-3">
-                                    <img src="/paper.png" class="w-10 h-10 object-cover" alt="">
+                                <div
+                                    class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                                    <!-- image -->
+                                    <div class="flex justify-center items-center w-full p-3">
+                                        <img src="/paper.png" class="w-10 h-10 object-cover" alt="">
+                                    </div>
+                                    <h1 class="font-medium my-2 text-md break-words">
+                                        Un'analisi precisa
+                                    </h1>
+                                    <p class="font-normal text-sm">
+                                        grazie alle nostre analisi potrai risparmiare
+                                        elettricità e risparmiare il più possibile. L'amministrazione
+                                        il servizio sarà più fluido, immediato e alla portata di tutti
+                                        portata, grazie all'interfaccia user-friendly del software.
+                                    </p>
                                 </div>
-                                <h1 class="font-medium my-2 text-md break-words">
-                                    Un'analisi precisa
-                                </h1>
-                                <p class="font-normal text-sm">
-                                    grazie alle nostre analisi potrai risparmiare
-                                    elettricità e risparmiare il più possibile. L'amministrazione
-                                    il servizio sarà più fluido, immediato e alla portata di tutti
-                                    portata, grazie all'interfaccia user-friendly del software.
-                                </p>
-                            </div>
-                            <div
-                                class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
-                                <!-- image -->
-                                <div class="flex justify-center items-center w-full p-3">
-                                    <img src="/planet-earth.png" class="w-10 h-10 object-cover" alt="">
+                                <div
+                                    class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
+                                    <!-- image -->
+                                    <div class="flex justify-center items-center w-full p-3">
+                                        <img src="/planet-earth.png" class="w-10 h-10 object-cover" alt="">
+                                    </div>
+                                    <h1 class="font-medium my-2 text-md break-words">
+                                        Salvare l'ambiente
+                                    </h1>
+                                    <p class="font-normal text-sm">
+                                        Lo sviluppo sostenibile e l'uso di veicoli elettrici per tutti i giorni
+                                        la mobilità sta diventando una pratica adottata da tutti in tutto il mondo,
+                                        ed è sempre in evoluzione. Per questo, grazie alla stazione di ricarica
+                                        e il nostro monitoraggio, saranno incoraggiati i viaggi su veicoli elettrici.
+                                    </p>
                                 </div>
-                                <h1 class="font-medium my-2 text-md break-words">
-                                    Salvare l'ambiente
-                                </h1>
-                                <p class="font-normal text-sm">
-                                    Lo sviluppo sostenibile e l'uso di veicoli elettrici per tutti i giorni
-                                    la mobilità sta diventando una pratica adottata da tutti in tutto il mondo,
-                                    ed è sempre in evoluzione. Per questo, grazie alla stazione di ricarica
-                                    e il nostro monitoraggio, saranno incoraggiati i viaggi su veicoli elettrici.
-                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="sectionNormal2 min-h-full">
-                        <div class="flex flex-col sm:flex-row justify-center items-center gap-2 max-h-full mt-4 mb-24">
-                            <div class="full flex flex-col">
+                    
+                    <!-- domande -->
+                    <div class="my-24 min-h-full">
+                        <div class="flex flex-col sm:flex-row mx-2 sm:mx-auto justify-center items-center gap-2 max-h-full mt-4 mb-24">
+                            <!-- container -->
+                            <div class="full flex flex-col px-2 sm:p-0">
                                 <h1 class="font-semibold text-2xl">Altre domande?</h1>
                                 <a class="tags" data-gloss="Click hover the questions!">
                                     <span class="text-lg sm:text-xl py-2">
@@ -135,7 +141,7 @@ import Footer from '../components/Footer.vue'
                                 <!-- box domande -->
                                 <div class="container w-full mx-auto flex flex-col justify-start items-start pt-8 mt-6">
                                     <button @click="toggleContent(1)" :class="{ 'button-active': showContent1 }"
-                                        class="flex justify-between w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
                                         Domanda 1
                                         <i :class="showContent1 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
                                             class="text-dark-500"></i>
@@ -143,7 +149,7 @@ import Footer from '../components/Footer.vue'
                                     <div v-show="showContent1">Testo della domanda 1</div>
 
                                     <button @click="toggleContent(2)" :class="{ 'button-active': showContent2 }"
-                                        class="flex justify-between w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
                                         Domanda 2
                                         <i :class="showContent2 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
                                             class="text-dark-500"></i>
@@ -151,12 +157,36 @@ import Footer from '../components/Footer.vue'
                                     <div v-show="showContent2">Testo della domanda 2</div>
 
                                     <button @click="toggleContent(3)" :class="{ 'button-active': showContent3 }"
-                                        class="flex justify-between w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
                                         Domanda 3
                                         <i :class="showContent3 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
                                             class="text-dark-500"></i>
                                     </button>
                                     <div v-show="showContent3">Testo della domanda 3</div>
+
+                                    <button @click="toggleContent(4)" :class="{ 'button-active': showContent4 }"
+                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        Domanda 4
+                                        <i :class="showContent4 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                            class="text-dark-500"></i>
+                                    </button>
+                                    <div v-show="showContent4">Testo della domanda 4</div>
+
+                                    <button @click="toggleContent(5)" :class="{ 'button-active': showContent5 }"
+                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        Domanda 5
+                                        <i :class="showContent5 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                            class="text-dark-500"></i>
+                                    </button>
+                                    <div v-show="showContent5">Testo della domanda 5</div>
+
+                                    <button @click="toggleContent(6)" :class="{ 'button-active': showContent6 }"
+                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                        Domanda 6
+                                        <i :class="showContent6 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                            class="text-dark-500"></i>
+                                    </button>
+                                    <div v-show="showContent6">Testo della domanda 6</div>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +204,10 @@ export default {
         return {
             showContent1: false,
             showContent2: false,
-            showContent3: false
+            showContent3: false,
+            showContent4: false,
+            showContent5: false,
+            showContent6: false
         };
     },
     methods: {
@@ -188,6 +221,15 @@ export default {
                 break; 
                 case 3:
                     this.showContent3 = !this.showContent3;
+                break; 
+                case 4:
+                    this.showContent4 = !this.showContent4;
+                break; 
+                case 5:
+                    this.showContent5 = !this.showContent5;
+                break; 
+                case 6:
+                    this.showContent6 = !this.showContent6;
                 break; 
             }   
         }

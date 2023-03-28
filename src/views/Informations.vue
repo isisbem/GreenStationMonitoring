@@ -57,7 +57,7 @@ import Footer from '../components/Footer.vue'
                         <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                             <dt class="text-lg font-medium text-green-500"> Email address </dt>
                             <a href="mailto:greenstation.monitoring@gmail.com" class="w-full">
-                                <dd class="mt-3 font-semibold text-md text-gray-900 sm:mt-0 sm:col-span-2">
+                                <dd class="mt-3 font-semibold text-md text-gray-900 sm:mt-0 sm:col-span-2 hover:text-green-500 transition-colors">
                                     greenstation.monitoring@gmail.com
                                 </dd>
                             </a>
@@ -103,19 +103,19 @@ import Footer from '../components/Footer.vue'
         </div>
         <!-- Sample HTML/tailwind Form -->
         <div class="min-h-full my-48 bg-white py-2 flex flex-col justify-center sm:py-12">
-            <div class="relative py-3 mx-0 sm:max-w-xl sm:mx-auto">
+            <div class="relative py-3 mx-0 sm:max-w-full sm:mx-auto">
                 <div
                     class="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
                 </div>
-                <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-                    <div class="max-w-md mx-auto">
+                <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:py-24 sm:px-28">
+                    <div class="max-w-full mx-auto">
                         <div>
                             <h1 class="text-2xl font-semibold">
                                 Send a message!
                             </h1>
                         </div>
                         <div class="divide-y divide-gray-200">
-                            <div class="py-8 text-base leading-5 space-y-7 text-gray-700 sm:text-lg sm:leading-7">
+                            <div class="py-8 sm:min-w-[375px] text-base leading-5 space-y-7 text-gray-700 sm:text-lg sm:leading-7">
                                 <div class="relative">
                                     <input autocomplete="off" id="email" name="email" type="text" class="peer placeholder-transparent h-10 w-full 
                                                 focus:border-b-green-500 border-b-2 border-gray-300
@@ -131,7 +131,7 @@ import Footer from '../components/Footer.vue'
                                 </div>
                                 <div class="relative">
                                     <div class="relative w-full min-w-[200px]">
-                                        <textarea class="peer h-full min-h-[100px] w-full resize-none rounded-[7px] border 
+                                        <textarea class="peer h-full min-h-[150px] w-full resize-none rounded-[7px] border 
                                                 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 
                                                 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 
                                                 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 

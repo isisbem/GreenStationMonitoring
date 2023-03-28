@@ -7,6 +7,9 @@ import './style.css'
 //Import css main
 import './assets/main.css'
 
+//import the charts
+import { Bar } from 'vue-chartjs'
+
 //import aos animation
 import AOS from 'aos'
 import 'aos/dist/aos.css'
