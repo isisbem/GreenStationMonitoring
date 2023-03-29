@@ -12,8 +12,8 @@ import Footer from '../components/Footer.vue'
                 </h1>
                 <!-- first table with some information -->
                 <div class="mt-10 grid mx-4 sm:mx-auto">
-                    <dl>
-                        <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
+                    <dl class="z-10">
+                        <div class="rounded-t-lg px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                             <dt class="text-lg font-medium text-green-500"> Nome del progetto: </dt>
                             <dd class="mt-3 font-semibold text-md text-gray-900 sm:mt-0 sm:col-span-2">
                                 Green Station Monitoring
@@ -83,7 +83,7 @@ import Footer from '../components/Footer.vue'
                             </dd>
                         </div>
 
-                        <div class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <div class="rounded-b-lg px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                             <dt class="text-lg font-medium text-green-500"> Nel dettaglio: </dt>
                             <dd class="mt-3 text-md text-gray-900 sm:mt-0 sm:col-span-2">
                                 Questo progetto recupererà 
