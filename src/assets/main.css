@@ -61,9 +61,11 @@ main { position: relative }
 
 .imageLogo {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 43px;
+    height: 43px;
+    background-position: center;
     object-fit: cover;
+    -o-object-fit: cover;
 }
   
 ul li:nth-child(1) { animation-delay: var(--animation-delay) !important }

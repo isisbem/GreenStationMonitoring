@@ -1,6 +1,7 @@
 <script setup>
 import Footer from '../components/Footer.vue'
 import ChartLanguage from '../components/ChartsLanguage.vue'
+import ChartAnalytics from '../components/ChartsAnalytics.vue'
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import ChartLanguage from '../components/ChartsLanguage.vue'
                 <h1 class="font-semibold text-2xl mt-16 mb-4">
                     Dati raccolti e Analisi
                 </h1>
-                <Bar id="my-chart-id" :options="chartOptions" :data="chartData" />
+                <ChartAnalytics></ChartAnalytics>
             </div>
             <div class="h-4/5 mt-12 w-full containerm mx-auto flex flex-col justify-center items-center text-black">
                 <h1 class="font-semibold text-2xl mt-16 mb-4">
@@ -28,25 +29,3 @@ import ChartLanguage from '../components/ChartsLanguage.vue'
         <Footer class="mt-auto"></Footer>
     </div>
 </template>
-
-<script>
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
-
-export default {
-    name: 'BarChart',
-    components: { Bar },
-    data() {
-        return {
-            chartData: {
-                labels: ['wh/h', 'users', 'consumated'],
-                datasets: [{ data: [40, 12, 26] }]
-            },
-            chartOptions: {
-                responsive: true
-            }
-        }
-    }
-}
-</script>
