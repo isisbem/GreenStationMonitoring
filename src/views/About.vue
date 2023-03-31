@@ -128,30 +128,30 @@ import Footer from '../components/Footer.vue'
 
                     <!-- Photo/video -->
                     <div class="container w-full max-w-4xl mx-auto shadow-md min-h-screen relative">
-                        <!-- <div class="container mx-auto text-center">
+                        <div class="container mx-auto text-center">
                             <h1 class="font-bold text-2xl sm:text-3xl py-2 mb-3">
                                 Gallery
                             </h1>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/1.jpeg" alt="photos"
+                                <img src="/GSM/1.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/2.jpeg" alt="photos"
+                                <img src="/GSM/2.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
 
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/3.jpeg" alt="photos"
+                                <img src="/GSM/3.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/4.jpeg" alt="photos"
+                                <img src="/GSM/4.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
-                        </div> -->
+                        </div>
                         <div class="container mx-auto text-center">
                             <h1 class="text-2xl sm:text-3xl font-bold py-2 mt-12 mb-4">
                                 Video
@@ -160,7 +160,7 @@ import Footer from '../components/Footer.vue'
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
                                 <video 
-                                    src="/vid spot gsm/IMG_2848.webm" type="video/webm"
+                                    src="/GSM/IMG_2848.webm" type="video/webm"
                                     controls="" loop="" 
                                     class="max-h-[500px] max-w-full border-green-500 border rounded-lg border-double p-1"
                                     v-bind:aria-controls="true">
