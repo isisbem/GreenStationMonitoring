@@ -1,5 +1,5 @@
 <template>
-    <div ref="artRef" class="w-[500px] h-96"></div>
+    <div ref="artRef" class="relative"></div>
 </template>
   
 <script>

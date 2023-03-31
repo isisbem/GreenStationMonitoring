@@ -179,3 +179,22 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
     position: absolute;
     z-index: 99;
 }
+
+/* video */
+.art-video-player, .art-video-player video {
+    width: 650px !important;
+    height: 650px !important;
+}
+
+@media screen and (max-width: 685px) {
+    .art-video-player, .art-video-player video {
+        width: 400px !important;
+        height: 400px !important;
+    }
+}
+@media screen and (max-width: 445px) {
+    .art-video-player, .art-video-player video {
+        width: 225px !important;
+        height: 300px !important;
+    }
+}

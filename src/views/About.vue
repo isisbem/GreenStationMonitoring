@@ -159,13 +159,7 @@ import Footer from '../components/Footer.vue'
                         </div>
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
-                                <Artplayer @get-instance="getInstance" :option="option" :style="style" />
-                                <!-- <video 
-                                    src="/GSM/IMG_2848.webm" type="video/webm"
-                                    controls="" loop="" 
-                                    class="max-h-[500px] max-w-full border-green-500 border rounded-lg border-double p-1"
-                                    v-bind:aria-controls="true">
-                                </video> -->
+                                <Artplayer @get-instance="getInstance" :option="option" :style="style"/>
                             </div>
                         </div>
                         <!-- domande -->
@@ -252,8 +246,9 @@ export default {
         url: "/GSM/IMG_2848.webm",
       },
       style: {
-        width: "600px",
-        height: "400px",
+        /**width and height**/
+        // width: "400px",
+        // height: "400px",
         margin: "60px auto 0",
       },
       showContent1: false,
