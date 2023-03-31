@@ -160,11 +160,10 @@ import Footer from '../components/Footer.vue'
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
                                 <video 
+                                    src="../../public/vid spot gsm/IMG_2848.webm" type="video/webm"
                                     controls="" loop="" 
                                     class="max-h-[500px] max-w-full border-green-500 border rounded-lg border-double p-1"
                                     v-bind:aria-controls="true">
-                                    <source src="../../public/vid spot gsm/IMG_2848.webm" type="video/webm">
-                                    <source src="" type="video/ogg">
                                 </video>
                             </div>
                         </div>
