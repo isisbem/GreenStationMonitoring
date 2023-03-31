@@ -64,7 +64,7 @@ import Footer from '../components/Footer.vue'
                             <!-- if  it is -->
                         </div>
                     </div>
-                    
+
                     <div class="mt-44 mb-2">
                         <!-- second section -->
                         <div class="my-2">
@@ -125,75 +125,119 @@ import Footer from '../components/Footer.vue'
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- domande -->
-                    <div class="my-24 min-h-full">
-                        <div class="flex flex-col sm:flex-row mx-2 sm:mx-auto justify-center items-center gap-2 max-h-full mt-4 mb-24">
-                            <!-- container -->
-                            <div class="full flex flex-col px-2 sm:p-0">
-                                <h1 class="font-semibold text-2xl">Altre domande?</h1>
-                                <a class="tags" data-gloss="Click hover the questions!">
-                                    <span class="text-lg sm:text-xl py-2">
-                                        Box domande
-                                    </span>
-                                </a>
 
-                                <!-- box domande -->
-                                <div class="container w-full mx-auto flex flex-col justify-start items-start pt-8 mt-6">
-                                    <button @click="toggleContent(1)" :class="{ 'button-active': showContent1 }"
-                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
-                                        Domanda 1
-                                        <i :class="showContent1 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
-                                            class="text-dark-500"></i>
-                                    </button>
-                                    <div v-show="showContent1">Testo della domanda 1</div>
+                    <!-- Photo/video -->
+                    <div class="container w-full max-w-4xl mx-auto shadow-md min-h-screen relative">
+                        <div class="container mx-auto text-center">
+                            <h1 class="font-bold text-2xl sm:text-3xl py-2 mb-3">
+                                Gallery
+                            </h1>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="/vid spot gsm/1C8B99EF-A047-4FB0-BCDE-D46C220BE33B.jpeg" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="/vid spot gsm/333B7D5F-558F-4D9F-A56B-446EBE3ABA7F.jpeg" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                            </div>
 
-                                    <button @click="toggleContent(2)" :class="{ 'button-active': showContent2 }"
-                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
-                                        Domanda 2
-                                        <i :class="showContent2 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
-                                            class="text-dark-500"></i>
-                                    </button>
-                                    <div v-show="showContent2">Testo della domanda 2</div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="/vid spot gsm/68C242A6-A81D-4EE7-83EE-C63051C5992B.jpeg" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="/vid spot gsm/C276E9E6-2D4A-4009-9ACA-53F9CDD2DB6B.jpeg" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                            </div>
+                        </div>
+                        <div class="container mx-auto text-center">
+                            <h1 class="text-2xl sm:text-3xl font-bold py-2 mt-12 mb-4">
+                                Video
+                            </h1>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4 px-2 w-full">
+                            <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
+                                <video 
+                                    controls="" loop="" 
+                                    class="max-h-[500px] max-w-full border-green-500 border rounded-lg border-double p-1"
+                                    v-bind:aria-controls="true">
+                                    <source src="../../public/vid spot gsm/IMG_2848.webm" type="video/webm">
+                                    <source src="" type="video/ogg">
+                                </video>
+                            </div>
+                        </div>
+                        <!-- domande -->
+                        <div class="my-24 min-h-full">
+                            <div
+                                class="flex flex-col sm:flex-row mx-2 sm:mx-auto justify-center items-center gap-2 max-h-full mt-4 mb-24">
+                                <!-- container -->
+                                <div class="full flex flex-col px-2 sm:p-0">
+                                    <h1 class="font-semibold text-2xl">Altre domande?</h1>
+                                    <a class="tags" data-gloss="Click hover the questions!">
+                                        <span class="text-lg sm:text-xl py-2">
+                                            Box domande
+                                        </span>
+                                    </a>
 
-                                    <button @click="toggleContent(3)" :class="{ 'button-active': showContent3 }"
-                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
-                                        Domanda 3
-                                        <i :class="showContent3 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
-                                            class="text-dark-500"></i>
-                                    </button>
-                                    <div v-show="showContent3">Testo della domanda 3</div>
+                                    <!-- box domande -->
+                                    <div class="container w-full mx-auto flex flex-col justify-start items-start pt-8 mt-6">
+                                        <button @click="toggleContent(1)" :class="{ 'button-active': showContent1 }"
+                                            class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                            Domanda 1
+                                            <i :class="showContent1 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                                class="text-dark-500"></i>
+                                        </button>
+                                        <div v-show="showContent1">Testo della domanda 1</div>
 
-                                    <button @click="toggleContent(4)" :class="{ 'button-active': showContent4 }"
-                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
-                                        Domanda 4
-                                        <i :class="showContent4 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
-                                            class="text-dark-500"></i>
-                                    </button>
-                                    <div v-show="showContent4">Testo della domanda 4</div>
+                                        <button @click="toggleContent(2)" :class="{ 'button-active': showContent2 }"
+                                            class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                            Domanda 2
+                                            <i :class="showContent2 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                                class="text-dark-500"></i>
+                                        </button>
+                                        <div v-show="showContent2">Testo della domanda 2</div>
 
-                                    <button @click="toggleContent(5)" :class="{ 'button-active': showContent5 }"
-                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
-                                        Domanda 5
-                                        <i :class="showContent5 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
-                                            class="text-dark-500"></i>
-                                    </button>
-                                    <div v-show="showContent5">Testo della domanda 5</div>
+                                        <button @click="toggleContent(3)" :class="{ 'button-active': showContent3 }"
+                                            class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                            Domanda 3
+                                            <i :class="showContent3 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                                class="text-dark-500"></i>
+                                        </button>
+                                        <div v-show="showContent3">Testo della domanda 3</div>
 
-                                    <button @click="toggleContent(6)" :class="{ 'button-active': showContent6 }"
-                                        class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
-                                        Domanda 6
-                                        <i :class="showContent6 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
-                                            class="text-dark-500"></i>
-                                    </button>
-                                    <div v-show="showContent6">Testo della domanda 6</div>
+                                        <button @click="toggleContent(4)" :class="{ 'button-active': showContent4 }"
+                                            class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                            Domanda 4
+                                            <i :class="showContent4 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                                class="text-dark-500"></i>
+                                        </button>
+                                        <div v-show="showContent4">Testo della domanda 4</div>
+
+                                        <button @click="toggleContent(5)" :class="{ 'button-active': showContent5 }"
+                                            class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                            Domanda 5
+                                            <i :class="showContent5 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                                class="text-dark-500"></i>
+                                        </button>
+                                        <div v-show="showContent5">Testo della domanda 5</div>
+
+                                        <button @click="toggleContent(6)" :class="{ 'button-active': showContent6 }"
+                                            class="flex justify-between min-w-full w-64 sm:w-96 px-4 py-2 mt-3 text-md font-medium text-left text-dark-500 bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                                            Domanda 6
+                                            <i :class="showContent6 ? 'bi bi-arrow-up' : 'bi bi-arrow-down'"
+                                                class="text-dark-500"></i>
+                                        </button>
+                                        <div v-show="showContent6">Testo della domanda 6</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <Footer class="mt-auto w-[100vw]"></Footer>
             </div>
-            <Footer class="mt-auto"></Footer>
         </div>
     </div>
 </template>
@@ -212,26 +256,26 @@ export default {
     },
     methods: {
         toggleContent(id) {
-            switch(id) {
+            switch (id) {
                 case 1:
                     this.showContent1 = !this.showContent1;
-                break; 
+                    break;
                 case 2:
                     this.showContent2 = !this.showContent2;
-                break; 
+                    break;
                 case 3:
                     this.showContent3 = !this.showContent3;
-                break; 
+                    break;
                 case 4:
                     this.showContent4 = !this.showContent4;
-                break; 
+                    break;
                 case 5:
                     this.showContent5 = !this.showContent5;
-                break; 
+                    break;
                 case 6:
                     this.showContent6 = !this.showContent6;
-                break; 
-            }   
+                    break;
+            }
         }
     }
 };
