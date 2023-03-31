@@ -159,12 +159,13 @@ import Footer from '../components/Footer.vue'
                         </div>
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
-                                <video 
+                                <Artplayer @get-instance="getInstance" :option="option" :style="style" />
+                                <!-- <video 
                                     src="/GSM/IMG_2848.webm" type="video/webm"
                                     controls="" loop="" 
                                     class="max-h-[500px] max-w-full border-green-500 border rounded-lg border-double p-1"
                                     v-bind:aria-controls="true">
-                                </video>
+                                </video> -->
                             </div>
                         </div>
                         <!-- domande -->
@@ -242,40 +243,56 @@ import Footer from '../components/Footer.vue'
 </template>
   
 <script>
+import Artplayer from "../components/Videos.vue";
+
 export default {
-    data() {
-        return {
-            showContent1: false,
-            showContent2: false,
-            showContent3: false,
-            showContent4: false,
-            showContent5: false,
-            showContent6: false
-        };
+  data() {
+    return {
+      option: {
+        url: "/GSM/IMG_2848.webm",
+      },
+      style: {
+        width: "600px",
+        height: "400px",
+        margin: "60px auto 0",
+      },
+      showContent1: false,
+      showContent2: false,
+      showContent3: false,
+      showContent4: false,
+      showContent5: false,
+      showContent6: false,
+    };
+  },
+  components: {
+    Artplayer,
+  },
+  methods: {
+    getInstance(art) {
+      console.info(art);
     },
-    methods: {
-        toggleContent(id) {
-            switch (id) {
-                case 1:
-                    this.showContent1 = !this.showContent1;
-                    break;
-                case 2:
-                    this.showContent2 = !this.showContent2;
-                    break;
-                case 3:
-                    this.showContent3 = !this.showContent3;
-                    break;
-                case 4:
-                    this.showContent4 = !this.showContent4;
-                    break;
-                case 5:
-                    this.showContent5 = !this.showContent5;
-                    break;
-                case 6:
-                    this.showContent6 = !this.showContent6;
-                    break;
-            }
-        }
-    }
+    toggleContent(id) {
+      switch (id) {
+        case 1:
+          this.showContent1 = !this.showContent1;
+          break;
+        case 2:
+          this.showContent2 = !this.showContent2;
+          break;
+        case 3:
+          this.showContent3 = !this.showContent3;
+          break;
+        case 4:
+          this.showContent4 = !this.showContent4;
+          break;
+        case 5:
+          this.showContent5 = !this.showContent5;
+          break;
+        case 6:
+          this.showContent6 = !this.showContent6;
+          break;
+      }
+    },
+  },
 };
 </script>
