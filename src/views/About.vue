@@ -128,7 +128,7 @@ import Footer from '../components/Footer.vue'
 
                     <!-- Photo/video -->
                     <div class="container w-full max-w-4xl mx-auto shadow-md min-h-screen relative">
-                        <div class="container mx-auto text-center">
+                        <!-- <div class="container mx-auto text-center">
                             <h1 class="font-bold text-2xl sm:text-3xl py-2 mb-3">
                                 Gallery
                             </h1>
@@ -151,7 +151,7 @@ import Footer from '../components/Footer.vue'
                                 <img src="/vid spot gsm/4.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="container mx-auto text-center">
                             <h1 class="text-2xl sm:text-3xl font-bold py-2 mt-12 mb-4">
                                 Video
