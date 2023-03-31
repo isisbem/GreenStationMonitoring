@@ -135,20 +135,20 @@ import Footer from '../components/Footer.vue'
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/1C8B99EF-A047-4FB0-BCDE-D46C220BE33B.jpeg" alt="photos"
+                                <img src="/vid spot gsm/1.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/333B7D5F-558F-4D9F-A56B-446EBE3ABA7F.jpeg" alt="photos"
+                                <img src="/vid spot gsm/2.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
 
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/68C242A6-A81D-4EE7-83EE-C63051C5992B.jpeg" alt="photos"
+                                <img src="/vid spot gsm/3.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/vid spot gsm/C276E9E6-2D4A-4009-9ACA-53F9CDD2DB6B.jpeg" alt="photos"
+                                <img src="/vid spot gsm/4.jpeg" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                         </div>
@@ -160,7 +160,7 @@ import Footer from '../components/Footer.vue'
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
                                 <video 
-                                    src="../../public/vid spot gsm/IMG_2848.webm" type="video/webm"
+                                    src="/vid spot gsm/IMG_2848.webm" type="video/webm"
                                     controls="" loop="" 
                                     class="max-h-[500px] max-w-full border-green-500 border rounded-lg border-double p-1"
                                     v-bind:aria-controls="true">
