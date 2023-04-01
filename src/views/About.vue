@@ -247,8 +247,6 @@ export default {
       },
       style: {
         /**width and height**/
-        // width: "400px",
-        // height: "400px",
         margin: "60px auto 0",
       },
       showContent1: false,

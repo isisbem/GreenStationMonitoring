@@ -22,7 +22,7 @@ html, body {
 main { position: relative }
 
 .sectionNormal, .sectionNormal2 {
-    min-height: calc(100vh - 375px);
+    height: calc(100vh - 375px);
     height: 100%;
 }
 
@@ -37,6 +37,8 @@ main { position: relative }
 .Analytics {
     min-height: calc(100dvh) !important;
     min-height: calc(100vh);
+    max-height: 100%;
+    height: 100%;
 }
 
 /* about */
