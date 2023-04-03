@@ -116,7 +116,7 @@ import Footer from '../components/Footer.vue'
                     <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:py-24 sm:px-28">
                         <!-- form (basin form)-->
                         <form action="https://usebasin.com/f/37a6db30912f" method="POST" enctype="multipart/form-data"
-                            id="form" @submit.prevent="submitForm">
+                            id="form">
                             <div class="py-8 sm:min-w-[375px] text-base leading-5 space-y-7 text-gray-700 sm:text-lg sm:leading-7">
                                 <h1 class="font-bold py-2 mx-auto w-full text-xl sm:text-2xl">Send a message</h1>
                                 <div class="relative">
@@ -196,12 +196,6 @@ export default {
         validateEmail() {
             this.isValidEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.email)
         },
-        submitForm() {
-            if (!this.isValidEmail) {
-                return
-            }
-            // submit form
-        }
     }
 }
 </script>
