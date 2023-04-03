@@ -114,8 +114,12 @@ import Footer from '../components/Footer.vue'
                         class="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
                     </div>
                     <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:py-24 sm:px-28">
-                        <!-- form -->
-                        <form action="" method="POST" @submit.prevent="submitForm">
+                        <!-- form (basin form)-->
+                        <form action="https://usebasin.com/f/37a6db30912f" 
+                            method="POST"
+                            enctype="multipart/form-data"
+                            id="form" 
+                            @submit.prevent="submitForm">
                             <div class="max-w-full mx-auto">
                                 <h1 class="text-2xl font-semibold">Send a message!</h1>
                                 <div class="divide-y divide-gray-200">
@@ -123,11 +127,13 @@ import Footer from '../components/Footer.vue'
                                         <div class="relative">
                                             <input v-model="email" @input="validateEmail" :class="{ 'border-red-500': !isValidEmail }" 
                                                     autocomplete="off" required id="email" name="email" 
-                                                    type="text" class="peer placeholder-transparent h-10 w-full 
-                                                          focus:border-b-green-500 border-b-2 border-gray-300
-                                                          text-gray-900 focus:outline-none focus:borer-rose-600
-                                                          focus:shadow-sm" placeholder="Email address" />
-                                            <label for="email-address"
+                                                    type="text" placeholder="Email address"
+                                                    class="peer placeholder-transparent h-10 w-full 
+                                                        focus:border-b-green-500 border-b-2 border-gray-300
+                                                        text-gray-900 focus:outline-none focus:borer-rose-600
+                                                        focus:shadow-sm" />
+                                            <label 
+                                                for="email-address"
                                                 class="absolute left-0 -top-3.5 text-gray-600 text-sm 
                                                           peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 
                                                           peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5
@@ -144,8 +150,8 @@ import Footer from '../components/Footer.vue'
                                                           transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 
                                                           placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-green-500 
                                                           focus:border-t-transparent focus:outline-0 disabled:resize-none disabled:border-0 
-                                                          disabled:bg-blue-gray-50 focus:shadow-md" placeholder=" "
-                                                    name="message"></textarea>
+                                                          disabled:bg-blue-gray-50 focus:shadow-md" 
+                                                          placeholder="" name="message" required></textarea>
                                                 <label
                                                     class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 
                                                           -top-1.5 flex h-full w-full select-none text-[13px] font-normal leading-tight 
@@ -161,7 +167,7 @@ import Footer from '../components/Footer.vue'
                                                           peer-placeholder-shown:after:border-transparent peer-focus:text-[13px] 
                                                           peer-focus:leading-tight peer-focus:text-green-500 peer-focus:before:border-t-2 
                                                           peer-focus:before:border-l-2 peer-focus:before:border-green-500 
-                                                          peer-focus:after:border-t-2 peer-focus:after:border-r-2peer-focus:after:border-green-500">
+                                                          peer-focus:after:border-t-2 peer-focus:after:border-r-2peer-focus:after:border-green-500" for="message">
                                                     Message
                                                 </label>
                                             </div>
