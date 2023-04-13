@@ -1,9 +1,22 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
 //Import tailwind
 import './style.css'
-//Import font 
+
+//Import css main
 import './assets/main.css'
+
+//import the charts
+import { Bar } from 'vue-chartjs'
+
+//import aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+//starting aos
+render:(h) => h(App);
+AOS.init();
+
 //Create router
 import { createRouter, createWebHistory } from 'vue-router'
 //import @views

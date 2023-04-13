@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    :root {
+        --bd-r: 8px;
+        --clr-primary: #22c55e;
+        --clr-bg: #44403c;
+        --bg-: #E7E5E4;
+        --font-fam: 'Inter', sans-serif;
+    }
+    html,body{ font-family: var(--font-fam) !important }
+    /* For Firefox Browser */
+    .scrollbar { scrollbar-width: thin; scrollbar-color: var(--clr-bg) var(--clr-primary) }
+    /* For Chrome, EDGE, Opera, Others */
+    .scrollbar::-webkit-scrollbar { width: 9px }
+    .scrollbar::-webkit-scrollbar-track { background:var(--clr-primary) }
+    .scrollbar::-webkit-scrollbar-thumb { background: var(--clr-bg) }
+    ::selection { color: var(--clr-primary); background-color: var(--bg-white) }
+    ::-moz-selection { color: var(--clr-primary); background-color: var(--bg-) }
+}
