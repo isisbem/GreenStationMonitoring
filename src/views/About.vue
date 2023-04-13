@@ -135,21 +135,21 @@ import Footer from '../components/Footer.vue'
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/1.jpeg" alt="photos"
-                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                                <img src="/GSM/1.jpeg" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/2.jpeg" alt="photos"
-                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                                <img src="/GSM/2.jpeg" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
                             </div>
 
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/3.jpeg" alt="photos"
-                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                                <img src="/GSM/3.jpeg" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/4.jpeg" alt="photos"
-                                    class="object-cover rounded-md shadow" title="green station physical photo">
+                                <img src="/GSM/4.jpeg" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
                             </div>
                         </div>
                         <div class="container mx-auto text-center">
@@ -159,7 +159,7 @@ import Footer from '../components/Footer.vue'
                         </div>
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
-                                <Artplayer @get-instance="getInstance" :option="option" :style="style"/>
+                                <Artplayer @get-instance="getInstance" id="webm/mp4" :option="option" :style="style" />
                             </div>
                         </div>
                         <!-- domande -->
@@ -240,52 +240,54 @@ import Footer from '../components/Footer.vue'
 import Artplayer from "../components/Videos.vue";
 
 export default {
-  data() {
-    return {
-      option: {
-        url: "/GSM/IMG_2848.webm",
-      },
-      style: {
-        /**width and height**/
-        margin: "60px auto 0",
-      },
-      showContent1: false,
-      showContent2: false,
-      showContent3: false,
-      showContent4: false,
-      showContent5: false,
-      showContent6: false,
-    };
-  },
-  components: {
-    Artplayer,
-  },
-  methods: {
-    getInstance(art) {
-      console.info(art);
+    data() {
+        return {
+            option: {
+                url: "/GSM/IMG_2848.webm",
+                url: "/GSM/IMG_2848_MP4.mp4",
+                poster: "/GSM/GSM_Poster_1.png",
+            },
+            style: {
+                /**width and height**/
+                margin: "60px auto 0",
+            },
+            showContent1: false,
+            showContent2: false,
+            showContent3: false,
+            showContent4: false,
+            showContent5: false,
+            showContent6: false,
+        };
     },
-    toggleContent(id) {
-      switch (id) {
-        case 1:
-          this.showContent1 = !this.showContent1;
-          break;
-        case 2:
-          this.showContent2 = !this.showContent2;
-          break;
-        case 3:
-          this.showContent3 = !this.showContent3;
-          break;
-        case 4:
-          this.showContent4 = !this.showContent4;
-          break;
-        case 5:
-          this.showContent5 = !this.showContent5;
-          break;
-        case 6:
-          this.showContent6 = !this.showContent6;
-          break;
-      }
+    components: {
+        Artplayer,
     },
-  },
+    methods: {
+        getInstance(art) {
+            console.info(art);
+        },
+        toggleContent(id) {
+            switch (id) {
+                case 1:
+                    this.showContent1 = !this.showContent1;
+                    break;
+                case 2:
+                    this.showContent2 = !this.showContent2;
+                    break;
+                case 3:
+                    this.showContent3 = !this.showContent3;
+                    break;
+                case 4:
+                    this.showContent4 = !this.showContent4;
+                    break;
+                case 5:
+                    this.showContent5 = !this.showContent5;
+                    break;
+                case 6:
+                    this.showContent6 = !this.showContent6;
+                    break;
+            }
+        },
+    },
 };
 </script>

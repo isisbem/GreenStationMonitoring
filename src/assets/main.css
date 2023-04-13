@@ -200,3 +200,8 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
         height: 300px !important;
     }
 }
+
+.art-progress-played, .art-progress-indicator {
+    background-color: #22c55e !important;
+}
+
