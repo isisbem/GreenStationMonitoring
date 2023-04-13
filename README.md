@@ -16,7 +16,7 @@ Sistema di monitoraggio e analisi per la pensilina fotovoltaica, che viene usata
 ## Documentation
 
 
-[WebSite](https://linktodocumentation)
+[WebSite](https://greenstation.vercel.app)
 
 
 
@@ -24,39 +24,50 @@ Sistema di monitoraggio e analisi per la pensilina fotovoltaica, che viene usata
 
 Install my-project with npm (node.js)
 
-#*1 step*
+#*1 PERCORSO FILE*
 
 ```bash
   cd GreenStationMonitoring
 ```
 
-#*2 step*
+#*2 INSTALL DEPENDENCIES*
 
 ```bash
   npm install 
 ```
 
-#*3 step*
+#*3 BUILD IL PROGETTO*
+
+```bash
+  npm install 
+```
+
+#*4 RUN NEL BROWSER*
 
 ```bash
   npm run dev
 ```
 
-#*4 step*
+#*5 INDIRIZZO PER LA PREVIEW*
 ```bash
   *go to localhost:5173 or 8800 / 8000*
 ```
    
 
 
-## Usage/Examples
+## Usage/Examples - Base project
 
 
 ```javascript
-import Component from 'my-project'
-function App() {
-  return <Component />
-}
+import { createApp } from 'vue'
+
+createApp({
+  data() {
+    return {
+      count: 0
+    }
+  }
+}).mount('#app')
 ```
 
 
@@ -65,5 +76,4 @@ function App() {
 
 This project is used by the following companies:
 
-- Company 1
-- Company 2
+- "G. Marconi - ISIS BEM - Staranzano (GO)"
