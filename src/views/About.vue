@@ -1,5 +1,7 @@
 <script setup>
 import Footer from '../components/Footer.vue'
+import heroAbout from '../components/transition-component/FirstSectAbout.vue'
+import Artplayer from "../components/Videos.vue";
 </script>
 
 <template>
@@ -8,13 +10,15 @@ import Footer from '../components/Footer.vue'
             <div class="h-2/3 mt-4 flex flex-col justify-center items-center text-black">
                 <div class="flex min-h-full flex-col items-center justify-center w-full max-w-5xl mt-16 mx-auto">
                     <div class="sectionNormal">
-                        <!-- title -->
-                        <h1 class="font-semibold text-2xl">Informazioni sul team</h1>
+                        <!-- title transition -->
+                        <heroAbout></heroAbout>
                         <!-- table with all items -->
                         <div class="flex flex-wrap flex-col max-w-md lg:max-w-2xl w-full mt-4">
                             <div class="my-4 mx-3 flex flex-col sm:flex sm:flex-row">
                                 <!-- 1 row -->
-                                <div
+                                <div data-aos="fade-in"
+                                     data-duration="500"
+                                     data-easing="ease-in"
                                     class="hover:transition-shadow hover:shadow-lg border border-gray-300 flex flex-col justify-center items-center rounded-md w-full mr-3">
                                     <div
                                         class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
@@ -237,8 +241,6 @@ import Footer from '../components/Footer.vue'
 </template>
   
 <script>
-import Artplayer from "../components/Videos.vue";
-
 export default {
     data() {
         return {

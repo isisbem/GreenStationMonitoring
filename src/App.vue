@@ -26,7 +26,7 @@
 /* icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 .Main {
-  height: 100dvh !important;
+  height: 100dvh;
   height: 100vh;
 }
 .fade-enter-active, .fade-leave-active {
