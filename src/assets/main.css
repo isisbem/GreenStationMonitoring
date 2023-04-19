@@ -133,7 +133,6 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
 .active { display: flex !important }
 /* second toggle */
 .Closing { display: none }
-/* end navbar styles */
 /* other states */
 .hamburger { transition: 0ms } 
 
@@ -165,7 +164,7 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
     bottom: -38px;
     color: #fff;
     content: attr(data-gloss);
-    left: -14%;
+    left: 18.5%;
     padding: 5px;
     position: absolute;
     z-index: 98;
@@ -201,7 +200,4 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
     }
 }
 
-.art-progress-played, .art-progress-indicator {
-    background-color: #22c55e !important;
-}
-
+.art-progress-played, .art-progress-indicator { background-color: #22c55e !important }

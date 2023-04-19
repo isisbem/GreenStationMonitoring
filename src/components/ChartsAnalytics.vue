@@ -5,13 +5,12 @@
 <script lang="ts">
 import { Bar } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-import { options } from '../js/Charts1'
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
 export default {
     name: 'BarChart',
     components: { Bar },
-    datasets: [{ label: 'Analytics'}],
+    datasets: [{ label: 'Analytics' }],
     data() {
         return {
             chartData: {
@@ -33,7 +32,8 @@ export default {
                     {
                         label: "utilizzo",
                         backgroundColor: "#f87979",
-                        data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+                        data: [15, 22, 40, 45, 45, 35, 5, 20, 15, 10, 10, 5],
+                        unit: "percent",
                     },
                 ],
             }
@@ -44,8 +44,8 @@ export default {
 
 <style>
 #my-chart-id {
- width: 100%;
- height: 100%; 
- image-rendering: optimizeQuality;  
+    width: 100%;
+    height: 100%;
+    image-rendering: optimizeQuality;
 }
 </style>

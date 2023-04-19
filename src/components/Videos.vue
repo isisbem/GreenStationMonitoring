@@ -28,8 +28,9 @@ export default {
                     url: "./GSM/IMG_2848_MP4.mp4",
                 },
                 {
+                    default: false,
                     html: 'HD 720P',
-                    url: "./GSM/IMG_2848_MP4.mp4",
+                    url: "./GSM/IMG_2848.webm",
                 },
             ],
         });
@@ -47,11 +48,11 @@ export default {
             name: 'your-menu',
             html: 'Your Menu',
             click: function (...args) {
-                console.info(args);
+                //console.info(args);
                 art.contextmenu.show = false;
             },            
         });
-        console.info(art.contextmenu['your-menu']);
+        //console.info(art.contextmenu['your-menu']);
 
         this.$nextTick(() => {
             this.$emit("get-instance", this.instance);
@@ -60,10 +61,9 @@ export default {
     beforeDestroy() {
         if (this.instance && this.instance.destroy) {
             this.instance.destroy(false);
+            console.log("destroy");
         }
     },
     
 };
-
-console.log('belloooooooooooooooooooooo')
 </script>
