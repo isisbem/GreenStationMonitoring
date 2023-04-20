@@ -228,7 +228,7 @@ export default {
             },
             style: {
                 /**width and height**/
-                margin: "60px auto 0",
+                margin: "60px auto",
             },
             showContent1: false,
             showContent2: false,
@@ -267,6 +267,7 @@ export default {
                     break;
             }
         },
+        //AOS animation
         mounted() {
             AOS.init()
         },

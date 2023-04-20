@@ -74,8 +74,14 @@ export default {
       gsap.to(el, {
         duration: 2.5,
         y: 0,
+        ease: 'bounce.out',
         opacity: 1,
+        delay: 0.5,
       })
+    },
+    afterEnter(el) {
+      el.style.opacity = '1'
+      el.style.transform = 'translateY(0px)'
     }
   }
 }
