@@ -9,6 +9,7 @@
         --clr-primary: #22c55e;
         --clr-bg: #44403c;
         --bg-: #E7E5E4;
+        --bg-selection: #d4d4d4; 
         --font-fam: 'Inter', sans-serif;
     }
     html,body{ font-family: var(--font-fam) !important }
@@ -18,6 +19,6 @@
     .scrollbar::-webkit-scrollbar { width: 9px }
     .scrollbar::-webkit-scrollbar-track { background:var(--clr-primary) }
     .scrollbar::-webkit-scrollbar-thumb { background: var(--clr-bg) }
-    ::selection { color: var(--clr-primary); background-color: var(--bg-white) }
-    ::-moz-selection { color: var(--clr-primary); background-color: var(--bg-) }
+    ::selection { color: var(--clr-bg); background-color: var(--bg-selection) }
+    ::-moz-selection { color: var(--clr-bg); background-color: var(--bg-selection) }
 }
