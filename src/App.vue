@@ -30,7 +30,11 @@
   height: 100vh;
 }
 .fade-enter-active, .fade-leave-active {
-  transition: all 300ms ease; 
+  transition: all 275ms ease; 
+  -webkit-transition: all 275ms ease;
+  -moz-transition: all 275ms ease;
+  -o-transition: all 275ms ease;
+  -ms-transition: all 275ms ease;
   opacity: 1;
 }
 .fade-enter-from, .fade-leave-to { opacity: 0 }

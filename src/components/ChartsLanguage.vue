@@ -17,7 +17,8 @@ export default {
     Doughnut
   },
   chartOptions: {
-    responsive: true
+    responsive: true,
+    maintainAspectRatio: false
   },
   data() {
     return chartConfig

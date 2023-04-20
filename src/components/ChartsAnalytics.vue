@@ -36,7 +36,7 @@ export default {
                         unit: "percent",
                     },
                 ],
-            }
+            },
         }
     }
 }

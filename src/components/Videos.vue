@@ -24,12 +24,14 @@ export default {
             quality: [
                 {
                     default: true,
+                    type: 'SD',
                     html: 'SD 480P',
                     url: "./GSM/IMG_2848_MP4.mp4",
                 },
                 {
                     default: false,
-                    html: 'HD 720P',
+                    html: 'HD 720P',    
+                    type: 'HD',
                     url: "./GSM/IMG_2848.webm",
                 },
             ],
@@ -48,7 +50,6 @@ export default {
             name: 'your-menu',
             html: 'Your Menu',
             click: function (...args) {
-                //console.info(args);
                 art.contextmenu.show = false;
             },            
         });
@@ -64,6 +65,5 @@ export default {
             console.log("destroy");
         }
     },
-    
 };
 </script>
