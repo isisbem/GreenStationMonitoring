@@ -118,7 +118,7 @@ import Cards from '../components/transition-component/Cards.vue'
                         <!-- domande -->
                         <div class="my-24 min-h-full">
                             <div
-                                class="flex flex-col sm:flex-row mx-2 sm:mx-auto justify-center items-center gap-2 max-h-full mt-4 mb-24">
+                                class="flex flex-col sm:flex-row mx-2 sm:mx-auto justify-center items-center gap-2 max-h-full my-24">
                                 <!-- container -->
                                 <div class="full flex flex-col px-2 sm:p-0">
                                     <h1 class="font-semibold text-2xl">Altre domande?</h1>
