@@ -45,7 +45,7 @@ export default {
             dovresti contattare l'amministratore 
             del server e richiedere di abilitare 
             l'accesso cross-origin dal tuo dominio.*/
-            const url = 'http://82.223.8.163';
+            const url = 'https://82.223.8.163';
             const data = {
                 username: 'gsm',
                 password: 'GsM!2023',
