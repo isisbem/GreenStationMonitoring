@@ -6,8 +6,10 @@ import './style.css'
 import './assets/main.css'
 
 //import axios
-//import axios from 'axios';
-//Vue.prototype.$http = axios;
+import axios from 'axios';
+axios.prototype.$http = axios;
+
+//"nodemon": "^2.0.22",
 
 //import the charts
 import { Bar } from 'vue-chartjs'

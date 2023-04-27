@@ -1,7 +1,7 @@
 <template>
-    <div>
-      <Doughnut :data="data" :options="options" />
-    </div>
+  <div>
+    <Doughnut :data="data" :options="options" />
+  </div>
 </template>
 
 <script lang="ts">
