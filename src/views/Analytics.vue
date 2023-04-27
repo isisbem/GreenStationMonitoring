@@ -12,6 +12,7 @@ import ChartAnalytics from '../components/ChartsAnalytics.vue'
                 <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                     class="font-bold text-2xl sm:text-3xl mt-16 mb-4">
                     Dati raccolti e Analisi
+                    <p>{{ messageError }}</p>
                 </h1>
                 <ChartAnalytics class="my-8"></ChartAnalytics>
             </div>
@@ -29,12 +30,40 @@ import ChartAnalytics from '../components/ChartsAnalytics.vue'
                 </h1>
                 <p class="text-neutral-900 text-xl mt-4 max-w-3xl mx-auto text-left pt-2">
                     Dai dati analizzati e dai grafici si può concludere che l'utilizzo della pensilina
-                    avviene in special modo in autunno e primavera, con utilizzo medio del <i>50%</i> di presenze 
-                    di picco, con un minimo d'estate di poche utenze. Questi dati comportano un'adeguamento 
-                    della pensilina in modo che sia efficiente nei mesi dove ci sono più utenze. 
+                    avviene in special modo in autunno e primavera, con utilizzo medio del <i>50%</i> di presenze
+                    di picco, con un minimo d'estate di poche utenze. Questi dati comportano un'adeguamento
+                    della pensilina in modo che sia efficiente nei mesi dove ci sono più utenze.
                 </p>
             </div>
         </div>
         <Footer class="mt-auto"></Footer>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            messageError: 'Non ci sono dati raccolti e analisi'
+        }
+    }
+}
+  /*
+methods: {
+      showMessageError: (chartData) => {
+          if (chartData != null) {
+              //todo
+          } else {
+              this.messageError = 'Non ci sono dati raccolti e analisi';
+          }
+      }
+  },
+  data() {
+      return {
+          messageError: ''
+      }
+  },
+  created() {
+      this.showMessageError(chartData);
+  }*/
+</script>

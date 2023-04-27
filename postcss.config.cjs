@@ -3,4 +3,7 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
   },
+  devServer: {
+    proxy: 'https://localhost:5137',
+  }
 }

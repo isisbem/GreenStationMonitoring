@@ -1,19 +1,16 @@
-<!-- RIGHT CODE (0)-->
 <template>
     <Bar id="my-chart-id" :bind="true" :data="chartData" />
-    <button @click="">Refresh chart dates</button>
 </template>
-
+  
 <script lang="ts">
-import axios from 'axios'
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+import axios from 'axios';
+import { Bar } from 'vue-chartjs';
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 export default {
     name: 'BarChart',
     components: { Bar },
-    datasets: [{ label: 'Analytics' }],
     data() {
         return {
             chartData: {
@@ -35,36 +32,51 @@ export default {
                     {
                         label: "utilizzo",
                         backgroundColor: "#f87979",
-                        data: [15, 22, 40, 45, 45, 35, 5, 20, 15, 10, 10, 5],
+                        data: [],
                         unit: "percent",
                     },
                 ],
             },
-            methods: {
-                //in the main.js 
-                //import axios from 'axios';
-                //Vue(axios).prototype.$http = axios;
-            },
-            //axios catch errors
-            posts: [],
-            errors: []
+        };
+    },
+    methods: {
+        fetchData() {
+            /*Se non hai accesso al server API, 
+            dovresti contattare l'amministratore 
+            del server e richiedere di abilitare 
+            l'accesso cross-origin dal tuo dominio.*/
+            const url = 'http://82.223.8.163';
+            const data = {
+                username: 'gsm',
+                password: 'GsM!2023',
+                // Add any other data to send to the API here
+            };
+
+            axios.post(url, data, {
+                withCredentials: true, // Aggiungere questa opzione per consentire i cookie nel contesto CORS
+                headers: {
+                    'Access-Control-Allow-Origin': '*', // Aggiungere questo header per consentire l'accesso cross-origin
+                },
+            })
+                .then(response => {
+                    // Extract the data from the API response and update the chart
+                    const newData = response.data;
+                    for (let i = 0; i < newData.length; i++) {
+                        this.chartData.datasets[0].data.push(newData[i].utilizzo);
+                    }
+                    this.$refs.chart.update();
+                })
+                .catch(error => {
+                    console.error(error);
+                });
         }
     },
-    // Fetches posts when the component is created.
-    created() {
-        //API call to get all posts
-        axios.get(`http://jsonplaceholder.typicode.com/posts`)
-        .then(response => {
-            // JSON responses are automatically parsed.
-            this.posts = response.data
-        })
-        .catch(e => {
-            this.errors.push(e)
-        })
+    mounted() {
+        this.fetchData();
     }
-}
+};
 </script>
-
+  
 <style>
 #my-chart-id {
     width: 100%;
