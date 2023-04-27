@@ -1,5 +1,6 @@
 <template>
     <Bar id="my-chart-id" :bind="true" :data="chartData" />
+    <button @click="refresh">Refresh data</button>
 </template>
   
 <script lang="ts">
@@ -40,11 +41,19 @@ export default {
         };
     },
     methods: {
+        refresh() {
+            this.chartData.datasets[0].data = [];
+            this.chartData.datasets[0].unit = "percent";
+            axios
+              .get(
+                    "http://localhost:8080/api/v1/utilizzo/utilizzo/" +
+                        this.$route.params.id
+                )
+              .then((response) => {
+                    this.chartData.datasets[0].data = response.data;
+                });
+        },
         fetchData() {
-            /*Se non hai accesso al server API, 
-            dovresti contattare l'amministratore 
-            del server e richiedere di abilitare 
-            l'accesso cross-origin dal tuo dominio.*/
             const url = 'https://82.223.8.163';
             const data = {
                 username: 'gsm',
@@ -53,9 +62,9 @@ export default {
             };
 
             axios.post(url, data, {
-                withCredentials: true, // Aggiungere questa opzione per consentire i cookie nel contesto CORS
+                withCredentials: true, // Consentire i cookie nel contesto CORS
                 headers: {
-                    'Access-Control-Allow-Origin': '*', // Aggiungere questo header per consentire l'accesso cross-origin
+                    'Access-Control-Allow-Origin': '*', // Consentire l'accesso cross-origin
                 },
             })
                 .then(response => {
