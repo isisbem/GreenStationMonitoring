@@ -5,13 +5,9 @@ import App from './App.vue'
 import './style.css'
 import './assets/main.css'
 
-//import servers
-// import { createServer } from './api/users/server.js'
-// Create and configure the server
-// const server = createServer()
-// server.listen(3080, () => {
-//   console.log(`Server is running on port 3080`)
-// })
+//import axios
+//import axios from 'axios';
+//Vue.prototype.$http = axios;
 
 //import the charts
 import { Bar } from 'vue-chartjs'

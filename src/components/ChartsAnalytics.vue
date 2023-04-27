@@ -37,6 +37,23 @@ export default {
                     },
                 ],
             },
+            methods: {
+                //in the main.js 
+                //import axios from 'axios';
+                //Vue.prototype.$http = axios;
+                async getData() {
+                    try {
+                        const response = await this.$http.get("82.223.8.168");
+                        // JSON responses are automatically parsed.
+                        this.posts = response.data;
+                    } catch (error) {
+                        console.log(error);
+                    }
+                },
+            },
+            created() {
+                this.getData();
+            },
         }
     }
 }
