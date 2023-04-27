@@ -45,46 +45,32 @@ export default {
             this.chartData.datasets[0].data = [];
             this.chartData.datasets[0].unit = "percent";
             axios
-              .get(
-                    "http://localhost:8080/api/v1/utilizzo/utilizzo/" +
-                        this.$route.params.id
+                .get(
+                    "https://82.223.8.163" +
+                    this.$route.params.id
                 )
-              .then((response) => {
+                .then((response) => {
                     this.chartData.datasets[0].data = response.data;
                 });
         },
         fetchData() {
             const url = 'https://82.223.8.163';
-            const data = {
-                username: 'gsm',
-                password: 'GsM!2023',
-                // Add any other data to send to the API here
-            };
-
-            axios.post(url, data, {
-                withCredentials: true, // Consentire i cookie nel contesto CORS
-                headers: {
-                    'Access-Control-Allow-Origin': '*', // Consentire l'accesso cross-origin
-                },
-            })
-                .then(response => {
-                    // Extract the data from the API response and update the chart
+            const data = { username: 'gsm', password: 'GsM!2023' };
+            const config = {
+                withCredentials: true, headers: { 'Access-Control-Allow-Origin': '*' } // Consentire l'accesso cross-origin }; 
+                // Consentire l'accesso cross-origin 
+            }; axios.post(url, data, config)
+                .then(response => { // Extract the data from the API response and update the chart 
                     const newData = response.data;
                     for (let i = 0; i < newData.length; i++) {
                         this.chartData.datasets[0].data.push(newData[i].utilizzo);
                     }
                     this.$refs.chart.update();
-                })
-                .catch(error => {
-                    console.error(error);
-                });
+                }).catch(error => { console.error(error); });
         }
-    },
-    mounted() {
-        this.fetchData();
-    }
-};
-</script>
+    }, mounted() { this.fetchData(); }
+}; 
+</script>;
   
 <style>
 #my-chart-id {
