@@ -24,7 +24,8 @@ import ChartAnalytics from '../components/ChartsAnalytics.vue'
                 <ChartLanguage class="my-8"></ChartLanguage>
             </div>
             <div
-                class="h-4/5 min-h-[35vh] mx-4 px-3 sm:mx-auto mt-10 mb-20 w-full container max-w-5xl flex flex-col justify-items-start items-center text-black">
+                class="h-4/5 min-h-[40vh]  mx-4 my-10 px-3 sm:mx-auto w-full container max-w-5xl flex flex-col justify-items-start items-center text-black">
+                <hr class="w-full my-8 mx-auto">
                 <h1 class="font-semibold text-2xl sm:text-3xl mt-8">
                     Conclusioni:
                 </h1>

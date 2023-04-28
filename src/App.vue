@@ -7,7 +7,7 @@
 <template>
   <div id="app" data-v-app="">
     <!-- main page -->
-    <main class="Main w-full scrollbar overflow-y-auto overflow-x-hidden text-center font-Inter">
+    <main class="Main h-[100dvh] h-screen w-full scrollbar overflow-y-auto overflow-x-hidden text-center font-Inter">
       <!-- navigation -->
       <Navbar></Navbar>
       <!-- for content of the page -->
@@ -25,10 +25,6 @@
 <style lang="css">
 /* icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-.Main {
-  height: 100dvh;
-  height: 100vh;
-}
 .fade-enter-active, .fade-leave-active {
   transition: all 275ms ease; 
   -webkit-transition: all 275ms ease;

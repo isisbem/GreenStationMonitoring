@@ -1,76 +1,86 @@
 <template>
-    <Bar id="my-chart-id" :bind="true" :data="chartData" />
-    <button @click="refresh">Refresh data</button>
+    <Bar ref="barChart" :bind="true" :data="chartData" />
+    <button @click="refresh" 
+            class="inline-flex justify-center items-center gap-1 bg-green-500 text-gray-50 uppercase 
+               rounded-lg py-4 px-8 mt-6 hover:bg-green-600 transition
+               hover:shadow-lg active:scale-95">
+               <i class="bi bi-arrow-clockwise text-xl md:text-3xl"></i>
+               <span>Refresh</span>
+    </button>
 </template>
   
 <script lang="ts">
-import axios from 'axios';
 import { Bar } from 'vue-chartjs';
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
+import axios from 'axios';
+import {
+    Chart as ChartJS,
+    Title,
+    Tooltip,
+    Legend,
+    BarElement,
+    CategoryScale,
+    LinearScale,
+} from 'chart.js';
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 export default {
     name: 'BarChart',
-    components: { Bar },
+    components: {
+        Bar,
+    },
     data() {
         return {
             chartData: {
                 labels: [
-                    "January",
-                    "February",
-                    "March",
-                    "April",
-                    "May",
-                    "June",
-                    "July",
-                    "August",
-                    "September",
-                    "October",
-                    "November",
-                    "December",
+                    'January',
+                    'February',
+                    'March',
+                    'April',
+                    'May',
+                    'June',
+                    'July',
+                    'August',
+                    'September',
+                    'October',
+                    'November',
+                    'December',
                 ],
                 datasets: [
                     {
-                        label: "utilizzo",
-                        backgroundColor: "#f87979",
+                        label: 'utilizzo',
+                        backgroundColor: '#f87979',
                         data: [],
-                        unit: "percent",
+                        unit: 'percent',
                     },
                 ],
             },
         };
     },
+    mounted() {
+        this.refresh();
+    },
     methods: {
-        refresh() {
-            this.chartData.datasets[0].data = [];
-            this.chartData.datasets[0].unit = "percent";
-            axios
-                .get(
-                    "https://82.223.8.163" +
-                    this.$route.params.id
-                )
-                .then((response) => {
-                    this.chartData.datasets[0].data = response.data;
+        async refresh() {
+            try {
+                const response = await axios.get('http://82.223.8.163:22/your/api/path', {
+                    auth: {
+                        username: 'gsm',
+                        password: 'GsM!2023',
+                    },
                 });
+
+                if (response && response.data) {
+                    const data = response.data.map((item) => item.yourIntegerProperty);
+                    this.chartData.datasets[0].data = data;
+                    this.$refs.barChart.update();
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         },
-        fetchData() {
-            const url = 'https://82.223.8.163';
-            const data = { username: 'gsm', password: 'GsM!2023' };
-            const config = {
-                withCredentials: true, headers: { 'Access-Control-Allow-Origin': '*' } // Consentire l'accesso cross-origin }; 
-                // Consentire l'accesso cross-origin 
-            }; axios.post(url, data, config)
-                .then(response => { // Extract the data from the API response and update the chart 
-                    const newData = response.data;
-                    for (let i = 0; i < newData.length; i++) {
-                        this.chartData.datasets[0].data.push(newData[i].utilizzo);
-                    }
-                    this.$refs.chart.update();
-                }).catch(error => { console.error(error); });
-        }
-    }, mounted() { this.fetchData(); }
-}; 
-</script>;
+    },
+};
+</script>
   
 <style>
 #my-chart-id {
@@ -80,165 +90,6 @@ export default {
 }
 </style>
 
-
-<!-- latest code -->
-<!-- <template>
-    <div>
-        <button @click="fetchData">Refresh Data</button>
-        <Bar id="my-chart-id" :chart-data="chartData" />
-        <div v-if="loading">Loading...</div>
-        <div v-if="error">{{ error }}</div>
-    </div>
-</template>
-
-<script>
-import axios from 'axios';
-import { ref } from 'vue';
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
-
-export default {
-    name: 'BarChart', components: { Bar }, datasets: [{ label: 'Analytics' }],
-    setup() {
-        const chartData = ref({
-            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",],
-            datasets: [{ 
-                label: "utilizzo", 
-                backgroundColor: "#f87979", 
-                data: [15, 22, 40, 45, 45, 35, 5, 20, 15, 10, 10, 5], 
-                unit: "percent", 
-            }],
-        });
-        const loading = ref(false);
-        const error = ref(null);
-        axios.interceptors.request.use(config => {
-            config.auth = { username: 'gsm', password: 'GsM!2023' };
-            return config;
-        });
-        const fetchData = async () => {
-            try {
-                loading.value = true;
-                const response = await axios.get('https://82.223.8.168');
-                if (response.data) {
-                    chartData.value.datasets[0].data = response.data;
-                    error.value = null;
-                } else {
-                    error.value = 'Invalid response from the API';
-                }
-            } catch (err) {
-                console.error(err);
-                error.value = 'Failed to fetch data from the API';
-            } finally {
-                loading.value = false;
-            }
-        };
-        fetchData();
-        // return { chartData, loading, error };
-    },
-    methods: {
-        fetchData() {
-            this.fetchData();
-        },
-    },
-};
-</script> -->
-
-
-<!-- code (1) -->
-<!-- <template>
-    <div>
-        <button @click="fetchData">Refresh Data</button>
-        <Bar id="my-chart-id" :chart-data="chartData" /> 
-        <div v-if="loading">Loading...</div>
-        <Bar v-else />
-    </div>
-</template> -->
-  
-<!-- <script>
-// imports...
-import axios from 'axios';
-// import { ref } from 'vue';
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
-
-export default {
-    // same as before
-    name: 'BarChart',
-    components: { Bar },
-    datasets: [{ label: 'Analytics' }],
-    data() {
-        return {
-            // same as before
-            chartData: {
-                labels: [
-                    "January",
-                    "February",
-                    "March",
-                    "April",
-                    "May",
-                    "June",
-                    "July",
-                    "August",
-                    "September",
-                    "October",
-                    "November",
-                    "December",
-                ],
-                datasets: [
-                    {
-                        label: "utilizzo",
-                        backgroundColor: "#f87979",
-                        data: [15, 22, 40, 45, 45, 35, 5, 20, 15, 10, 10, 5],
-                        unit: "percent",
-                    },
-                ],
-            },
-            //axios catch errors
-            posts: [],
-            errors: [],
-            loading: false
-        }
-    },
-
-    methods: {
-        fetchData() {
-            this.loading = true;
-            axios.get('http://82.223.8.168')
-                .then(response => {
-                    this.chartData = formatChartData(response);
-                    this.loading = false;
-                })
-                .catch(err => {
-                    // console.error(this.errors);
-                    this.loading = false;
-                })
-        }
-    },
-    setup() {
-        axios.interceptors.request.use(config => {
-            config.auth = { username: 'gsm', password: 'GsM!2023' };
-            return config;
-        });
-
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('http://82.223.8.168');
-                const data = formatChartData(response);
-                chartData.value = data;
-            } catch (err) {
-                console.error(err);
-                this.loading = false;  // Add this
-            }
-        };
-
-        // rest of setup...
-        fetchData();
-        return { fetchData, chartData };
-    }
-}
-</script> -->
 
 
 <!-- EXAMPLE CODE FETCHING TO API... -->

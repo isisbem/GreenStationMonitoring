@@ -14,17 +14,17 @@ import Footer from '../components/Footer.vue'
                         Di più +
                     </h1>
                     <!-- first table with some information -->
-                    <div class="mt-10 grid mx-4 sm:mx-auto">
-                        <dl class="z-10">
+                    <div class="mt-10 grid mx-6 sm:mx-auto">
+                        <dl class="z-10 p-0">
                             <div
-                                class="rounded-t-lg px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
+                                class="rounded-t-lg px-4 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                                 <dt class="text-lg font-medium text-green-500"> Nome del progetto: </dt>
                                 <dd class="mt-3 font-semibold text-md text-gray-900 sm:mt-0 sm:col-span-2">
                                     Green Station Monitoring
                                 </dd>
                             </div>
                             <div
-                                class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
+                                class="px-4 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                                 <dt class="text-lg font-medium text-green-500"> Membri del gruppo: </dt>
                                 <dd class="mt-3 font-medium text-md text-gray-900 sm:mt-0 sm:col-span-2">
                                     <div class="grid grid-cols-2">
@@ -60,7 +60,7 @@ import Footer from '../components/Footer.vue'
                                 </dd>
                             </div>
                             <div
-                                class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
+                                class="px-4 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                                 <dt class="text-lg font-medium text-green-500"> Email address </dt>
                                 <a href="mailto:greenstation.monitoring@gmail.com" class="w-full">
                                     <dd
@@ -70,7 +70,7 @@ import Footer from '../components/Footer.vue'
                                 </a>
                             </div>
                             <div
-                                class="px-3 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
+                                class="px-4 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                                 <dt class="text-lg font-medium text-green-500"> Ringraziamenti: </dt>
                                 <dd class="mt-3 font-medium text-md text-gray-900 sm:mt-0 sm:col-span-2">
                                     <p class="font-normal">
