@@ -2,7 +2,7 @@
   <!-- navbar -->
   <header class="m-0 flex flex-wrap items-center justify-between px-2 py-3 bg-green-500 mb-3">
     <div ref="wrapper" @click="handleOutsideClick"
-      class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      class="container lg:px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full fullata relative flex justify-between ">
         <Router-Link
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300 active:rounded p-3"
@@ -19,7 +19,7 @@
         </button>
       </div>
 
-      <nav ref="navbar" v-show="isNavbarOpen" class="navbar flex w-full flex-col justify-start items-start text-left sm:justify-center sm:items-center">
+      <nav ref="navbar" v-show="isNavbarOpen" class="navbar flex w-full flex-col justify-start items-start text-left lg:justify-center lg:items-center">
         <div class="contenitore lg:flex flex-grow w-full justify-center items-center transition-all">
           <ul ref="lista" data-testid="nav-list" class="flex flex-col list-none mx-auto">
             <div class="md:w-full md:flex md:flex-row w-44 mx-auto"> 
@@ -66,7 +66,18 @@
                     <span>Informazioni</span>
                   </RouterLink>
                 </div>
-              </li>  
+              </li> 
+              <li class="nav-item w-fit mx-2">
+                <div class="flex my-1 items-center">
+                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">05</span>
+                  <RouterLink
+                    class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                    title="Home"
+                    to="/OurSchool">
+                    <span>School</span>
+                  </RouterLink>
+                </div>
+              </li> 
             </div>           
           </ul>
         </div>

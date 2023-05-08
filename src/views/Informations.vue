@@ -6,7 +6,7 @@ import Footer from '../components/Footer.vue'
     <div>
         <!-- 100dvh / 100vh -->
         <div class="min-h-[100dvh] min-h-screen">
-            <div class="Informations min-h-[40vh] max-w-3xl mx-auto w-full">
+            <div class="Informations min-h-[40vh] max-w-4xl mx-auto w-full">
                 <!-- .sectionNormal -->
                 <div data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="650" data-aos-delay="50"
                     class="container w-full mt-4 flex flex-col text-black text-left">
@@ -15,7 +15,7 @@ import Footer from '../components/Footer.vue'
                     </h1>
                     <!-- first table with some information -->
                     <div class="mt-10 grid mx-6 sm:mx-auto">
-                        <dl class="z-10 p-0">
+                        <dl class="z-10 p-0 border rounded-lg shadow-lg">
                             <div
                                 class="rounded-t-lg px-4 py-6 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
                                 <dt class="text-lg font-medium text-green-500"> Nome del progetto: </dt>

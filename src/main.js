@@ -9,8 +9,6 @@ import './assets/main.css'
 import axios from 'axios';
 axios.prototype.$http = axios;
 
-//"nodemon": "^2.0.22",
-
 //import the charts
 import { Bar } from 'vue-chartjs'
 import {
@@ -45,6 +43,7 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Analytics from './views/Analytics.vue'
 import Informations from './views/Informations.vue'
+import school from './views/OurSchool.vue'
 
 //Get all pages
 const router = createRouter({
@@ -69,6 +68,11 @@ const router = createRouter({
       path: '/Informations',
       name: 'Informations',
       component: Informations
+    },
+    {
+      path: '/OurSchool',
+      name: 'OurSchool',
+      component: school
     }
   ]
 })
