@@ -105,37 +105,29 @@ import Cards from '../components/transition-component/Cards.vue'
                             </div>
                             <!-- new image -->
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/a.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/i-min.jpeg" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/b.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/l-min.jpeg" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/c.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/m-min.jpeg" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/d.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/n-min.jpeg" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <!-- <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="/GSM/" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/e.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
-                            </div>
-                            <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/f.JPG" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
-                            </div>
-                            <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/g.JPG" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
-                            </div>
-                            <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/h.JPG" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
@@ -312,5 +304,11 @@ export default {
 .layout-1 img {
     aspect-ratio: 5 / 4 !important;
     margin: 1rem 0 !important;
+}
+.layout-1 div:nth-child(7) img, .layout-1 div:nth-child(8) img {
+    margin: 16rem 0 2rem 0 !important;
+}
+.layout-1 div {
+    margin: 1rem auto;
 }
 </style>
