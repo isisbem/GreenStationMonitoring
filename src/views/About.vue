@@ -85,6 +85,7 @@ import Cards from '../components/transition-component/Cards.vue'
                                 Gallery
                             </h1>
                         </div>
+                        <!-- usare non (../../public/GSM/photo.png) ma /GSM/photo.png -->
                         <div class="grid layout-1 grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
                                 <img src="/GSM/1.jpeg" alt="photos" class="object-cover rounded-md shadow"
@@ -120,6 +121,7 @@ import Cards from '../components/transition-component/Cards.vue'
                                 <img src="/GSM/n-min.jpeg" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
+                            <!-- altre foto da aggiungere -->
                             <!-- <div class="grid col-span-1 px-2 object-cover max-w-full">
                                 <img src="/GSM/" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
@@ -246,6 +248,7 @@ import Cards from '../components/transition-component/Cards.vue'
 export default {
     data() {
         return {
+            // option del video (trailer)
             option: {
                 url: "/GSM/IMG_2848.webm",
                 url: "/GSM/IMG_2848_MP4.mp4",
