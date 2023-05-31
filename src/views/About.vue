@@ -105,35 +105,35 @@ import Cards from '../components/transition-component/Cards.vue'
                             </div>
                             <!-- new image -->
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7119.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7119.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7143.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7143.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7148.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7148.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7150.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7150.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7151.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7151.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7156.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7156.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7157.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7157.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="../../public/GSM/IMG_7118.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/IMG_7118.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                         </div>
