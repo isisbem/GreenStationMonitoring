@@ -85,7 +85,7 @@ import Cards from '../components/transition-component/Cards.vue'
                                 Gallery
                             </h1>
                         </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
+                        <div class="grid layout-1 grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
                                 <img src="/GSM/1.jpeg" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
@@ -101,6 +101,39 @@ import Cards from '../components/transition-component/Cards.vue'
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
                                 <img src="/GSM/4.jpeg" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <!-- new image -->
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7119.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7143.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7148.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7150.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7151.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7156.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7157.JPG" alt="photos" class="object-cover rounded-md shadow"
+                                    title="green station physical photo">
+                            </div>
+                            <div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="../../public/GSM/IMG_7118.JPG" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                         </div>
@@ -274,3 +307,10 @@ export default {
     },
 };
 </script>
+
+<style>
+.layout-1 img {
+    aspect-ratio: 5 / 4 !important;
+    margin: 1rem 0 !important;
+}
+</style>
