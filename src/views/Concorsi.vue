@@ -4,8 +4,8 @@ import Footer from '../components/Footer.vue';
 import { ref } from 'vue';
 
 const images = [
-  '../../public/img-gruppo-tpl-winer/G-1.jpeg',
-  '../../public/img-gruppo-tpl-winer/G-2.jpeg',
+  '/img-gruppo-tpl-winer/G-1.jpeg',
+  '/img-gruppo-tpl-winer/G-2.jpeg',
 ];
 function openModal(imageSrc) {
   modalImageUrl.value = imageSrc;
@@ -37,7 +37,7 @@ const modalImageUrl = ref('');
 
     <div class="container mx-auto mt-4 mb-0 flex flex-col justify-center items-center max-w-[900px]">
       <a href="https://www.tplfvg.it" target="_blank" role="link" class="mx-auto my-0">
-        <img src="../../public/TPL_FVG_logo.png" class="mx-auto my-0" alt="TPL" width="700" height="300">
+        <img src="/TPL_FVG_logo.png" class="mx-auto my-0" alt="TPL" width="700" height="300">
       </a>
     </div>
 
