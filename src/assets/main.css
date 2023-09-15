@@ -437,12 +437,13 @@ ul li:nth-child(6) {
 
 /** images ingrandimento **/
 .myImg {
-    border-radius: 5px;
     cursor: pointer !important;
     transition: 0.3s;
     display: block;
-    margin-left: auto;
-    margin-right: auto
+    max-height: 470px;
+    max-width: 700px;
+    width: 100%;
+    /* aspect-ratio: 16 / 9; */
 }
 
 .myImg:hover {

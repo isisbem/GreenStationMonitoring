@@ -74,7 +74,7 @@ const modalImageUrl = ref('');
       </h1>
       <!-- photo winners -->
       <img v-for="(image, index) in images" :key="index" :src="image" @click="openModal(image)"
-        class="myImg max-w-full rounded-md h-full mx-auto" />
+        class="myImg max-w-full max-h-fit rounded-md h-full mx-auto" />
       <div id="myModal" class="modal" @click="closeModal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImg" :src="modalImageUrl" />
