@@ -1,7 +1,7 @@
 <template>
     <div ref="artRef" class="relative" :aria-controls="false"></div>
 </template>
-  
+
 <script>
 import Artplayer from "artplayer";
 
@@ -36,16 +36,7 @@ export default {
                 },
             ],
         });
-        // this.instance = new Artplayer({
-        //     ...this.option,
-        //     container: this.$refs.artRef,
-        //     url: "./GSM/IMG_2848_MP4.mp4",
-        //     url: "./GSM/IMG_2848.webm",
-        //     screenshot: true,
-        //     autoSize: true,
-        //     autoMini: true,
-        // });
-        
+
         art.contextmenu.add({
             name: 'your-menu',
             html: 'Your Menu',
@@ -53,7 +44,6 @@ export default {
                 art.contextmenu.show = false;
             },            
         });
-        //console.info(art.contextmenu['your-menu']);
 
         this.$nextTick(() => {
             this.$emit("get-instance", this.instance);

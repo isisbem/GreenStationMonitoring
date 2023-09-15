@@ -19,71 +19,84 @@
         </button>
       </div>
 
-      <nav ref="navbar" v-show="isNavbarOpen" class="navbar flex w-full flex-col justify-start items-start text-left lg:justify-center lg:items-center">
+      <nav ref="navbar" v-show="isNavbarOpen"
+        class="navbar flex w-full flex-col justify-start items-start text-left lg:justify-center lg:items-center">
         <div class="contenitore lg:flex flex-grow w-full justify-center items-center transition-all">
           <ul ref="lista" data-testid="nav-list" class="flex flex-col list-none mx-auto">
-            <div class="md:w-full md:flex md:flex-row w-44 mx-auto"> 
+            <div class="md:w-full md:flex md:flex-row w-44 mx-auto">
               <li class="nav-item w-fit mx-2">
                 <div class="flex my-1 items-center">
-                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">01</span>
+                  <span
+                    class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">01</span>
                   <RouterLink
                     class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                    title="Home"
-                    to="/">
+                    title="Home" to="/">
                     <span>Home</span>
                   </RouterLink>
                 </div>
               </li>
               <li class="nav-item w-fit mx-2">
                 <div class="flex my-1 items-center">
-                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">02</span>
+                  <span
+                    class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">02</span>
                   <RouterLink
                     class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                    title="About"
-                    to="/About">
+                    title="About" to="/About">
                     <span>Riguardo noi</span>
                   </RouterLink>
                 </div>
               </li>
               <li class="nav-item w-fit mx-2">
                 <div class="flex my-1 items-center">
-                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">03</span>
+                  <span
+                    class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">03</span>
                   <RouterLink
                     class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                    title="Analisi"
-                    to="/Analytics">
+                    title="Concorsi" to="/Concorsi">
+                    <span>Concorsi</span>
+                  </RouterLink>
+                </div>
+              </li>
+              <li class="nav-item w-fit mx-2">
+                <div class="flex my-1 items-center">
+                  <span
+                    class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">04</span>
+                  <RouterLink
+                    class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                    title="Analisi" to="/Analytics">
                     <span>Analisi</span>
                   </RouterLink>
                 </div>
               </li>
               <li class="nav-item w-fit ml-2">
                 <div class="flex my-1 items-center">
-                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">04</span>
+                  <span
+                    class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">05</span>
                   <RouterLink
                     class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                    title="Informazioni"
-                    to="/Informations">
+                    title="Informazioni" to="/Informations">
                     <span>Informazioni</span>
                   </RouterLink>
                 </div>
-              </li> 
+              </li>
               <li class="nav-item w-fit mx-2">
                 <div class="flex my-1 items-center">
-                  <span class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">05</span>
+                  <span
+                    class="text-white font-mono pl-2 inline-flex justify-center items-center w-6 h-6 text-base ml-2 font-bold">06</span>
                   <RouterLink
                     class="pl-3 py-2 flex justify-center items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
-                    title="Home"
-                    to="/OurSchool">
+                    title="Home" to="/OurSchool">
                     <span>School</span>
                   </RouterLink>
                 </div>
-              </li> 
-            </div>           
+              </li>
+            </div>
           </ul>
           <div class="ribbon-navbar-mobile">
             <div class="wrap">
               <span class="ribbon6">
-                <img src="../../public/Tpl_logo_piccolo.png" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*" role="img"> 
+                <img src="/Tpl_logo_piccolo.png" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
+                  role="img">
                 <a href="https://www.tplfvg.it" target="_blank" role="link">TPL fvg Winner 1</a>
               </span>
             </div>
@@ -94,7 +107,8 @@
       <div class="ribbon">
         <div class="wrap">
           <span class="ribbon6">
-            <img src="../../public/Tpl_logo_piccolo.png" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*" role="img"> 
+            <img src="../../public/Tpl_logo_piccolo.png" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
+              role="img">
             <a href="https://www.tplfvg.it" target="_blank" role="link">TPL fvg Winner 1</a>
           </span>
         </div>
@@ -127,7 +141,7 @@ export default {
       if (this.isNavbarOpen && event.target !== toggleButton && !navbar.contains(event.target) && !wrapper.contains(event.target)) {
         this.isNavbarOpen = false;
         document.body.style.overflow = 'hidden';
-        if(!this.isNavbarOpen) {
+        if (!this.isNavbarOpen) {
           btnClose.classList.remove('active');
           btnOpen.classList.add('active');
         }
@@ -147,7 +161,7 @@ export default {
           btnClose.classList.remove('active');
           btnOpen.classList.add('active');
         }
-      });      
+      });
     },
   },
   watch: {

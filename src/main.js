@@ -41,6 +41,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 //import @views
 import Home from './views/Home.vue'
 import About from './views/About.vue'
+import Concorsi from './views/Concorsi.vue'
 import Analytics from './views/Analytics.vue'
 import Informations from './views/Informations.vue'
 import school from './views/OurSchool.vue'
@@ -58,6 +59,11 @@ const router = createRouter({
       path: '/about',
       name: 'About',
       component: About
+    },
+    {
+      path: '/Concorsi',
+      name: 'Concorsi',
+      component: Concorsi
     },
     {
       path: '/Analytics',

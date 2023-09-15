@@ -9,7 +9,7 @@
         --clr-primary: #22c55e;
         --clr-bg: #44403c;
         --bg-: #E7E5E4;
-        --bg-selection: #d4d4d4; 
+        --bg-selection: #d4d4d4;
         --font-fam: 'Inter', sans-serif;
     }
     html,body{ font-family: var(--font-fam) !important; text-wrap: balance }
@@ -23,113 +23,54 @@
     ::-moz-selection { color: var(--clr-bg); background-color: var(--bg-selection) }
     .hamburger { z-index: 9999 !important }
 
-    /** ribbon winner fvg tpl **/
-    .ribbon {
-        height: 90px;
-        position: relative;
-        margin-bottom: 30px;
-        background: url('https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg');
+    /** video **/
+    .video-gsm, :where(video.video-gsm) { image-rendering: optimizeSpeed }
+    .large-video {
+        min-width: 1000px !important;
+        min-height: 1000px !important;
+    }
+
+    .art-video {
+        object-fit: cover;
+        -o-object-fit: cover;
+        background-position: center;
+        background-clip: content-box;
         background-size: cover;
-        text-transform: uppercase;
-        color: white;
     }
 
-    .wrap {
-        --_misure_standard: 40px;
-        width: 100%;
-        height: 180px;
-        position: absolute;
-        top: var(--_misure_standard);
-        left: var(--_misure_standard);/* overflow: hidden; */
+    .video-gsm .art-video-player, .video-gsm .art-video-player video {
+        margin-left: auto; margin-right: auto;
     }
 
-    .wrap:before, .wrap:after {
-        content: "";
-        position: absolute;
-    }
-
-    .wrap:before {
-        width: 45px;
-        height: 10px;
-        right: 84px;
-        transform: rotate(-45deg);
-        background: #4D6530;
-        border-radius: 8px 8px 0px 0px;
-        top: -51px;
-    }
-
-    .wrap:after {
-        width: 15px;
-        height: 45px;
-        right: -55px;
-        top: 85px;
-        background: #4D6530;
-        border-radius: 0px 8px 8px 0px;
-        transform: rotate(45deg);
-    }
-
-    .ribbon6::first-letter {text-transform: uppercase}
-
-    .ribbon6 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 1rem;
-        -webkit-text-size-adjust: 100%;
-        width: 200px;
-        height: 40px;
-        line-height: 40px;
-        position: absolute;
-        top: 10px;
-        right: -70px;
-        z-index: 2;
-        overflow: hidden;
-        transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                    -o-transform: rotate(45deg);
-        border: 1px dashed rgba(0, 0, 0, 0.6);
-        box-shadow: 0 0 0 3px #57DD43, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
-        background: #57DD43;
-        text-align: center;
-        color: inherit;
-    }
-
-    /** SMALL DEVICES **/
-    @media screen and (max-width: 1024px) {
-        .ribbon { display: none }
-    }
-
-    .ribbon-navbar-mobile {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    @media screen and (max-width: 767px) {
-        .ribbon-navbar-mobile {
-            display: block;
-            opacity: 1;
-            visibility: visible;
+    @media screen and (min-width: 979px) {
+        .video-gsm, :where(video.video-gsm) {
+            min-width: 710px !important;
+            margin: 2rem auto;
         }
-        .ribbon-navbar-mobile .wrap {
-            width: 100%;
-            height: 180px;
-            position: absolute;
-            top: 60px; /*standard value*/
-            left: -60px; /*standard value*/
-            z-index: 9; /* overflow: hidden; */
-        }
-    }
-
-    @media (min-width: 500px) {
-        .ribbons-wrapper {
+        /* [top-layer] > div {
+            height: calc(var(--_misure) - 150px) !important;
+        } */
+        .container.responsive, .video-gsm {
+            min-height: 450px !important;  /* default value */
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
-        .ribbon6 {gap: .3rem} /* .ribbon {width: 10%} */
+    }
+
+    /** IMPORTANT FOR VIDEO LARGE DEVICES **/
+    @media screen and (min-width: 1750px) and (max-width: 9998px) {
+        .art-video-player, .art-video-player video  {
+            --_misure: 800px !important;
+            max-width: var(--_misure) !important;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width: 451px) {
+        .video-gsm, :where(video.video-gsm) {
+            max-width: 325px !important;
+        }
     }
 
     nav ul, :not(.ribbon-navbar-mobile, .ribbon-navbar-mobile > *), .fullata {

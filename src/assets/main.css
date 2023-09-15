@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Inter', sans-serif;
     src: local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.woff2') format('woff2'),
-         local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.ttf') format('ttf'),
-         local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.woff2') format('truetype'),
-         local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.ttf') format('truetype');
+        local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.ttf') format('ttf'),
+        local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.woff2') format('truetype'),
+        local(Inter-VariableFont) url('../../public/Fonts/Inter-VariableFont.ttf') format('truetype');
     font-weight: 200 900;
     font-stretch: 100%;
     /* for ie and safari */
@@ -19,7 +19,9 @@ html, body {
 }
 
 /* sections */
-main { position: relative }
+main {
+    position: relative
+}
 
 .sectionNormal, .sectionNormal2 {
     height: calc(100vh - 375px);
@@ -54,11 +56,20 @@ main { position: relative }
     --animation-name: fade-in;
     --fill-mode: cubic-bezier(0.100, 0.850, 0.300, 1.150);
 }
-  
+
 @media screen and (min-width: 768px) {
-    .hamburger { display: none !important }
-    .navbar, .navbar .contenitore, .fullata { display: flex !important; width: fit-content !important}
-    .navbar ul { flex-direction: row !important }
+    .hamburger {
+        display: none !important
+    }
+
+    .navbar, .navbar .contenitore, .fullata {
+        display: flex !important;
+        width: fit-content !important
+    }
+
+    .navbar ul {
+        flex-direction: row !important
+    }
 }
 
 .imageLogo {
@@ -69,13 +80,31 @@ main { position: relative }
     object-fit: cover;
     -o-object-fit: cover;
 }
-  
-ul li:nth-child(1) { animation-delay: var(--animation-delay) !important }
-ul li:nth-child(2) { animation-delay: calc(var(--animation-delay) * 2) !important }
-ul li:nth-child(3) { animation-delay: calc(var(--animation-delay) * 3) !important }
-ul li:nth-child(4) { animation-delay: calc(var(--animation-delay) * 4) !important }
-ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !important }
-  
+
+ul li:nth-child(1) {
+    animation-delay: var(--animation-delay) !important
+}
+
+ul li:nth-child(2) {
+    animation-delay: calc(var(--animation-delay) * 2) !important
+}
+
+ul li:nth-child(3) {
+    animation-delay: calc(var(--animation-delay) * 3) !important
+}
+
+ul li:nth-child(4) {
+    animation-delay: calc(var(--animation-delay) * 4) !important
+}
+
+ul li:nth-child(5) {
+    animation-delay: calc(var(--animation-delay) * 5) !important
+}
+
+ul li:nth-child(6) {
+    animation-delay: calc(var(--animation-delay) * 6) !important
+}
+
 @media screen and (max-width: 767px) {
     .nav-item {
         display: none;
@@ -85,7 +114,7 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
         -webkit-backface-visibility: hidden;
     }
 }
-  
+
 .nav-item.active {
     /* animations */
     animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
@@ -94,17 +123,17 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
     animation-fill-mode: forwards;
     animation-direction: normal;
     animation-timing-function: var(--fill-mode);
-      -webkit-animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
-      -webkit-animation-name: fade-in;
-      -webkit-animation-direction: normal;
-      -webkit-animation-fill-mode: forwards;
-      -webkit-animation-duration: calc(var(--animation-delay)*3.3);
-      -webkit-animation-timing-function: var(--fill-mode);
-        -moz-animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
-        -moz-animation-direction: normal;
-        -moz-animation-name: fade-in;
-        -moz-animation-duration: calc(var(--animation-delay)*3.3);
-        -moz-animation-timing-function: var(--fill-mode);
+    -webkit-animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: calc(var(--animation-delay)*3.3);
+    -webkit-animation-timing-function: var(--fill-mode);
+    -moz-animation: fade-in calc(var(--animation-delay)*3.3) var(--fill-mode) forwards;
+    -moz-animation-direction: normal;
+    -moz-animation-name: fade-in;
+    -moz-animation-duration: calc(var(--animation-delay)*3.3);
+    -moz-animation-timing-function: var(--fill-mode);
     /* displays */
     display: flex;
     display: -webkit-flex;
@@ -112,51 +141,244 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
     align-items: center;
     visibility: visible;
     backface-visibility: visible;
-        -webkit-backface-visibility: visible;
+    -webkit-backface-visibility: visible;
 }
-  
-@keyframes fade-in { 
-0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
-100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-33.3%);
+        -webkit-transform: translateY(-33.3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+
 @-webkit-keyframes fade-in {
-0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
-100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+    0% {
+        opacity: 0;
+        transform: translateY(-33.3%);
+        -webkit-transform: translateY(-33.3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+
 @-moz-keyframes fade-in {
-0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
-100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+    0% {
+        opacity: 0;
+        transform: translateY(-33.3%);
+        -webkit-transform: translateY(-33.3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+
 @-o-keyframes fade-in {
-0% { opacity: 0; transform: translateY(-33.3%); -webkit-transform: translateY(-33.3%);}
-100% { opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);} }
+    0% {
+        opacity: 0;
+        transform: translateY(-33.3%);
+        -webkit-transform: translateY(-33.3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
 
 /* hamburger close icon */
-.Open, .Close { display: none }
-.active { display: flex !important }
+.Open, .Close {
+    display: none
+}
+
+.active {
+    display: flex !important
+}
+
 /* second toggle */
-.Closing { display: none }
+.Closing {
+    display: none
+}
+
 /* other states */
-.hamburger { transition: 0ms } 
+.hamburger {
+    transition: 0ms
+}
 
 /* analytics */
-.gif-disabled:hover { animation: pulse 1.5s cubic-bezier(0.1, 1, .125, .75) }
+.gif-disabled:hover {
+    animation: pulse 1.5s cubic-bezier(0.1, 1, .125, .75)
+}
+
 @keyframes pulse {
-    0% { transform: scale(1) }
+    0% {
+        transform: scale(1)
+    }
+
     47% {
         transform: scale(1.04);
         background-color: red;
         padding: 12px;
         border-radius: 8px;
     }
+
     53% {
         transform: scale(1.12);
         background-color: red;
         padding: 12px;
         border-radius: 8px;
     }
-    100% { transform: scale(1) }
+
+    100% {
+        transform: scale(1)
+    }
 }
 
+
+/** ribbon winner fvg tpl **/
+.ribbon {
+    height: 90px;
+    position: relative;
+    margin-bottom: 30px;
+    background: url('https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg');
+    background-size: cover;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrap {
+    --_misure_standard: 40px;
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: var(--_misure_standard);
+    left: var(--_misure_standard);
+    /* overflow: hidden; */
+}
+
+.wrap:before, .wrap:after {
+    content: "";
+    position: absolute;
+}
+
+.wrap:before {
+    width: 45px;
+    height: 10px;
+    right: 84px;
+    transform: rotate(-45deg);
+    background: #4D6530;
+    border-radius: 8px 8px 0px 0px;
+    top: -51px;
+}
+
+.wrap:after {
+    width: 15px;
+    height: 45px;
+    right: -55px;
+    top: 85px;
+    background: #4D6530;
+    border-radius: 0px 8px 8px 0px;
+    transform: rotate(45deg);
+}
+
+.ribbon6::first-letter {
+    text-transform: uppercase
+}
+
+.ribbon6 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    -webkit-text-size-adjust: 100%;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 10px;
+    right: -70px;
+    z-index: 2;
+    overflow: hidden;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border: 1px dashed rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 3px #57DD43, 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
+    background: #57DD43;
+    text-align: center;
+    color: inherit;
+}
+
+/** SMALL DEVICES **/
+@media screen and (max-width: 1024px) {
+    .ribbon {
+        display: none
+    }
+}
+
+.ribbon-navbar-mobile {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .ribbon-navbar-mobile {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .ribbon-navbar-mobile .wrap {
+        width: 100%;
+        height: 180px;
+        position: absolute;
+        top: 60px;
+        /*standard value*/
+        left: -60px;
+        /*standard value*/
+        z-index: 9;
+        /* overflow: hidden; */
+    }
+}
+
+@media (min-width: 500px) {
+    .ribbons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .ribbon6 {
+        gap: .3rem
+    }
+
+    /* .ribbon {width: 10%} */
+}
+
+
 /* title hover */
-.tags { display: inline; position: relative }
+.tags {
+    display: inline;
+    position: relative
+}
+
 .tags:hover:after {
     background: #333;
     background: rgba(0, 0, 0, .8);
@@ -170,6 +392,7 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
     z-index: 98;
     width: 250px;
 }
+
 .tags:hover:before {
     border: solid;
     border-color: #333 transparent;
@@ -182,9 +405,16 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
 }
 
 /* video */
-.art-video-player, .art-video-player video {
+.art-video-player:not(.video-gsm .art-video-player), .art-video-player:not(.video-gsm .art-video-player) video {
     width: 650px !important;
     height: 650px !important;
+}
+
+@media screen and (min-width: 685px) and (max-width: 980px) {
+    .art-video-player, .art-video-player video {
+        min-width: 400px !important;
+        min-height: 400px !important;
+    }
 }
 
 @media screen and (max-width: 685px) {
@@ -193,11 +423,147 @@ ul li:nth-child(5) { animation-delay: calc(var(--animation-delay) * 5) !importan
         height: 400px !important;
     }
 }
+
 @media screen and (max-width: 445px) {
     .art-video-player, .art-video-player video {
-        width: 225px !important;
+        width: 300px !important;
         height: 300px !important;
     }
 }
 
-.art-progress-played, .art-progress-indicator { background-color: #22c55e !important }
+.art-progress-played, .art-progress-indicator {
+    background-color: #22c55e !important
+}
+
+/** images ingrandimento **/
+.myImg {
+    border-radius: 5px;
+    cursor: pointer !important;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.myImg:hover {
+    --_scale: scale(1.015);
+    opacity: 0.9;
+    cursor: pointer;
+    transform: var(--_scale);
+    -webkit-transform: var(--_scale);
+    -o-transform: var(--_scale);
+    -ms-transform: var(--_scale);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: calc(100vw - 55%);
+    /* max-width: 75%; */
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.out {
+    animation-name: zoom-out;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1)
+    }
+
+    to {
+        -webkit-transform: scale(2)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.4)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(0)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+

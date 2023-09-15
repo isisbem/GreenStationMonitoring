@@ -106,20 +106,20 @@ import Cards from '../components/transition-component/Cards.vue'
                             </div>
                             <!-- new image -->
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/i-min.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
+                                <img src="/GSM/i-min.jpeg" loading="lazy" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/l-min.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
+                                <img src="/GSM/l-min.jpeg" loading="lazy" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/m-min.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
+                                <img src="/GSM/m-min.jpeg" loading="lazy" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/n-min.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
+                                <img src="/GSM/n-min.jpeg" loading="lazy" alt="photos"
+                                    class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <!-- altre foto da aggiungere -->
                             <!-- <div class="grid col-span-1 px-2 object-cover max-w-full">
@@ -139,7 +139,8 @@ import Cards from '../components/transition-component/Cards.vue'
                                 </h1>
                             </div>
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
-                                <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option" :style="style" />
+                                <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option"
+                                    :style="style" />
                             </div>
                         </div>
                         <!-- domande -->
@@ -304,7 +305,16 @@ export default {
 </script>
 
 <style>
-.layout-1 img { aspect-ratio: 5 / 4 !important; margin: 1rem 0 !important }
-.layout-1 div:nth-child(7) img, .layout-1 div:nth-child(8) img { margin: 16rem 0 2rem 0 !important }
-.layout-1 div { margin: 1rem auto }
-</style>
+.layout-1 img {
+    aspect-ratio: 5 / 4 !important;
+    margin: 1rem 0 !important
+}
+
+.layout-1 div:nth-child(7) img,
+.layout-1 div:nth-child(8) img {
+    margin: 16rem 0 2rem 0 !important
+}
+
+.layout-1 div {
+    margin: 1rem auto
+}</style>
