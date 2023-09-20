@@ -69,7 +69,7 @@ const modalImageUrl = ref('');
     </ul>
 
     <div class="container mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
-      <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:">
+      <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
         Vincitori TPL&times; Friuli-Venezia-Giulia
       </h1>
       <!-- photo winners -->

@@ -11,17 +11,14 @@
     font-style: normal;
     font-variant: normal;
     font-feature-settings: normal;
+    font-display: optional;
 }
 
 /* get the font */
-html, body {
-    font-family: 'Inter', sans-serif !important;
-}
+html, body { font-family: 'Inter', sans-serif !important; }
 
 /* sections */
-main {
-    position: relative
-}
+main { position: relative }
 
 .sectionNormal, .sectionNormal2 {
     height: calc(100vh - 375px);
@@ -58,18 +55,14 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    .hamburger {
-        display: none !important
-    }
+    .hamburger { display: none !important }
 
     .navbar, .navbar .contenitore, .fullata {
         display: flex !important;
         width: fit-content !important
     }
 
-    .navbar ul {
-        flex-direction: row !important
-    }
+    .navbar ul { flex-direction: row !important }
 }
 
 .imageLogo {
@@ -84,23 +77,18 @@ main {
 ul li:nth-child(1) {
     animation-delay: var(--animation-delay) !important
 }
-
 ul li:nth-child(2) {
     animation-delay: calc(var(--animation-delay) * 2) !important
 }
-
 ul li:nth-child(3) {
     animation-delay: calc(var(--animation-delay) * 3) !important
 }
-
 ul li:nth-child(4) {
     animation-delay: calc(var(--animation-delay) * 4) !important
 }
-
 ul li:nth-child(5) {
     animation-delay: calc(var(--animation-delay) * 5) !important
 }
-
 ul li:nth-child(6) {
     animation-delay: calc(var(--animation-delay) * 6) !important
 }
@@ -201,33 +189,17 @@ ul li:nth-child(6) {
 }
 
 /* hamburger close icon */
-.Open, .Close {
-    display: none
-}
-
-.active {
-    display: flex !important
-}
-
+.Open, .Close { display: none }
+.active { display: flex !important }
 /* second toggle */
-.Closing {
-    display: none
-}
-
+.Closing { display: none }
 /* other states */
-.hamburger {
-    transition: 0ms
-}
-
+.hamburger { transition: 0ms }
 /* analytics */
-.gif-disabled:hover {
-    animation: pulse 1.5s cubic-bezier(0.1, 1, .125, .75)
-}
+.gif-disabled:hover { animation: pulse 1.5s cubic-bezier(0.1, 1, .125, .75) }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1)
-    }
+    0% { transform: scale(1) }
 
     47% {
         transform: scale(1.04);
@@ -243,9 +215,7 @@ ul li:nth-child(6) {
         border-radius: 8px;
     }
 
-    100% {
-        transform: scale(1)
-    }
+    100% { transform: scale(1) }
 }
 
 
@@ -253,11 +223,134 @@ ul li:nth-child(6) {
 .ribbon {
     height: 90px;
     position: relative;
-    margin-bottom: 30px;
-    background: url('https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg');
+    margin-bottom: 30px; /* background: url('../../public/'); */
     background-size: cover;
     text-transform: uppercase;
     color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1285px) {
+    .ribbon, .logo-home {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container-navbar-first { margin: 0 !important }
+}
+
+/* 2 search bar: 1 desktop, 1 mobile */
+.search-bar:not(.search-bar-open) {
+    margin: 0 0 0 1rem;
+}
+/* default */
+.search-bar.desktop {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+}
+.search-bar.mobile {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.result-active .search-bar.desktop {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+/** COUNTER IN CSS ONLY FOR THE RESULTS OF THE USER SEARCH **/
+.product-list {
+    counter-reset: my-counter;
+    list-style-type: none;
+}
+.product-list li::before {
+    /* Increment the counter for each li */
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    margin-right: 0.5rem; 
+}
+
+/* responsive 2 search bar */
+@media screen and (max-width: 768px) {
+    .search-container {
+        max-width: 170px !important;
+        margin: 1.25rem auto !important;
+    }
+    .search-bar.desktop:not(.result-search .search-bar) {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .search-bar.mobile {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/** search container of click in the input search **/
+.result-search {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    z-index: 0;
+}
+.result-active {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+    opacity: 1 !important;
+    position: absolute !important;
+    inset: 0 !important;
+    margin: auto !important;
+    background: #fff !important;
+    color: black !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 99999 !important;
+    visibility: visible !important;
+    overflow: hidden;
+}
+.result-active > * {
+    z-index: 99999 !important;
+    color: black !important;
+}
+.result-active .result-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/** search input desktop results **/
+@media screen and (min-width: 768px) {
+    #search-input-desktop {
+        min-width: 100%;
+        width: 450px;
+    }
+}
+
+/* responsive search */
+@media screen and (min-width: 880px) and (max-width: 1024px) {
+    .search-bar-input {
+        min-width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-item div span:not(.nav-item div a span) {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 .wrap {
@@ -267,7 +360,6 @@ ul li:nth-child(6) {
     position: absolute;
     top: var(--_misure_standard);
     left: var(--_misure_standard);
-    /* overflow: hidden; */
 }
 
 .wrap:before, .wrap:after {
@@ -327,9 +419,7 @@ ul li:nth-child(6) {
 
 /** SMALL DEVICES **/
 @media screen and (max-width: 1024px) {
-    .ribbon {
-        display: none
-    }
+    .ribbon { display: none }
 }
 
 .ribbon-navbar-mobile {
@@ -349,12 +439,9 @@ ul li:nth-child(6) {
         width: 100%;
         height: 180px;
         position: absolute;
-        top: 60px;
-        /*standard value*/
-        left: -60px;
-        /*standard value*/
-        z-index: 9;
-        /* overflow: hidden; */
+        top: 60px; /*standard value*/
+        left: -60px; /*standard value*/
+        z-index: 9; /* overflow: hidden; */
     }
 }
 
@@ -365,10 +452,7 @@ ul li:nth-child(6) {
         justify-content: space-between;
     }
 
-    .ribbon6 {
-        gap: .3rem
-    }
-
+    .ribbon6 { gap: .3rem }
     /* .ribbon {width: 10%} */
 }
 
@@ -431,9 +515,7 @@ ul li:nth-child(6) {
     }
 }
 
-.art-progress-played, .art-progress-indicator {
-    background-color: #22c55e !important
-}
+.art-progress-played, .art-progress-indicator { background-color: #22c55e !important }
 
 /** images ingrandimento **/
 .myImg {
@@ -458,34 +540,24 @@ ul li:nth-child(6) {
 
 /* The Modal (background) */
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
+    display: none;/* Hidden by default */
+    position: fixed;/* Stay in place */
+    z-index: 1;/* Sit on top */
+    padding-top: 100px;/* Location of the box */
     left: 0;
     top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+    width: 100%;/* Full width */
+    height: 100%;/* Full height */
+    overflow: auto;/* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);/* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);/* Black w/ opacity */
 }
 
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
-    width: calc(100vw - 55%);
-    /* max-width: 75%; */
+    width: calc(100vw - 55%);  /* max-width: 75%; */
 }
 
 /* Caption of Modal Image */
@@ -514,33 +586,18 @@ ul li:nth-child(6) {
 }
 
 @-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(1)
-    }
-
-    to {
-        -webkit-transform: scale(2)
-    }
+    from { -webkit-transform: scale(1) }
+    to { -webkit-transform: scale(2) }
 }
 
 @keyframes zoom {
-    from {
-        transform: scale(0.4)
-    }
-
-    to {
-        transform: scale(1)
-    }
+    from {transform: scale(0.4) }
+    to {transform: scale(1) }
 }
 
 @keyframes zoom-out {
-    from {
-        transform: scale(1)
-    }
-
-    to {
-        transform: scale(0)
-    }
+    from { transform: scale(1) }
+    to { transform: scale(0) }
 }
 
 /* The Close Button */
@@ -562,9 +619,4 @@ ul li:nth-child(6) {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-
+@media only screen and (max-width: 700px) { .modal-content { width: 100% } }
