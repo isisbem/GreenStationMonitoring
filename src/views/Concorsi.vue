@@ -7,6 +7,14 @@ const images = [
   '/img-gruppo-tpl-winer/G-1.jpeg',
   '/img-gruppo-tpl-winer/G-2.jpeg',
 ];
+
+const images2 = [
+  '/GSM_Foto_Premiazioni/93E4E25E-1DDD-4461-8CFB-4828DC868172.webp',
+  '/GSM_Foto_Premiazioni/748F6C22-8067-4070-9A3C-78FB302D58A8.webp',
+  '/GSM_Foto_Premiazioni/D0BB284D-064A-4A36-8099-E365FC6942EB_1.webp',
+  '/GSM_Foto_Premiazioni/EA171FDC-F79D-4B6E-9408-42DC2FF6F95D_1.webp'
+];
+
 function openModal(imageSrc) {
   modalImageUrl.value = imageSrc;
   const modal = document.getElementById('myModal');
@@ -81,6 +89,31 @@ const modalImageUrl = ref('');
         <div id="caption"></div>
       </div>
     </div>
+
+    <!-- premiazione 10.10.2023 a palazzo Belgrado Antonini Udine -->
+    <div class="container mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
+      <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
+        Premiazione Vincitori TPL fvg - concorso
+      </h1>
+      <!-- photo winners -->
+      <img v-for="(image, index) in images2" :key="index" :src="image" @click="openModal(image)"
+        class="myImg max-w-full max-h-fit rounded-md h-full mx-auto" />
+      <div id="myModal" class="modal" @click="closeModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" :src="modalImageUrl" />
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <!-- video premiazione -->
+    <div class="container mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
+      <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
+        Video Premiazione 
+      </h1>
+      <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
+        <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option2" :style="style" />
+      </div>
+    </div>
   </div>
   <Footer />
 </template>
@@ -95,6 +128,11 @@ export default {
         url: "/video-tpl-official/Video-HD-720.mp4",
         url: "/video-tpl-official/video_TPL_ciclomobilita_sostenibile_BEM.mp4",
         poster: "/video-tpl-official/Poster.png",
+      },
+      option2: {
+        url: "/GSM_Foto_Premiazioni/IMG_4975.mp4",
+        url: "/GSM_Foto_Premiazioni/IMG_4975.mp4",  /** aggiungere 480,1080 */
+        poster: "/GSM_Foto_Premiazioni/PosterVideoPremiaz.png",
       },
     }
   },
