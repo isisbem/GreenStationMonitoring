@@ -26,12 +26,13 @@
 /* icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 .fade-enter-active, .fade-leave-active {
+  --_tra: 225ms;
   opacity: 1;
-  transition: all 275ms ease; 
-    -webkit-transition: all 275ms ease;
-      -moz-transition: all 275ms ease;
-        -o-transition: all 275ms ease;
-          -ms-transition: all 275ms ease;
+  transition: all var(--_tra) ease-in; 
+    -webkit-transition: all var(--_tra) ease-in;
+      -moz-transition: all var(--_tra) ease-in;
+        -o-transition: all var(--_tra) ease-in;
+          -ms-transition: all var(--_tra) ease-in;
 }
 .fade-enter-from, .fade-leave-to { opacity: 0 }
 </style>

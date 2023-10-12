@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
     :root {
         --bd-r: 8px;
@@ -22,14 +21,12 @@
     ::selection { color: var(--clr-bg); background-color: var(--bg-selection) }
     ::-moz-selection { color: var(--clr-bg); background-color: var(--bg-selection) }
     .hamburger { z-index: 9999 !important }
-
     /** video **/
     .video-gsm, :where(video.video-gsm) { image-rendering: optimizeSpeed }
     .large-video {
         min-width: 1000px !important;
         min-height: 1000px !important;
     }
-
     .art-video {
         object-fit: cover;
         -o-object-fit: cover;
@@ -37,19 +34,13 @@
         background-clip: content-box;
         background-size: cover;
     }
-
-    .video-gsm .art-video-player, .video-gsm .art-video-player video {
-        margin-left: auto; margin-right: auto;
-    }
-
+    .video-gsm .art-video-player, .video-gsm .art-video-player video { margin-left: auto; margin-right: auto }
     @media screen and (min-width: 979px) {
         .video-gsm, :where(video.video-gsm) {
             min-width: 710px !important;
             margin: 2rem auto;
         }
-        /* [top-layer] > div {
-            height: calc(var(--_misure) - 150px) !important;
-        } */
+        /* [top-layer] > div { height: calc(var(--_misure) - 150px) !important; } */
         .container.responsive, .video-gsm {
             min-height: 450px !important;  /* default value */
             display: flex;
@@ -57,7 +48,6 @@
             align-items: flex-start;
         }
     }
-
     /** IMPORTANT FOR VIDEO LARGE DEVICES **/
     @media screen and (min-width: 1750px) and (max-width: 9998px) {
         .art-video-player, .art-video-player video  {
@@ -66,14 +56,6 @@
             margin: auto;
         }
     }
-
-    @media screen and (max-width: 451px) {
-        .video-gsm, :where(video.video-gsm) {
-            max-width: 325px !important;
-        }
-    }
-
-    nav ul, body:not(.ribbon-navbar-mobile, .ribbon-navbar-mobile > *, .modal), .fullata {
-        z-index: 9999 !important;
-    }
+    @media screen and (max-width: 451px) { .video-gsm, :where(video.video-gsm) { max-width: 325px !important } }
+    nav ul, body:not(.ribbon-navbar-mobile, .ribbon-navbar-mobile > *, .modal), .fullata { z-index: 9999 !important }
 }

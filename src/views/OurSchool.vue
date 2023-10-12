@@ -15,14 +15,14 @@ import Footer from '../components/Footer.vue'
           <p class=" font-normal text-lg md:text-xl text-neutral-900">Ingresso principale dell'istituto</p>
           <div class="container mx-auto block max-w-7xl h-full w-full">
             <figure class="mx-auto w-full my-2 flex flex-row justify-center items-center">
-              <img src="/school-ph/th-912641979.jpg"
+              <img src="/school-ph/th-912641979.webp"
                 class="max-w-[900px] px-6 md:px-0 rounded-lg md:mx-auto w-full h-full" alt="">
             </figure>
           </div>
           <div class="container mx-auto block max-w-7xl mt-8 h-full w-full">
             <p class=" font-normal text-lg md:text-xl text-neutral-900">Parte sul retro dell'istituto</p>
             <figure class="mx-auto w-full my-2 flex flex-row justify-center items-center">
-              <img src="/school-ph/Foto-2-external.jpg"
+              <img src="/school-ph/foto-2-external.webp"
                 class="max-w-[900px] px-6 md:px-0 rounded-lg md:mx-auto w-full h-full" alt="">
             </figure>
           </div>

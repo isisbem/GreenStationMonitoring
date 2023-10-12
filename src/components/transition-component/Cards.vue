@@ -8,7 +8,7 @@
             class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
             <!-- image -->
             <div class="flex justify-center items-center w-full p-3">
-              <img src="/green-economy.png" class="w-10 h-10 object-cover" alt="">
+              <img src="/green-economy.webp" class="w-10 h-10 object-cover" alt="">
             </div>
             <h1 class="font-medium my-2 text-md break-words">
               Risparmio di soldi
@@ -25,7 +25,7 @@
             class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
             <!-- image -->
             <div class="flex justify-center items-center w-full p-3">
-              <img src="/paper.png" class="w-10 h-10 object-cover" alt="">
+              <img src="/paper.webp" class="w-10 h-10 object-cover" alt="">
             </div>
             <h1 class="font-medium my-2 text-md break-words">
               Un'analisi precisa
@@ -41,7 +41,7 @@
             class="card hover:transition-shadow hover:shadow-xl mx-4 min-h-full my-2 m-w-3xl border border-gray-200 rounded-lg py-6 px-4">
             <!-- image -->
             <div class="flex justify-center items-center w-full p-3">
-              <img src="/planet-earth.png" class="w-10 h-10 object-cover" alt="">
+              <img src="/planet-earth.webp" class="w-10 h-10 object-cover" alt="">
             </div>
             <h1 class="font-medium my-2 text-md break-words">
               Salvare l'ambiente

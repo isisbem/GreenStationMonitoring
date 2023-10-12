@@ -88,48 +88,44 @@ import Cards from '../components/transition-component/Cards.vue'
                         <!-- usare non (../../public/GSM/photo.png) ma /GSM/photo.png -->
                         <div class="grid layout-1 grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/1.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/1.webp" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/2.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/2.webp" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
 
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/3.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/3.webp" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/4.jpeg" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
+                                <img src="/GSM/4.webp" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
                             </div>
                             <!-- new image -->
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/i-min.jpeg" loading="lazy" alt="photos"
+                                <img src="/GSM/i-min.webp" loading="lazy" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/l-min.jpeg" loading="lazy" alt="photos"
+                                <img src="/GSM/l-min.webp" loading="lazy" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/m-min.jpeg" loading="lazy" alt="photos"
+                                <img src="/GSM/m-min.webp" loading="lazy" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/n-min.jpeg" loading="lazy" alt="photos"
+                                <img src="/GSM/n-min.webp" loading="lazy" alt="photos"
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <!-- altre foto da aggiungere -->
                             <!-- <div class="grid col-span-1 px-2 object-cover max-w-full">
                                 <img src="/GSM/" alt="photos" class="object-cover rounded-md shadow"
                                     title="green station physical photo">
-                            </div>
-                            <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
-                            </div> -->
+                            </div>-->
                         </div>
 
                         <div class="grid grid-cols-1 gap-4 px-2 w-full">
@@ -253,7 +249,7 @@ export default {
             option: {
                 url: "/GSM/IMG_2848.webm",
                 url: "/GSM/IMG_2848_MP4.mp4",
-                poster: "/GSM/GSM_Poster_1.png",
+                poster: "/GSM/GSM_Poster_1.webm",
             },
             style: {
                 /**width and height**/
@@ -274,25 +270,34 @@ export default {
         getInstance(art) {
             console.info(art);
         },
+        closeAllContent() {
+            this.showContent1 = false;
+            this.showContent2 = false;
+            this.showContent3 = false;
+            this.showContent4 = false;
+            this.showContent5 = false;
+            this.showContent6 = false;
+        },
         toggleContent(id) {
+            this.closeAllContent();
             switch (id) {
                 case 1:
-                    this.showContent1 = !this.showContent1;
+                    this.showContent1 = true;
                     break;
                 case 2:
-                    this.showContent2 = !this.showContent2;
+                    this.showContent2 = true;
                     break;
                 case 3:
-                    this.showContent3 = !this.showContent3;
+                    this.showContent3 = true;
                     break;
                 case 4:
-                    this.showContent4 = !this.showContent4;
+                    this.showContent4 = true;
                     break;
                 case 5:
-                    this.showContent5 = !this.showContent5;
+                    this.showContent5 = true;
                     break;
                 case 6:
-                    this.showContent6 = !this.showContent6;
+                    this.showContent6 = true;
                     break;
             }
         },

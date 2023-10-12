@@ -9,7 +9,7 @@
           class="logo-home text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white outline-none focus:outline-none active:outline-1 active:outline active:outline-slate-300 active:rounded p-3"
           to="/">
           <div>
-            <img src="/Logo.png" class="imageLogo" alt="">
+            <img src="/Logo.webp" class="imageLogo" alt="">
           </div>
         </Router-Link>
         <!-- HAMBURGER -->
@@ -156,7 +156,7 @@
           <div class="ribbon-navbar-mobile">
             <div class="wrap">
               <span class="ribbon6">
-                <img src="/Tpl_logo_piccolo.png" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
+                <img src="/Tpl_logo_piccolo.webp" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
                   role="img">
                 <a href="https://www.tplfvg.it" target="_blank" role="link">TPL fvg Winner 1</a>
               </span>
@@ -167,7 +167,7 @@
       <div class="ribbon">
         <div class="wrap">
           <span class="ribbon6">
-            <img src="../../public/Tpl_logo_piccolo.png" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
+            <img src="../../public/Tpl_logo_piccolo.webp" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
               role="img">
             <a href="https://www.tplfvg.it" target="_blank" role="link">TPL fvg Winner 1</a>
           </span>

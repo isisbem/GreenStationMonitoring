@@ -44,8 +44,14 @@ import Footer from '../components/Footer.vue'
 </template>
 
 <style>
-:root {
-    --size-vh: 214px
+:root { --size-vh: 215px }
+
+@media screen and (min-width: 1250px) {
+    :root { --size-vh: 276px }
+}
+
+@media screen and (max-width: 767px) {
+    :root { --size-vh: 215px }
 }
 
 .home {

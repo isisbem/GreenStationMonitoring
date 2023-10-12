@@ -4,8 +4,8 @@ import Footer from '../components/Footer.vue';
 import { ref } from 'vue';
 
 const images = [
-  '/img-gruppo-tpl-winer/G-1.jpeg',
-  '/img-gruppo-tpl-winer/G-2.jpeg',
+  '/img-gruppo-tpl-winer/g-1.webp',
+  '/img-gruppo-tpl-winer/g-2.webp',
 ];
 
 const images2 = [
@@ -43,9 +43,9 @@ const modalImageUrl = ref('');
       </div>
     </div>
 
-    <div class="container mx-auto mt-4 mb-0 flex flex-col justify-center items-center max-w-[900px]">
+    <div class="container mx-auto mt-16 mb-8 flex flex-col justify-center items-center max-w-[900px]">
       <a href="https://www.tplfvg.it" target="_blank" role="link" class="mx-auto my-0">
-        <img src="/TPL_FVG_logo.png" class="mx-auto my-0" alt="TPL" width="700" height="300">
+        <img src="/TPL_FVG_logo.webp" class="w-[80%] min-w-[250px] sm:w-full sm:max-w-[750px] mx-auto my-0" alt="TPL" width="700" height="300">
       </a>
     </div>
 
@@ -147,17 +147,17 @@ export default {
       option: {
         url: "/video-tpl-official/Video-HD-720.mp4",
         url: "/video-tpl-official/video_TPL_ciclomobilita_sostenibile_BEM.mp4",
-        poster: "/video-tpl-official/Poster.png",
+        poster: "/video-tpl-official/Poster.webp",
       },
       option2: {
         url: "/GSM_Foto_Premiazioni/IMG_4975.mp4",
         url: "/GSM_Foto_Premiazioni/IMG_4975_1080FHD.mp4",  /** aggiungere 480,1080 */
-        poster: "/GSM_Foto_Premiazioni/PosterVideoPremiaz.png",
+        poster: "/GSM_Foto_Premiazioni/PosterVideoPremiaz.webp",
       },
       option3: {
         url: "/GSM_Foto_Premiazioni/IMG_4979_telefriuli.mp4",
         url: "/GSM_Foto_Premiazioni/IMG_4979_telefriuli.mp4",  
-        poster: "/PosterVideoTelefriuli.png",
+        poster: "/PosterVideoTelefriuli.webp",
       },
     }
   },
