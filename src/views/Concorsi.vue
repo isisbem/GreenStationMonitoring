@@ -91,14 +91,16 @@ const modalImageUrl = ref('');
     </div>
 
     <!-- premiazione 10.10.2023 a palazzo Belgrado Antonini Udine -->
-    <div class="container mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
+    <div 
+      ref="modalAdd"
+      class="container contOne mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
       <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
         Premiazione Vincitori TPL fvg - concorso
       </h1>
       <!-- photo winners -->
       <img v-for="(image, index) in images2" :key="index" :src="image" @click="openModal(image)"
         class="myImg max-w-full max-h-fit rounded-md h-full mx-auto" />
-      <div id="myModal" class="modal" @click="closeModal">
+      <div id="myModal z-[9999]" class="modal" @click="closeModal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImg" :src="modalImageUrl" />
         <div id="caption"></div>
@@ -106,12 +108,30 @@ const modalImageUrl = ref('');
     </div>
 
     <!-- video premiazione -->
-    <div class="container mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
+    <div class="container mt-24 mb-16 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
       <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
         Video Premiazione 
       </h1>
       <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
         <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option2" :style="style" />
+      </div>
+
+      <!-- inizio spot -->
+      <h1 class="font-bold mt-20 text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
+        Siamo finiti in tv:
+        <a 
+          class="underline underline-offset-2 text-blue-500 hover:no-underline"
+          href="http://telefriuli.it" target="blank">
+          <i>Telefriuli</i>
+        </a> 
+      </h1>
+      <!-- SPOT TELEFRIULI.IT -->
+      <p
+        class="text-xl sm:text-2xl"
+      > Ha deciso di fare un servizio per la presentazione!
+      </p>
+      <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
+        <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option3" :style="style" />
       </div>
     </div>
   </div>
@@ -131,8 +151,13 @@ export default {
       },
       option2: {
         url: "/GSM_Foto_Premiazioni/IMG_4975.mp4",
-        url: "/GSM_Foto_Premiazioni/IMG_4975.mp4",  /** aggiungere 480,1080 */
+        url: "/GSM_Foto_Premiazioni/IMG_4975_1080FHD.mp4",  /** aggiungere 480,1080 */
         poster: "/GSM_Foto_Premiazioni/PosterVideoPremiaz.png",
+      },
+      option3: {
+        url: "/GSM_Foto_Premiazioni/IMG_4979_telefriuli.mp4",
+        url: "/GSM_Foto_Premiazioni/IMG_4979_telefriuli.mp4",  
+        poster: "/PosterVideoTelefriuli.png",
       },
     }
   },

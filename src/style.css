@@ -73,7 +73,7 @@
         }
     }
 
-    nav ul, :not(.ribbon-navbar-mobile, .ribbon-navbar-mobile > *), .fullata {
+    nav ul, body:not(.ribbon-navbar-mobile, .ribbon-navbar-mobile > *, .modal), .fullata {
         z-index: 9999 !important;
     }
 }

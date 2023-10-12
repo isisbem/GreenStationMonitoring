@@ -542,7 +542,6 @@ ul li:nth-child(6) {
 .modal {
     display: none;/* Hidden by default */
     position: fixed;/* Stay in place */
-    z-index: 1;/* Sit on top */
     padding-top: 100px;/* Location of the box */
     left: 0;
     top: 0;
@@ -553,11 +552,20 @@ ul li:nth-child(6) {
     background-color: rgba(0, 0, 0, 0.9);/* Black w/ opacity */
 }
 
+.modal, .modal > * {
+    z-index: 9999 !important;/* Sit on top */
+}
+
+.contOne:not(body .container) {
+    z-index: 0 !important;
+}
+
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
     width: calc(100vw - 55%);  /* max-width: 75%; */
+    z-index: 9999 !important;
 }
 
 /* Caption of Modal Image */
