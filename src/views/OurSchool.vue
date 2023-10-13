@@ -39,7 +39,7 @@ import Footer from '../components/Footer.vue'
             </a>
             <div class="grid grid-cols-1 text-left mb-4">
               <p class="my-1 text-lg font-semibold">Lista completa:</p>
-              <ul class="pl-4 list-disc ">
+              <ul class="pl-4 list-disc">
                 <li>
                   <p>Via Roma, 9 - 34072 Gradisca d'Isonzo (GO)</p>
                 </li>

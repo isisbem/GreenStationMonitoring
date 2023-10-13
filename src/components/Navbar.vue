@@ -167,7 +167,7 @@
       <div class="ribbon">
         <div class="wrap">
           <span class="ribbon6">
-            <img src="../../public/Tpl_logo_piccolo.webp" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
+            <img src="/Tpl_logo_piccolo.webp" width="40" height="40" alt="TPL LOGO" title="Winner TPL fvg 1*"
               role="img">
             <a href="https://www.tplfvg.it" target="_blank" role="link">TPL fvg Winner 1</a>
           </span>

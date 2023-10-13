@@ -45,26 +45,26 @@ import ChartAnalytics from '../components/ChartsAnalytics.vue'
 export default {
     data() {
         return {
-            messageError: 'Non ci sono dati raccolti e analisi'
+            messageError: 'Presto in arrivo qualche dato...'
         }
-    }
+    },
+
+    // methods: {
+    //     showMessageError: (chartData) => {
+    //         if (chartData != null) {
+    //             todo
+    //         } else {
+    //             this.messageError = 'Non ci sono dati raccolti e analisi';
+    //         }
+    //     }
+    // },
+    // data() {
+    //     return {
+    //         messageError: ''
+    //     }
+    // },
+    // created() {
+    //     this.showMessageError(chartData);
+    // }
 }
-  /*
-methods: {
-      showMessageError: (chartData) => {
-          if (chartData != null) {
-              //todo
-          } else {
-              this.messageError = 'Non ci sono dati raccolti e analisi';
-          }
-      }
-  },
-  data() {
-      return {
-          messageError: ''
-      }
-  },
-  created() {
-      this.showMessageError(chartData);
-  }*/
 </script>

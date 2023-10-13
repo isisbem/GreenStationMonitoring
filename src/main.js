@@ -38,13 +38,13 @@ AOS.init()
 
 //Create router
 import { createRouter, createWebHistory } from 'vue-router'
-//import @views
-import Home from './views/Home.vue'
-import About from './views/About.vue'
-import Concorsi from './views/Concorsi.vue'
-import Analytics from './views/Analytics.vue'
-import Informations from './views/Informations.vue'
-import school from './views/OurSchool.vue'
+//import @views (await import)
+const Home = () => import('./views/Home.vue')
+const About = () => import('./views/About.vue')
+const Concorsi = () => import('./views/Concorsi.vue')
+const Analytics = () => import('./views/Analytics.vue')
+const Informations = () => import('./views/Informations.vue')
+const school = () => import('./views/OurSchool.vue')
 
 //Get all pages
 const router = createRouter({

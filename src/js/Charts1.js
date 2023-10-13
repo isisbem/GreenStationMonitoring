@@ -11,7 +11,5 @@ export const data = {
 export const options = {
     responsive: true,
     maintainAspectRatio: false,
-    legend: {
-        display: true,
-    }
+    legend: { display: true }
 }

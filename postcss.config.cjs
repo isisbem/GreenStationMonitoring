@@ -1,9 +1,6 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    tailwindcss: {}, autoprefixer: {},
   },
-  devServer: {
-    proxy: 'https://localhost:5137',
-  }
+  devServer: { proxy: 'https://localhost:5137' }
 }

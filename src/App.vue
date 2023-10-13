@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div id="app" data-v-app="">
+  <div id="app">
     <!-- main page -->
     <main class="Main h-[100dvh] h-screen w-full scrollbar overflow-y-auto overflow-x-hidden text-center font-Inter">
       <!-- navigation -->
@@ -23,10 +23,9 @@
 </template>
 
 <style lang="css">
-/* icons */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/* icons */ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 .fade-enter-active, .fade-leave-active {
-  --_tra: 225ms;
+  --_tra: 150ms;
   opacity: 1;
   transition: all var(--_tra) ease-in; 
     -webkit-transition: all var(--_tra) ease-in;

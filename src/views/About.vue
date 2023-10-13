@@ -42,10 +42,8 @@ import Cards from '../components/transition-component/Cards.vue'
                             <div class="my-4 mx-3 flex flex-col sm:flex sm:flex-row" data-aos="zoom-in" data-duration="500"
                                 data-delay="200" data-easing="ease-in">
                                 <!-- 2 row -->
-                                <div
-                                    class="hover:transition-shadow hover:shadow-lg border border-gray-300 rounded-md flex flex-col justify-center items-center w-full mr-3">
-                                    <div
-                                        class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
+                                <div class="hover:transition-shadow hover:shadow-lg border border-gray-300 rounded-md flex flex-col justify-center items-center w-full mr-3">
+                                    <div class="flex flex-col p-2 my-2 tondo object-cover border-4 border-neutral-200 bg-green-500 hover:bg-green-400 transition-all">
                                         <i class="bi bi-graph-up text-xl text-neutral-100"></i>
                                     </div>
                                     <h1 class="font-semibold">progetto "GreenStation"</h1>
@@ -65,8 +63,7 @@ import Cards from '../components/transition-component/Cards.vue'
                                     </div>
                                 </div>
                             </div>
-                            <!-- 3 row -->
-                            <!-- if  it is -->
+                            <!-- 3 row --> <!-- if  it is -->
                         </div>
                     </div>
 
@@ -85,7 +82,6 @@ import Cards from '../components/transition-component/Cards.vue'
                                 Gallery
                             </h1>
                         </div>
-                        <!-- usare non (../../public/GSM/photo.png) ma /GSM/photo.png -->
                         <div class="grid layout-1 grid-cols-1 sm:grid-cols-2 columns-2xs gap-4 px-2 w-full">
                             <div class="grid col-span-1 px-2 object-cover max-w-full">
                                 <img src="/GSM/1.webp" loading="lazy" alt="photos" class="object-cover rounded-md shadow"
@@ -122,9 +118,8 @@ import Cards from '../components/transition-component/Cards.vue'
                                     class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>
                             <!-- altre foto da aggiungere -->
-                            <!-- <div class="grid col-span-1 px-2 object-cover max-w-full">
-                                <img src="/GSM/" alt="photos" class="object-cover rounded-md shadow"
-                                    title="green station physical photo">
+                            <!--<div class="grid col-span-1 px-2 object-cover max-w-full">
+                                <img src="/GSM/" alt="photos" class="object-cover rounded-md shadow" title="green station physical photo">
                             </div>-->
                         </div>
 
@@ -135,14 +130,12 @@ import Cards from '../components/transition-component/Cards.vue'
                                 </h1>
                             </div>
                             <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
-                                <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option"
-                                    :style="style" />
+                                <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option" :style="style" />
                             </div>
                         </div>
                         <!-- domande -->
                         <div class="my-24 min-h-full">
-                            <div
-                                class="flex flex-col sm:flex-row mx-2 sm:mx-auto justify-center items-center gap-2 max-h-full my-24">
+                            <div class="flex flex-col sm:flex-row mx-2 sm:mx-auto justify-center items-center gap-2 max-h-full my-24">
                                 <!-- container -->
                                 <div class="full flex flex-col px-2 sm:p-0">
                                     <h1 class="font-semibold text-2xl">Altre domande?</h1>
@@ -235,7 +228,7 @@ import Cards from '../components/transition-component/Cards.vue'
                         </div>
                     </div>
                 </div>
-                <Footer class="mt-auto w-[100vw]"></Footer>
+                <Footer class="mt-auto w-[100vw]" />
             </div>
         </div>
     </div>
@@ -252,8 +245,7 @@ export default {
                 poster: "/GSM/GSM_Poster_1.webm",
             },
             style: {
-                /**width and height**/
-                margin: "60px auto",
+                margin: "60px auto", /**width and height**/
             },
             showContent1: false,
             showContent2: false,
@@ -302,24 +294,19 @@ export default {
             }
         },
         //AOS animation
-        mounted() {
-            AOS.init()
-        },
+        mounted() { AOS.init() },
     },
 };
 </script>
 
-<style>
+<style lang="css">
 .layout-1 img {
     aspect-ratio: 5 / 4 !important;
     margin: 1rem 0 !important
 }
-
 .layout-1 div:nth-child(7) img,
 .layout-1 div:nth-child(8) img {
     margin: 16rem 0 2rem 0 !important
 }
-
-.layout-1 div {
-    margin: 1rem auto
-}</style>
+.layout-1 div { margin: 1rem auto }
+</style>

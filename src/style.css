@@ -12,6 +12,7 @@
         --font-fam: 'Inter', sans-serif;
     }
     html,body{ font-family: var(--font-fam) !important; text-wrap: balance }
+    img,video,picture { image-rendering: optimizeSpeed !important }
     /* For Firefox Browser */
     .scrollbar { scrollbar-width: thin; scrollbar-color: var(--clr-bg) var(--clr-primary) }
     /* For Chrome, EDGE, Opera, Others */
@@ -39,8 +40,7 @@
         .video-gsm, :where(video.video-gsm) {
             min-width: 710px !important;
             margin: 2rem auto;
-        }
-        /* [top-layer] > div { height: calc(var(--_misure) - 150px) !important; } */
+        } /* [top-layer] > div { height: calc(var(--_misure) - 150px) !important; } */
         .container.responsive, .video-gsm {
             min-height: 450px !important;  /* default value */
             display: flex;
