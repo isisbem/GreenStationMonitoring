@@ -1,6 +1,6 @@
 <template>
   <!-- navbar -->
-  <header class="m-0 flex flex-wrap items-center justify-between px-2 py-3 bg-green-500 mb-3">
+  <header class="m-0 flex flex-wrap items-center justify-between px-2 py-3 bg-green-500">
     <div ref="wrapper" @click="handleOutsideClick"
       class="container container-navbar-first lg:px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full fullata relative flex justify-between">

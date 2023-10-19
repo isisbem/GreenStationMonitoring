@@ -24,6 +24,22 @@ main {
     position: relative
 }
 
+.bg-gradient-classes-first {
+    background: rgb(34,197,93);
+    background: -moz-radial-gradient(circle, rgba(34,197,93,0.19940476190476186) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(34,197,93,0.19940476190476186) 0%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(34,197,93,0.19940476190476186) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c55d",endColorstr="#ffffff",GradientType=1);
+    z-index: 2;
+}
+
+.bg-second {
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    background: rgba(255,255,255, 0.1);
+    opacity: 1;
+}
+
 .sectionNormal, .sectionNormal2 {
     height: calc(100vh - 375px);
     height: 100%;

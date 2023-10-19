@@ -3,9 +3,9 @@ import Footer from '../components/Footer.vue'
 </script>
 
 <template>
-    <div class="font-poppins mx-auto h-full">
-        <div class="max-h-full home w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
-            <div class="gap-12 flex flex-col items-center text-center w-fit m-auto">
+    <div class="font-poppins mx-auto h-full w-full">
+        <div class="max-h-full bg-gradient-classes-first home w-full m-0 p-0 flex flex-col justify-center items-center text-black bg-white">
+            <div class="gap-12 flex bg-second flex-col items-center text-center w-fit m-auto">
                 <div class="my-0 flex flex-col justify-center items-center self-center mx-auto lg:mt-0">
                     <h1 title="project title: GreenStationMonitoring" data-aos="fade-up" data-aos-duration="250"
                         data-aos-delay="0"
@@ -44,9 +44,9 @@ import Footer from '../components/Footer.vue'
 </template>
 
 <style lang="css">
-:root { --size-vh: 215px }
-@media screen and (min-width: 1250px) { :root { --size-vh: 276px } }
-@media screen and (max-width: 767px) { :root { --size-vh: 215px } }
+:root { --size-vh: 200px }
+@media screen and (min-width: 1250px) { :root { --size-vh: 250px } }
+@media screen and (max-width: 767px) { :root { --size-vh: 203px } }
 .home {
     height: calc(100dvh - var(--size-vh));
     height: calc(100vh - var(--size-vh));
