@@ -1,5 +1,7 @@
 <script setup>
 import Artplayer from '../components/VideoWinner.vue';
+import Artplayer2 from '../components/VideoPremiazione.vue';
+import Artplayer3 from '../components/VideoTeleFriuli.vue';
 import Footer from '../components/Footer.vue';
 import { ref } from 'vue';
 
@@ -45,7 +47,8 @@ const modalImageUrl = ref('');
 
     <div class="container mx-auto mt-16 mb-8 flex flex-col justify-center items-center max-w-[900px]">
       <a href="https://www.tplfvg.it" target="_blank" role="link" class="mx-auto my-0">
-        <img src="/TPL_FVG_logo.webp" class="w-[80%] min-w-[250px] sm:w-full sm:max-w-[750px] mx-auto my-0" alt="TPL" width="700" height="300">
+        <img src="/TPL_FVG_logo.webp" class="w-[80%] min-w-[250px] sm:w-full sm:max-w-[750px] mx-auto my-0" alt="TPL"
+          width="700" height="300">
       </a>
     </div>
 
@@ -91,8 +94,7 @@ const modalImageUrl = ref('');
     </div>
 
     <!-- premiazione 10.10.2023 a palazzo Belgrado Antonini Udine -->
-    <div 
-      ref="modalAdd"
+    <div ref="modalAdd"
       class="container contOne mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
       <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
         Premiazione Vincitori TPL fvg - concorso
@@ -110,28 +112,26 @@ const modalImageUrl = ref('');
     <!-- video premiazione -->
     <div class="container mt-24 mb-16 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
       <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
-        Video Premiazione 
+        Video Premiazione
       </h1>
       <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
-        <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option2" :style="style" />
+        <Artplayer2 @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option2" :style="style" />
       </div>
 
       <!-- inizio spot -->
       <h1 class="font-bold mt-20 text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
         Siamo finiti in tv:
-        <a 
-          class="underline underline-offset-2 text-blue-500 hover:no-underline"
-          href="http://telefriuli.it" target="blank">
+        <a class="underline underline-offset-2 text-blue-500 hover:no-underline" href="http://telefriuli.it"
+          target="blank">
           <i>Telefriuli</i>
-        </a> 
+        </a>
       </h1>
       <!-- SPOT TELEFRIULI.IT -->
-      <p
-        class="text-xl sm:text-2xl"
-      > Ha deciso di fare un servizio per la presentazione!
+      <p class="text-xl sm:text-2xl"> Ha deciso di fare un servizio per la presentazione!
       </p>
       <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
-        <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option3" :style="style" />
+        <Artplayer3 @get-instance="getInstance" id="webm/mp4" class="videoFriuli" aria-controls="false" aria-label="video"
+          :option="option3" :style="style" />
       </div>
     </div>
   </div>
@@ -146,19 +146,16 @@ export default {
     return {
       option: {
         url: "/video-tpl-official/Video-HD-720.mp4",
-        url: "/video-tpl-official/video_TPL_ciclomobilita_sostenibile_BEM.mp4",
         poster: "/video-tpl-official/Poster.webp",
       },
       option2: {
         url: "/GSM_Foto_Premiazioni/IMG_4975.mp4",
-        url: "/GSM_Foto_Premiazioni/IMG_4975_1080FHD.mp4",  /** aggiungere 480,1080 */
         poster: "/GSM_Foto_Premiazioni/PosterVideoPremiaz.webp",
       },
       option3: {
         url: "/GSM_Foto_Premiazioni/IMG_4979_telefriuli.mp4",
-        url: "/GSM_Foto_Premiazioni/IMG_4979_telefriuli.mp4",  
         poster: "/PosterVideoTelefriuli.webp",
-      },
+      }
     }
   },
   setup() {
@@ -187,6 +184,7 @@ export default {
       modal,
       openModal,
       closeModal,
+      videoFriuli,
     };
   },
 };

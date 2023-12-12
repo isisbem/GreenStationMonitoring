@@ -35,6 +35,7 @@
         background-clip: content-box;
         background-size: cover;
     }
+    .dNone { display: none !important }
     .video-gsm .art-video-player, .video-gsm .art-video-player video { margin-left: auto; margin-right: auto }
     @media screen and (min-width: 979px) {
         .video-gsm, :where(video.video-gsm) {
