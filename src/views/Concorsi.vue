@@ -34,11 +34,11 @@ const modalImageUrl = ref('');
 
 <template>
   <div class="container mx-auto min-h-screen mb-24">
-    <h1 class="title mt-8 mx-0 max-w-[800px] sm:mx-4 md:mx-auto font-bold text-[21px] sm:text-3xl md:text-4xl">
+    <h1 class="title mt-16 mx-0 max-w-[800px] sm:mx-4 md:mx-auto font-bold text-[21px] sm:text-3xl md:text-4xl">
       Concorsi vinti / a cui abbiamo partecipato
     </h1>
 
-    <div class="container mx-auto aspect-video flex flex-col justify-center items-center responsive max-w-[900px]">
+    <div class="container mt-2 mx-auto aspect-video flex flex-col justify-center items-center responsive max-w-[900px]">
       <!-- VIDEO GSM WINNER FVG TPL 2023 -->
       <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
         <Artplayer @get-instance="getInstance" id="webm/mp4" aria-label="video" :option="option" :style="style" />
@@ -57,20 +57,20 @@ const modalImageUrl = ref('');
         <h1 class="title pl-6 mt-8 font-bold text-xl">
           Concorso tpl FVG
         </h1>
-        <p class="par text-lg mt-4 pl-6">
+        <p class="par text-left mr-auto w-fit text-lg mt-4 pl-6">
           <span class="underline underline-offset-2 max-w-fit font-sans text-xl">Tipologia di concorso: </span>
           Il concorso a cui abbiamo partecipato era incentrato sulla realizzazione
           di un video, basato sulla mobilità sostenibile, e allo sviluppo di nuove tecnologie
           per avere mezzi sempre più sostenibili e accessibili a tutti.
         </p>
-        <p class="par text-lg mt-10 pl-6">
+        <p class="par text-left mr-auto w-fit text-lg mt-10 pl-6">
           <span class="underline underline-offset-2 max-w-fit font-sans text-xl">Requisiti: </span>
           I requisiti per la corretta partecipazione a questo concorso, era produrre
           un video di almeno 50 secondi, con al suo interno dello "storytelling",
           ovvero saper raccontare una storia attraverso una sequenza di video o immagini
           al fine di comprendere a pieno lo scopo e l'obiettivo.
         </p>
-        <p class="par text-lg mt-10 pl-6">
+        <p class="par text-left mr-auto w-fit text-lg mt-10 pl-6">
           <span class="underline underline-offset-2 max-w-fit font-sans text-xl">Premio in palio / vincita: </span>
           Il premio assegnato ad una scuola che vinceva, del Friuli-Venezia-Giulia, è di
           1500 &euro;, il quale usufruibile dalla scuola di appartenenza per rinnovo di infrastrutture,
@@ -79,7 +79,7 @@ const modalImageUrl = ref('');
       </li>
     </ul>
 
-    <div class="container mt-24 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
+    <div class="container mt-28 mb-4 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
       <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
         Vincitori TPL&times; Friuli-Venezia-Giulia
       </h1>
@@ -110,8 +110,8 @@ const modalImageUrl = ref('');
     </div>
 
     <!-- video premiazione -->
-    <div class="container mt-24 mb-16 max-w-[800px] mx-auto min-h-screen flex flex-col gap-4 flex-wrap">
-      <h1 class="font-bold text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
+    <div class="container mt-24 mb-16 max-w-[800px] mx-auto min-h-screen flex flex-col flex-wrap">
+      <h1 class="font-bold text-xl sm:text-2xl md:text-3xl" id="vincitoriTPL">
         Video Premiazione
       </h1>
       <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
@@ -119,7 +119,7 @@ const modalImageUrl = ref('');
       </div>
 
       <!-- inizio spot -->
-      <h1 class="font-bold mt-20 text-xl sm:text-2xl md:text-3xl:" id="vincitoriTPL">
+      <h1 class="font-bold mt-20 mb-4 text-2xl sm:text-3xl md:text-4xl:" id="vincitoriTPL">
         Siamo finiti in tv:
         <a class="underline underline-offset-2 text-blue-500 hover:no-underline" href="http://telefriuli.it"
           target="blank">
@@ -127,12 +127,25 @@ const modalImageUrl = ref('');
         </a>
       </h1>
       <!-- SPOT TELEFRIULI.IT -->
-      <p class="text-xl sm:text-2xl"> Ha deciso di fare un servizio per la presentazione!
-      </p>
+      <p class="text-md sm:text-lg font-thin mb-6"> Ha deciso di fare un servizio per la premiazione!</p>
       <div class="grid col-span-1 px-2 max-h-screen mx-auto object-cover max-w-full">
         <Artplayer3 @get-instance="getInstance" id="webm/mp4" class="videoFriuli" aria-controls="false" aria-label="video"
           :option="option3" :style="style" />
       </div>
+    </div>
+
+    <!-- ringraziamenti -->
+    <div class="container mt-24 mb-16 max-w-[800px] mx-auto min-h-[50vh] flex flex-col flex-wrap">
+      <h1 class="font-bold text-xl sm:text-2xl md:text-3xl mt-28">Ringraziamenti</h1>
+      <p class="mt-6 text-md sm:text-lg font-sans font-regular text-left">
+        A nome dell'intero istituto <strong>"G. Marconi" di Staranzano(GO)</strong>, si fanno i ringraziamenti a <strong>TPL fvg</strong> per aver dato 
+        l'opportunità alle scuole, inclusa la nostra, ad aver partecipato a questo concorso. 
+      </p>
+      <p class="mt-2 text-md sm:text-lg font-sans font-regular">
+        Aver avuto l'opportunità di partecipare a questo concorso, ha permesso a studenti volenterosi e talentuosi di mettere in mostra le proprie 
+        abilità nel videomaking e nella capacità di collaborazione e interpretazione delle idee.
+        Per i motivi citati precedentemente, si spera in futuro di altre iniziative profique come queste!
+      </p>
     </div>
   </div>
   <Footer />
