@@ -9,17 +9,46 @@ import ChartAnalytics from '../components/ChartsAnalytics.vue'
         <div class="Analytics m-auto">
             <div
                 class="h-4/5 mx-4 px-3 sm:mx-auto container w-full max-w-4xl mt-4 flex flex-col justify-center items-center text-black">
-                <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    class="font-bold text-2xl sm:text-3xl mt-16 mb-4">
+                <div class="py-4 mt-16 flex flex-row justify-center items-center">
+                    <p class="text-2xl" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <span>Update: finished developing
+                            <a 
+                                href="https://www.soft-serv.it/gsm/index.php" 
+                                target="_blank"
+                                class="text-blue-500 font-bold font-mono underline underline-offset-4 hover:no-underline"
+                            >
+                                WEB APP
+                            </a> 
+                            for 
+                        </span>
+                        <span class="text-green-600 font-bold"> ECO </span> 
+                        <span>mobility</span>
+                    </p>
+                </div>
+                <div>
+                    <h1 class="font-bold text-2xl sm:text-3xl mt-8 mb-4" data-aos="fade-down" data-aos-offset="400" data-aos-delay="150" data-aos-easing="ease-in-sine">
+                        Preview APP:
+                    </h1>
+                    <div class="max-w-full h-auto block">
+                        <div class="grid col-span-1 px-2 object-cover max-w-full">
+                            <a href="https://www.soft-serv.it/gsm/index.php" target="_blank">
+                            <img src="/preview_app_gsm.png" loading="lazy" alt="photos"
+                                class="object-cover rounded-md shadow" title="Eco mobility app">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="font-bold text-2xl sm:text-3xl my-4 pt-24">
                     Dati raccolti e Analisi
-                    <p>{{ messageError }}</p>
+                    <!-- <p>{{ messageError }}</p> -->
                 </h1>
                 <ChartAnalytics class="my-8"></ChartAnalytics>
             </div>
             <div
                 class="h-4/5 mx-4 px-3 sm:mx-auto w-full container my-20 flex flex-col justify-center items-center text-black">
                 <h1 class="font-bold text-2xl sm:text-3xl mt-16 mb-4">
-                    App realizzata con:
+                    ...Invece questo sito web è realizzato con:
                 </h1>
                 <ChartLanguage class="my-8"></ChartLanguage>
             </div>
